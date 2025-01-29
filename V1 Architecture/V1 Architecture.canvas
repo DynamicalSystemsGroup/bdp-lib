@@ -1,24 +1,25 @@
 {
 	"nodes":[
-		{"id":"3dae3bbca8fa80c4","type":"group","x":-440,"y":-480,"width":1780,"height":580,"label":"bdp-lib"},
-		{"id":"f2dbf693b1902e1d","type":"group","x":-320,"y":170,"width":1900,"height":530,"label":"Concept Spec Library"},
-		{"id":"5d00e9e58ed03846","type":"file","file":"V1 Architecture/Functions/load_concept_spec.md","x":-300,"y":240,"width":400,"height":120,"color":"4"},
-		{"id":"a0b7d85baa99f833","type":"file","file":"V1 Architecture/Libraries/Concept Spec Library.md","x":-100,"y":560,"width":400,"height":120},
-		{"id":"04bcc5d42e976860","type":"file","file":"V1 Architecture/Classes/Concept Spec Class.md","x":350,"y":440,"width":380,"height":120},
-		{"id":"365dd3673efd3709","type":"file","file":"V1 Architecture/Instances/Concept Spec Instance.md","x":350,"y":220,"width":380,"height":80,"color":"4"},
-		{"id":"52bad558af77e00a","type":"file","file":"V1 Architecture/Functions/Concept Spec Output Functions.md","x":900,"y":190,"width":400,"height":140,"color":"4"},
-		{"id":"808afd982c2c3721","type":"text","text":"## PDF","x":1100,"y":500,"width":100,"height":60,"color":"4"},
-		{"id":"9bc714da7e7cb290","type":"text","text":"## Mermaid Graphs","x":1300,"y":500,"width":260,"height":60,"color":"4"},
-		{"id":"c52d4cb5c284d500","type":"text","text":"## Obsidian","x":1200,"y":590,"width":180,"height":50,"color":"4"},
+		{"id":"3dae3bbca8fa80c4","type":"group","x":-800,"y":-480,"width":2180,"height":700,"label":"bdp-lib"},
+		{"id":"f2dbf693b1902e1d","type":"group","x":-320,"y":320,"width":1900,"height":530,"label":"Concept Spec Library"},
+		{"id":"dc07e7617b3ea901","type":"file","file":"V1 Architecture/Instances/JSON Instance.md","x":185,"y":-400,"width":230,"height":310,"color":"4"},
 		{"id":"5702ef4d9e14faf0","type":"file","file":"V1 Architecture/Functions/load_block_diagram.md","x":520,"y":-230,"width":340,"height":100,"color":"4"},
 		{"id":"9cbb164d784b22b5","type":"file","file":"V1 Architecture/Instances/Block Diagram Instance.md","x":520,"y":-20,"width":380,"height":120,"color":"4"},
 		{"id":"f09d9b9d2f111c0a","type":"file","file":"V1 Architecture/Classes/Block Diagram Class.md","x":960,"y":-230,"width":360,"height":100},
 		{"id":"310658519caa0e4d","type":"file","file":"V1 Architecture/Libraries/bdp-lib.md","x":860,"y":-460,"width":200,"height":80},
-		{"id":"2664c45d63a33d61","type":"file","file":"V1 Architecture/Schemas/Space Schema.md","x":-400,"y":-420,"width":400,"height":80},
-		{"id":"29856ce47b71dcc9","type":"file","file":"V1 Architecture/Schemas/Block Schema.md","x":-400,"y":-280,"width":400,"height":100},
-		{"id":"6b69178f22dc8544","x":-400,"y":-140,"width":400,"height":100,"type":"file","file":"V1 Architecture/Schemas/Concrete Block Schema.md"},
-		{"id":"6a9a55d31349df00","x":-400,"y":-10,"width":400,"height":110,"type":"file","file":"V1 Architecture/Schemas/Wiring (Concrete Space) Schema.md"},
-		{"id":"dc07e7617b3ea901","type":"file","file":"V1 Architecture/Instances/JSON Instance.md","x":185,"y":-400,"width":230,"height":310,"color":"4"}
+		{"id":"52bad558af77e00a","type":"file","file":"V1 Architecture/Functions/Concept Spec Output Functions.md","x":900,"y":340,"width":400,"height":140,"color":"4"},
+		{"id":"808afd982c2c3721","type":"text","text":"## PDF","x":1100,"y":650,"width":100,"height":60,"color":"4"},
+		{"id":"c52d4cb5c284d500","type":"text","text":"## Obsidian","x":1200,"y":740,"width":180,"height":50,"color":"4"},
+		{"id":"9bc714da7e7cb290","type":"text","text":"## Mermaid Graphs","x":1300,"y":650,"width":260,"height":60,"color":"4"},
+		{"id":"365dd3673efd3709","type":"file","file":"V1 Architecture/Instances/Concept Spec Instance.md","x":350,"y":370,"width":380,"height":80,"color":"4"},
+		{"id":"5d00e9e58ed03846","type":"file","file":"V1 Architecture/Functions/load_concept_spec.md","x":-300,"y":390,"width":400,"height":120,"color":"4"},
+		{"id":"04bcc5d42e976860","type":"file","file":"V1 Architecture/Classes/Concept Spec Class.md","x":350,"y":590,"width":380,"height":120},
+		{"id":"a0b7d85baa99f833","type":"file","file":"V1 Architecture/Libraries/Concept Spec Library.md","x":-100,"y":710,"width":400,"height":120},
+		{"id":"2664c45d63a33d61","type":"file","file":"V1 Architecture/Schemas/Space Schema.md","x":-800,"y":-440,"width":400,"height":80},
+		{"id":"29856ce47b71dcc9","type":"file","file":"V1 Architecture/Schemas/Block Schema.md","x":-800,"y":-300,"width":400,"height":100},
+		{"id":"6b69178f22dc8544","type":"file","file":"V1 Architecture/Schemas/Concrete Block Schema.md","x":-800,"y":-160,"width":400,"height":100},
+		{"id":"6a9a55d31349df00","type":"file","file":"V1 Architecture/Schemas/Wiring (Concrete Space) Schema.md","x":-800,"y":-30,"width":400,"height":110},
+		{"id":"158e5d1f56751535","type":"file","file":"System Schema.md","x":-215,"y":50,"width":400,"height":100}
 	],
 	"edges":[
 		{"id":"72b40a6c6bb0251c","fromNode":"310658519caa0e4d","fromSide":"bottom","toNode":"5702ef4d9e14faf0","toSide":"top","label":"has function"},
@@ -39,6 +40,7 @@
 		{"id":"406b906b486fd379","fromNode":"2664c45d63a33d61","fromSide":"right","toNode":"dc07e7617b3ea901","toSide":"left","label":"uses"},
 		{"id":"5ddec9a8a6d3de2c","fromNode":"29856ce47b71dcc9","fromSide":"right","toNode":"dc07e7617b3ea901","toSide":"left","label":"uses"},
 		{"id":"7e94b3acc8002641","fromNode":"6a9a55d31349df00","fromSide":"right","toNode":"dc07e7617b3ea901","toSide":"left","label":"uses"},
-		{"id":"e8f5f48c91f6cf91","fromNode":"6b69178f22dc8544","fromSide":"right","toNode":"dc07e7617b3ea901","toSide":"left","label":"uses"}
+		{"id":"e8f5f48c91f6cf91","fromNode":"6b69178f22dc8544","fromSide":"right","toNode":"dc07e7617b3ea901","toSide":"left","label":"uses"},
+		{"id":"a2b872b9fa3f143a","fromNode":"158e5d1f56751535","fromSide":"right","toNode":"dc07e7617b3ea901","toSide":"bottom","label":"uses"}
 	]
 }

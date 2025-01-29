@@ -16,4 +16,27 @@ The "Block Diagram Protocol Library" or bdp-lib for short is a library for insta
 
 ## Component Definitions
 
+### Space
+
+A space represents the values passed between blocks.
+
+### Block
+
+A block represents a unit of computation or action
+
+### Concrete Block
+
+A concrete block is a specific instance of a block
+
+### Wiring
+
+A relationship that goes from one blocks codomain to another blocks domain
+
+### System
+
+Defines out the spaces, blocks, concrete blocks and wirings used in a system
+
 ## JSON Spec
+
+## Example bdp-lib Input
+
