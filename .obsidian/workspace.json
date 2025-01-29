@@ -15,9 +15,9 @@
               "state": {
                 "file": "V1 Architecture/V1 Architecture.canvas",
                 "viewState": {
-                  "x": 655.4283494858357,
-                  "y": 46.70756087384995,
-                  "zoom": -1.0220003179709116
+                  "x": 549.4843218039108,
+                  "y": 116.69402473508426,
+                  "zoom": -0.8400268816947937
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -167,6 +167,10 @@
   },
   "active": "d8201aec8e491ac2",
   "lastOpenFiles": [
+    "Wiring (Concrete Space) Schema.md",
+    "Concrete Block Schema.md",
+    "Block Schema.md",
+    "Space Schema.md",
     "Concept Spec Output Functions.md",
     "Concept Spec Instance.md",
     "load_concept_spec.md",
