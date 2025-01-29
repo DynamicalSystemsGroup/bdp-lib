@@ -15,9 +15,9 @@
               "state": {
                 "file": "V1 Architecture/V1 Architecture.canvas",
                 "viewState": {
-                  "x": 549.4843218039108,
-                  "y": 116.69402473508426,
-                  "zoom": -0.8400268816947937
+                  "x": 570,
+                  "y": 110,
+                  "zoom": -0.9278185425090746
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -167,22 +167,26 @@
   },
   "active": "d8201aec8e491ac2",
   "lastOpenFiles": [
-    "Wiring (Concrete Space) Schema.md",
-    "Concrete Block Schema.md",
-    "Block Schema.md",
-    "Space Schema.md",
-    "Concept Spec Output Functions.md",
-    "Concept Spec Instance.md",
-    "load_concept_spec.md",
-    "Concept Spec Class.md",
-    "Concept Spec Library.md",
-    "Block Diagram Class.md",
-    "load_block_diagram.md",
-    "Block Diagram Instance.md",
+    "V1 Architecture/Schemas/Wiring (Concrete Space) Schema.md",
+    "V1 Architecture/Schemas/Space Schema.md",
+    "V1 Architecture/Functions/load_block_diagram.md",
+    "V1 Architecture/Instances/JSON Instance.md",
+    "V1 Architecture/Schemas/Concrete Block Schema.md",
+    "V1 Architecture/Functions/Concept Spec Output Functions.md",
+    "V1 Architecture/Functions",
+    "V1 Architecture/Libraries/Concept Spec Library.md",
+    "V1 Architecture/Instances/Concept Spec Instance.md",
+    "V1 Architecture/Classes/Concept Spec Class.md",
+    "V1 Architecture/Schemas/Block Schema.md",
+    "V1 Architecture/Schemas",
+    "V1 Architecture/Instances/Block Diagram Instance.md",
+    "V1 Architecture/Classes/Block Diagram Class.md",
+    "V1 Architecture/Instances",
+    "V1 Architecture/Libraries/bdp-lib.md",
+    "V1 Architecture/Classes",
+    "V1 Architecture/Functions/load_concept_spec.md",
+    "V1 Architecture/Libraries",
     "V1 Architecture/V1 Architecture.canvas",
-    "bdp-lib.md",
-    "V1 Architecture/JSON Instance.md",
-    "scratch/Untitled.md",
-    "V1 Architecture/Untitled"
+    "scratch/Untitled.md"
   ]
 }
