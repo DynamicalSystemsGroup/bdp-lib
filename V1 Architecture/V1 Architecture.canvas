@@ -19,7 +19,7 @@
 		{"id":"29856ce47b71dcc9","type":"file","file":"V1 Architecture/Schemas/Block Schema.md","x":-800,"y":-300,"width":400,"height":100},
 		{"id":"6b69178f22dc8544","type":"file","file":"V1 Architecture/Schemas/Concrete Block Schema.md","x":-800,"y":-160,"width":400,"height":100},
 		{"id":"6a9a55d31349df00","type":"file","file":"V1 Architecture/Schemas/Wiring (Concrete Space) Schema.md","x":-800,"y":-30,"width":400,"height":110},
-		{"id":"158e5d1f56751535","type":"file","file":"System Schema.md","x":-215,"y":50,"width":400,"height":100}
+		{"id":"158e5d1f56751535","type":"file","file":"V1 Architecture/Schemas/System Schema.md","x":-215,"y":50,"width":400,"height":100}
 	],
 	"edges":[
 		{"id":"72b40a6c6bb0251c","fromNode":"310658519caa0e4d","fromSide":"bottom","toNode":"5702ef4d9e14faf0","toSide":"top","label":"has function"},
