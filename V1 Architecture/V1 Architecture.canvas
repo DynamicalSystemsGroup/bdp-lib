@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"5702ef4d9e14faf0","type":"file","file":"load_block_diagram.md","x":100,"y":-170,"width":340,"height":100},
+		{"id":"dc07e7617b3ea901","type":"file","file":"V1 Architecture/JSON Instance.md","x":-360,"y":-380,"width":260,"height":120},
+		{"id":"9cbb164d784b22b5","type":"file","file":"Block Diagram Instance.md","x":100,"y":40,"width":380,"height":120},
+		{"id":"f09d9b9d2f111c0a","x":540,"y":-170,"width":360,"height":100,"type":"file","file":"Block Diagram Class.md"},
+		{"id":"310658519caa0e4d","type":"file","file":"bdp-lib.md","x":440,"y":-400,"width":200,"height":80},
+		{"id":"a0b7d85baa99f833","x":320,"y":560,"width":400,"height":120,"type":"file","file":"Concept Spec Library.md"},
+		{"id":"04bcc5d42e976860","x":-160,"y":560,"width":380,"height":120,"type":"file","file":"Concept Spec Class.md"},
+		{"id":"5d00e9e58ed03846","x":320,"y":320,"width":400,"height":120,"type":"file","file":"load_concept_spec.md"}
+	],
+	"edges":[
+		{"id":"72b40a6c6bb0251c","fromNode":"310658519caa0e4d","fromSide":"bottom","toNode":"5702ef4d9e14faf0","toSide":"top","label":"has function"},
+		{"id":"cba283b391d095f9","fromNode":"dc07e7617b3ea901","fromSide":"right","toNode":"5702ef4d9e14faf0","toSide":"left","label":"input to"},
+		{"id":"7dfba61b5b7b9431","fromNode":"5702ef4d9e14faf0","fromSide":"bottom","toNode":"9cbb164d784b22b5","toSide":"top","label":"outputs"},
+		{"id":"3d4cef7581fa5d8c","fromNode":"310658519caa0e4d","fromSide":"bottom","toNode":"f09d9b9d2f111c0a","toSide":"top","label":"has class"},
+		{"id":"cd0e9c3340e66b88","fromNode":"9cbb164d784b22b5","fromSide":"right","toNode":"f09d9b9d2f111c0a","toSide":"bottom","label":"is an instance of"}
+	]
+}
