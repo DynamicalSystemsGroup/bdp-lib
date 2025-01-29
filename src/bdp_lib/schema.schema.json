@@ -1,0 +1,168 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Generated schema for Root",
+    "type": "object",
+    "properties": {
+      "Spaces": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "ID": {
+              "type": "string"
+            },
+            "Name": {
+              "type": "string"
+            },
+            "Description": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ID",
+            "Name",
+            "Description"
+          ]
+        }
+      },
+      "Blocks": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "ID": {
+              "type": "string"
+            },
+            "Name": {
+              "type": "string"
+            },
+            "Description": {
+              "type": "string"
+            },
+            "Domain": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "Codomain": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "ID",
+            "Name",
+            "Description",
+            "Domain",
+            "Codomain"
+          ]
+        }
+      },
+      "ConcreteBlocks": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "ID": {
+              "type": "string"
+            },
+            "Name": {
+              "type": "string"
+            },
+            "Description": {
+              "type": "string"
+            },
+            "Parent": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "ID",
+            "Name",
+            "Description",
+            "Parent"
+          ]
+        }
+      },
+      "Wires": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "ID": {
+              "type": "string"
+            },
+            "Parent": {
+              "type": "string"
+            },
+            "SourceBlock": {
+              "type": "string"
+            },
+            "TargetBlock": {
+              "type": "string"
+            },
+            "SourceIndex": {
+              "type": "number"
+            },
+            "TargetIndex": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "ID",
+            "Parent",
+            "SourceBlock",
+            "TargetBlock",
+            "SourceIndex",
+            "TargetIndex"
+          ]
+        }
+      },
+      "Systems": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "ID": {
+              "type": "string"
+            },
+            "Name": {
+              "type": "string"
+            },
+            "Description": {
+              "type": "string"
+            },
+            "ConcreteBlocks": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "Wires": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "ID",
+            "Name",
+            "Description",
+            "ConcreteBlocks",
+            "Wires"
+          ]
+        }
+      }
+    },
+    "required": [
+      "Spaces",
+      "Blocks",
+      "ConcreteBlocks",
+      "Wires",
+      "Systems"
+    ]
+  }
