@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "System Schema",
+    "type": "object",
+    "properties": {
+      "ID": {
+        "type": "string"
+      },
+      "Name": {
+        "type": "string"
+      },
+      "Description": {
+        "type": "string"
+      },
+      "ConcreteBlocks": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "Wires": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "ID",
+      "Name",
+      "ConcreteBlocks",
+      "Wires"
+    ]
+  }

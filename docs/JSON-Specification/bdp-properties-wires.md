@@ -12,4 +12,4 @@ undefined#/properties/Wires
 
 ## Wires Type
 
-`object[]` ([Details](bdp-properties-wires-items.md))
+`object[]` ([Wire Schema](wire.md))

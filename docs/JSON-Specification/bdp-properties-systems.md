@@ -12,4 +12,4 @@ undefined#/properties/Systems
 
 ## Systems Type
 
-`object[]` ([Details](bdp-properties-systems-items.md))
+`object[]` ([System Schema](system.md))

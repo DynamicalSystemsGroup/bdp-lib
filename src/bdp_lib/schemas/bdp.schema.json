@@ -24,71 +24,13 @@
       "Wires": {
         "type": "array",
         "items": {
-          "type": "object",
-          "properties": {
-            "ID": {
-              "type": "string"
-            },
-            "Parent": {
-              "type": "string"
-            },
-            "SourceBlock": {
-              "type": "string"
-            },
-            "TargetBlock": {
-              "type": "string"
-            },
-            "SourceIndex": {
-              "type": "number"
-            },
-            "TargetIndex": {
-              "type": "number"
-            }
-          },
-          "required": [
-            "ID",
-            "Parent",
-            "SourceBlock",
-            "TargetBlock",
-            "SourceIndex",
-            "TargetIndex"
-          ]
+          "$ref": "./wire.schema.json"
         }
       },
       "Systems": {
         "type": "array",
         "items": {
-          "type": "object",
-          "properties": {
-            "ID": {
-              "type": "string"
-            },
-            "Name": {
-              "type": "string"
-            },
-            "Description": {
-              "type": "string"
-            },
-            "ConcreteBlocks": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "Wires": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            }
-          },
-          "required": [
-            "ID",
-            "Name",
-            "Description",
-            "ConcreteBlocks",
-            "Wires"
-          ]
+          "$ref": "./system.schema.json"
         }
       }
     },

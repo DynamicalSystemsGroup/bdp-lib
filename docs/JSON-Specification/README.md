@@ -10,13 +10,15 @@
 
 *   [Space Schema](./space.md) – `-`
 
+*   [System Schema](./system.md) – `-`
+
+*   [Wire Schema](./wire.md) – `-`
+
 ## Other Schemas
 
 ### Objects
 
-*   [Untitled object in Block Diagram Protocol Schema](./bdp-properties-wires-items.md) – `undefined#/properties/Wires/items`
 
-*   [Untitled object in Block Diagram Protocol Schema](./bdp-properties-systems-items.md) – `undefined#/properties/Systems/items`
 
 ### Arrays
 
@@ -30,13 +32,13 @@
 
 *   [Untitled array in Block Diagram Protocol Schema](./bdp-properties-systems.md) – `undefined#/properties/Systems`
 
-*   [Untitled array in Block Diagram Protocol Schema](./bdp-properties-systems-items-properties-concreteblocks.md) – `undefined#/properties/Systems/items/properties/ConcreteBlocks`
-
-*   [Untitled array in Block Diagram Protocol Schema](./bdp-properties-systems-items-properties-wires.md) – `undefined#/properties/Systems/items/properties/Wires`
-
 *   [Untitled array in Block Schema](./block-properties-domain.md) – `undefined#/properties/Domain`
 
 *   [Untitled array in Block Schema](./block-properties-codomain.md) – `undefined#/properties/Codomain`
+
+*   [Untitled array in System Schema](./system-properties-concreteblocks.md) – `undefined#/properties/ConcreteBlocks`
+
+*   [Untitled array in System Schema](./system-properties-wires.md) – `undefined#/properties/Wires`
 
 ## Version Note
 

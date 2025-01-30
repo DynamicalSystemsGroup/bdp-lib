@@ -86,7 +86,7 @@ undefined
 
 *   is required
 
-*   Type: `object[]` ([Details](bdp-properties-wires-items.md))
+*   Type: `object[]` ([Wire Schema](wire.md))
 
 *   cannot be null
 
@@ -94,7 +94,7 @@ undefined
 
 ### Wires Type
 
-`object[]` ([Details](bdp-properties-wires-items.md))
+`object[]` ([Wire Schema](wire.md))
 
 ## Systems
 
@@ -104,7 +104,7 @@ undefined
 
 *   is required
 
-*   Type: `object[]` ([Details](bdp-properties-systems-items.md))
+*   Type: `object[]` ([System Schema](system.md))
 
 *   cannot be null
 
@@ -112,4 +112,4 @@ undefined
 
 ### Systems Type
 
-`object[]` ([Details](bdp-properties-systems-items.md))
+`object[]` ([System Schema](system.md))
