@@ -2,41 +2,43 @@
 
 ## Top-level Schemas
 
-*   [Generated schema for Root](./schema.md) – `-`
+*   [Block Diagram Protocol Schema](./bdp.md "This schema is used to validate the JSON file that is used to store the block diagram protocol") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json`
+
+*   [Block Schema](./block.md) – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json`
+
+*   [Concrete Block Schema](./concreteblock.md) – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBlock.schema.json`
+
+*   [Space Schema](./space.md) – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/space.schema.json`
+
+*   [System Schema](./system.md) – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json`
+
+*   [Wire Schema](./wire.md) – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json`
 
 ## Other Schemas
 
 ### Objects
 
-*   [Untitled object in Generated schema for Root](./schema-properties-spaces-items.md) – `undefined#/properties/Spaces/items`
 
-*   [Untitled object in Generated schema for Root](./schema-properties-blocks-items.md) – `undefined#/properties/Blocks/items`
-
-*   [Untitled object in Generated schema for Root](./schema-properties-concreteblocks-items.md) – `undefined#/properties/ConcreteBlocks/items`
-
-*   [Untitled object in Generated schema for Root](./schema-properties-wires-items.md) – `undefined#/properties/Wires/items`
-
-*   [Untitled object in Generated schema for Root](./schema-properties-systems-items.md) – `undefined#/properties/Systems/items`
 
 ### Arrays
 
-*   [Untitled array in Generated schema for Root](./schema-properties-spaces.md) – `undefined#/properties/Spaces`
+*   [Blocks](./bdp-properties-blocks.md "A list of blocks in the block diagram protocol that follow the block schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Blocks`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-blocks.md) – `undefined#/properties/Blocks`
+*   [Codomain](./block-properties-codomain.md "The codomain of the block which are IDs of spaces") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Codomain`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-blocks-items-properties-domain.md) – `undefined#/properties/Blocks/items/properties/Domain`
+*   [ConcreteBlocks](./bdp-properties-concreteblocks.md "A list of concrete blocks in the block diagram protocol that follow the concrete block schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/ConcreteBlocks`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-blocks-items-properties-codomain.md) – `undefined#/properties/Blocks/items/properties/Codomain`
+*   [ConcreteBlocks](./system-properties-concreteblocks.md "A list of concrete block IDs that are part of the system") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ConcreteBlocks`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-concreteblocks.md) – `undefined#/properties/ConcreteBlocks`
+*   [Domain](./block-properties-domain.md "The domain of the block which are IDs of spaces") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Domain`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-wires.md) – `undefined#/properties/Wires`
+*   [Spaces](./bdp-properties-spaces.md "A list of spaces in the block diagram protocol that follow the space schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Spaces`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-systems.md) – `undefined#/properties/Systems`
+*   [Systems](./bdp-properties-systems.md "A list of systems in the block diagram protocol that follow the system schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Systems`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-systems-items-properties-concreteblocks.md) – `undefined#/properties/Systems/items/properties/ConcreteBlocks`
+*   [Wires](./bdp-properties-wires.md "A list of wires in the block diagram protocol that follow the wire schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Wires`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-systems-items-properties-wires.md) – `undefined#/properties/Systems/items/properties/Wires`
+*   [Wires](./system-properties-wires.md "A list of wire IDs that are part of the system") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Wires`
 
 ## Version Note
 
