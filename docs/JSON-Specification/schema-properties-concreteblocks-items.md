@@ -1,4 +1,4 @@
-# Untitled object in Generated schema for Root Schema
+# Untitled object in Block Diagram Protocol Schema Schema
 
 ```txt
 undefined#/properties/ConcreteBlocks/items
@@ -16,12 +16,12 @@ undefined#/properties/ConcreteBlocks/items
 
 # items Properties
 
-| Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                                        |
-| :-------------------------- | :------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ID](#id)                   | `string` | Required | cannot be null | [Generated schema for Root](schema-properties-concreteblocks-items-properties-id.md "undefined#/properties/ConcreteBlocks/items/properties/ID")                   |
-| [Name](#name)               | `string` | Required | cannot be null | [Generated schema for Root](schema-properties-concreteblocks-items-properties-name.md "undefined#/properties/ConcreteBlocks/items/properties/Name")               |
-| [Description](#description) | `string` | Required | cannot be null | [Generated schema for Root](schema-properties-concreteblocks-items-properties-description.md "undefined#/properties/ConcreteBlocks/items/properties/Description") |
-| [Parent](#parent)           | `string` | Required | cannot be null | [Generated schema for Root](schema-properties-concreteblocks-items-properties-parent.md "undefined#/properties/ConcreteBlocks/items/properties/Parent")           |
+| Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                                            |
+| :-------------------------- | :------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ID](#id)                   | `string` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-concreteblocks-items-properties-id.md "undefined#/properties/ConcreteBlocks/items/properties/ID")                   |
+| [Name](#name)               | `string` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-concreteblocks-items-properties-name.md "undefined#/properties/ConcreteBlocks/items/properties/Name")               |
+| [Description](#description) | `string` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-concreteblocks-items-properties-description.md "undefined#/properties/ConcreteBlocks/items/properties/Description") |
+| [Parent](#parent)           | `string` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-concreteblocks-items-properties-parent.md "undefined#/properties/ConcreteBlocks/items/properties/Parent")           |
 
 ## ID
 
@@ -35,7 +35,7 @@ undefined#/properties/ConcreteBlocks/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-concreteblocks-items-properties-id.md "undefined#/properties/ConcreteBlocks/items/properties/ID")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-concreteblocks-items-properties-id.md "undefined#/properties/ConcreteBlocks/items/properties/ID")
 
 ### ID Type
 
@@ -53,7 +53,7 @@ undefined#/properties/ConcreteBlocks/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-concreteblocks-items-properties-name.md "undefined#/properties/ConcreteBlocks/items/properties/Name")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-concreteblocks-items-properties-name.md "undefined#/properties/ConcreteBlocks/items/properties/Name")
 
 ### Name Type
 
@@ -71,7 +71,7 @@ undefined#/properties/ConcreteBlocks/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-concreteblocks-items-properties-description.md "undefined#/properties/ConcreteBlocks/items/properties/Description")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-concreteblocks-items-properties-description.md "undefined#/properties/ConcreteBlocks/items/properties/Description")
 
 ### Description Type
 
@@ -89,7 +89,7 @@ undefined#/properties/ConcreteBlocks/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-concreteblocks-items-properties-parent.md "undefined#/properties/ConcreteBlocks/items/properties/Parent")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-concreteblocks-items-properties-parent.md "undefined#/properties/ConcreteBlocks/items/properties/Parent")
 
 ### Parent Type
 

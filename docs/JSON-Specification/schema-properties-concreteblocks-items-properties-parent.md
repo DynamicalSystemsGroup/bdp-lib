@@ -1,4 +1,4 @@
-# Untitled string in Generated schema for Root Schema
+# Untitled string in Block Diagram Protocol Schema Schema
 
 ```txt
 undefined#/properties/ConcreteBlocks/items/properties/Parent

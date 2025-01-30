@@ -1,4 +1,4 @@
-# Untitled number in Generated schema for Root Schema
+# Untitled number in Block Diagram Protocol Schema Schema
 
 ```txt
 undefined#/properties/Wires/items/properties/TargetIndex

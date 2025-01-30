@@ -1,28 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Generated schema for Root",
+    "title": "Block Diagram Protocol Schema",
     "type": "object",
     "properties": {
       "Spaces": {
         "type": "array",
         "items": {
-          "type": "object",
-          "properties": {
-            "ID": {
-              "type": "string"
-            },
-            "Name": {
-              "type": "string"
-            },
-            "Description": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "ID",
-            "Name",
-            "Description"
-          ]
+          "$ref": "./space.schema.json"
         }
       },
       "Blocks": {

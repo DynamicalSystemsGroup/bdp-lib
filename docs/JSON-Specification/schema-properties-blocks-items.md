@@ -1,4 +1,4 @@
-# Untitled object in Generated schema for Root Schema
+# Untitled object in Block Diagram Protocol Schema Schema
 
 ```txt
 undefined#/properties/Blocks/items
@@ -16,13 +16,13 @@ undefined#/properties/Blocks/items
 
 # items Properties
 
-| Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                        |
-| :-------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [ID](#id)                   | `string` | Required | cannot be null | [Generated schema for Root](schema-properties-blocks-items-properties-id.md "undefined#/properties/Blocks/items/properties/ID")                   |
-| [Name](#name)               | `string` | Required | cannot be null | [Generated schema for Root](schema-properties-blocks-items-properties-name.md "undefined#/properties/Blocks/items/properties/Name")               |
-| [Description](#description) | `string` | Required | cannot be null | [Generated schema for Root](schema-properties-blocks-items-properties-description.md "undefined#/properties/Blocks/items/properties/Description") |
-| [Domain](#domain)           | `array`  | Required | cannot be null | [Generated schema for Root](schema-properties-blocks-items-properties-domain.md "undefined#/properties/Blocks/items/properties/Domain")           |
-| [Codomain](#codomain)       | `array`  | Required | cannot be null | [Generated schema for Root](schema-properties-blocks-items-properties-codomain.md "undefined#/properties/Blocks/items/properties/Codomain")       |
+| Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                            |
+| :-------------------------- | :------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ID](#id)                   | `string` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-blocks-items-properties-id.md "undefined#/properties/Blocks/items/properties/ID")                   |
+| [Name](#name)               | `string` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-blocks-items-properties-name.md "undefined#/properties/Blocks/items/properties/Name")               |
+| [Description](#description) | `string` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-blocks-items-properties-description.md "undefined#/properties/Blocks/items/properties/Description") |
+| [Domain](#domain)           | `array`  | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-blocks-items-properties-domain.md "undefined#/properties/Blocks/items/properties/Domain")           |
+| [Codomain](#codomain)       | `array`  | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-blocks-items-properties-codomain.md "undefined#/properties/Blocks/items/properties/Codomain")       |
 
 ## ID
 
@@ -36,7 +36,7 @@ undefined#/properties/Blocks/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-blocks-items-properties-id.md "undefined#/properties/Blocks/items/properties/ID")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-blocks-items-properties-id.md "undefined#/properties/Blocks/items/properties/ID")
 
 ### ID Type
 
@@ -54,7 +54,7 @@ undefined#/properties/Blocks/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-blocks-items-properties-name.md "undefined#/properties/Blocks/items/properties/Name")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-blocks-items-properties-name.md "undefined#/properties/Blocks/items/properties/Name")
 
 ### Name Type
 
@@ -72,7 +72,7 @@ undefined#/properties/Blocks/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-blocks-items-properties-description.md "undefined#/properties/Blocks/items/properties/Description")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-blocks-items-properties-description.md "undefined#/properties/Blocks/items/properties/Description")
 
 ### Description Type
 
@@ -90,7 +90,7 @@ undefined#/properties/Blocks/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-blocks-items-properties-domain.md "undefined#/properties/Blocks/items/properties/Domain")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-blocks-items-properties-domain.md "undefined#/properties/Blocks/items/properties/Domain")
 
 ### Domain Type
 
@@ -108,7 +108,7 @@ undefined#/properties/Blocks/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-blocks-items-properties-codomain.md "undefined#/properties/Blocks/items/properties/Codomain")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-blocks-items-properties-codomain.md "undefined#/properties/Blocks/items/properties/Codomain")
 
 ### Codomain Type
 

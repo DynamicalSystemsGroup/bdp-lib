@@ -2,41 +2,41 @@
 
 ## Top-level Schemas
 
-*   [Generated schema for Root](./schema.md) – `-`
+*   [Block Diagram Protocol Schema](./schema.md) – `-`
+
+*   [Space Schema](./space.md) – `-`
 
 ## Other Schemas
 
 ### Objects
 
-*   [Untitled object in Generated schema for Root](./schema-properties-spaces-items.md) – `undefined#/properties/Spaces/items`
+*   [Untitled object in Block Diagram Protocol Schema](./schema-properties-blocks-items.md) – `undefined#/properties/Blocks/items`
 
-*   [Untitled object in Generated schema for Root](./schema-properties-blocks-items.md) – `undefined#/properties/Blocks/items`
+*   [Untitled object in Block Diagram Protocol Schema](./schema-properties-concreteblocks-items.md) – `undefined#/properties/ConcreteBlocks/items`
 
-*   [Untitled object in Generated schema for Root](./schema-properties-concreteblocks-items.md) – `undefined#/properties/ConcreteBlocks/items`
+*   [Untitled object in Block Diagram Protocol Schema](./schema-properties-wires-items.md) – `undefined#/properties/Wires/items`
 
-*   [Untitled object in Generated schema for Root](./schema-properties-wires-items.md) – `undefined#/properties/Wires/items`
-
-*   [Untitled object in Generated schema for Root](./schema-properties-systems-items.md) – `undefined#/properties/Systems/items`
+*   [Untitled object in Block Diagram Protocol Schema](./schema-properties-systems-items.md) – `undefined#/properties/Systems/items`
 
 ### Arrays
 
-*   [Untitled array in Generated schema for Root](./schema-properties-spaces.md) – `undefined#/properties/Spaces`
+*   [Untitled array in Block Diagram Protocol Schema](./schema-properties-spaces.md) – `undefined#/properties/Spaces`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-blocks.md) – `undefined#/properties/Blocks`
+*   [Untitled array in Block Diagram Protocol Schema](./schema-properties-blocks.md) – `undefined#/properties/Blocks`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-blocks-items-properties-domain.md) – `undefined#/properties/Blocks/items/properties/Domain`
+*   [Untitled array in Block Diagram Protocol Schema](./schema-properties-blocks-items-properties-domain.md) – `undefined#/properties/Blocks/items/properties/Domain`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-blocks-items-properties-codomain.md) – `undefined#/properties/Blocks/items/properties/Codomain`
+*   [Untitled array in Block Diagram Protocol Schema](./schema-properties-blocks-items-properties-codomain.md) – `undefined#/properties/Blocks/items/properties/Codomain`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-concreteblocks.md) – `undefined#/properties/ConcreteBlocks`
+*   [Untitled array in Block Diagram Protocol Schema](./schema-properties-concreteblocks.md) – `undefined#/properties/ConcreteBlocks`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-wires.md) – `undefined#/properties/Wires`
+*   [Untitled array in Block Diagram Protocol Schema](./schema-properties-wires.md) – `undefined#/properties/Wires`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-systems.md) – `undefined#/properties/Systems`
+*   [Untitled array in Block Diagram Protocol Schema](./schema-properties-systems.md) – `undefined#/properties/Systems`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-systems-items-properties-concreteblocks.md) – `undefined#/properties/Systems/items/properties/ConcreteBlocks`
+*   [Untitled array in Block Diagram Protocol Schema](./schema-properties-systems-items-properties-concreteblocks.md) – `undefined#/properties/Systems/items/properties/ConcreteBlocks`
 
-*   [Untitled array in Generated schema for Root](./schema-properties-systems-items-properties-wires.md) – `undefined#/properties/Systems/items/properties/Wires`
+*   [Untitled array in Block Diagram Protocol Schema](./schema-properties-systems-items-properties-wires.md) – `undefined#/properties/Systems/items/properties/Wires`
 
 ## Version Note
 

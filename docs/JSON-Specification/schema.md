@@ -1,4 +1,4 @@
-# Generated schema for Root Schema
+# Block Diagram Protocol Schema Schema
 
 ```txt
 undefined
@@ -10,19 +10,19 @@ undefined
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [schema.schema.json](../../out/bdp_lib/schema.schema.json "open original schema") |
 
-## Generated schema for Root Type
+## Block Diagram Protocol Schema Type
 
-`object` ([Generated schema for Root](schema.md))
+`object` ([Block Diagram Protocol Schema](schema.md))
 
-# Generated schema for Root Properties
+# Block Diagram Protocol Schema Properties
 
-| Property                          | Type    | Required | Nullable       | Defined by                                                                                              |
-| :-------------------------------- | :------ | :------- | :------------- | :------------------------------------------------------------------------------------------------------ |
-| [Spaces](#spaces)                 | `array` | Required | cannot be null | [Generated schema for Root](schema-properties-spaces.md "undefined#/properties/Spaces")                 |
-| [Blocks](#blocks)                 | `array` | Required | cannot be null | [Generated schema for Root](schema-properties-blocks.md "undefined#/properties/Blocks")                 |
-| [ConcreteBlocks](#concreteblocks) | `array` | Required | cannot be null | [Generated schema for Root](schema-properties-concreteblocks.md "undefined#/properties/ConcreteBlocks") |
-| [Wires](#wires)                   | `array` | Required | cannot be null | [Generated schema for Root](schema-properties-wires.md "undefined#/properties/Wires")                   |
-| [Systems](#systems)               | `array` | Required | cannot be null | [Generated schema for Root](schema-properties-systems.md "undefined#/properties/Systems")               |
+| Property                          | Type    | Required | Nullable       | Defined by                                                                                                  |
+| :-------------------------------- | :------ | :------- | :------------- | :---------------------------------------------------------------------------------------------------------- |
+| [Spaces](#spaces)                 | `array` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-spaces.md "undefined#/properties/Spaces")                 |
+| [Blocks](#blocks)                 | `array` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-blocks.md "undefined#/properties/Blocks")                 |
+| [ConcreteBlocks](#concreteblocks) | `array` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-concreteblocks.md "undefined#/properties/ConcreteBlocks") |
+| [Wires](#wires)                   | `array` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-wires.md "undefined#/properties/Wires")                   |
+| [Systems](#systems)               | `array` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-systems.md "undefined#/properties/Systems")               |
 
 ## Spaces
 
@@ -32,15 +32,15 @@ undefined
 
 *   is required
 
-*   Type: `object[]` ([Details](schema-properties-spaces-items.md))
+*   Type: `object[]` ([Space Schema](space.md))
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-spaces.md "undefined#/properties/Spaces")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-spaces.md "undefined#/properties/Spaces")
 
 ### Spaces Type
 
-`object[]` ([Details](schema-properties-spaces-items.md))
+`object[]` ([Space Schema](space.md))
 
 ## Blocks
 
@@ -54,7 +54,7 @@ undefined
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-blocks.md "undefined#/properties/Blocks")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-blocks.md "undefined#/properties/Blocks")
 
 ### Blocks Type
 
@@ -72,7 +72,7 @@ undefined
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-concreteblocks.md "undefined#/properties/ConcreteBlocks")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-concreteblocks.md "undefined#/properties/ConcreteBlocks")
 
 ### ConcreteBlocks Type
 
@@ -90,7 +90,7 @@ undefined
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-wires.md "undefined#/properties/Wires")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-wires.md "undefined#/properties/Wires")
 
 ### Wires Type
 
@@ -108,7 +108,7 @@ undefined
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-systems.md "undefined#/properties/Systems")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-systems.md "undefined#/properties/Systems")
 
 ### Systems Type
 

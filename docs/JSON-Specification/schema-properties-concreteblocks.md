@@ -1,4 +1,4 @@
-# Untitled array in Generated schema for Root Schema
+# Untitled array in Block Diagram Protocol Schema Schema
 
 ```txt
 undefined#/properties/ConcreteBlocks

@@ -1,4 +1,4 @@
-# Untitled object in Generated schema for Root Schema
+# Untitled object in Block Diagram Protocol Schema Schema
 
 ```txt
 undefined#/properties/Wires/items
@@ -16,14 +16,14 @@ undefined#/properties/Wires/items
 
 # items Properties
 
-| Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                      |
-| :-------------------------- | :------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ID](#id)                   | `string` | Required | cannot be null | [Generated schema for Root](schema-properties-wires-items-properties-id.md "undefined#/properties/Wires/items/properties/ID")                   |
-| [Parent](#parent)           | `string` | Required | cannot be null | [Generated schema for Root](schema-properties-wires-items-properties-parent.md "undefined#/properties/Wires/items/properties/Parent")           |
-| [SourceBlock](#sourceblock) | `string` | Required | cannot be null | [Generated schema for Root](schema-properties-wires-items-properties-sourceblock.md "undefined#/properties/Wires/items/properties/SourceBlock") |
-| [TargetBlock](#targetblock) | `string` | Required | cannot be null | [Generated schema for Root](schema-properties-wires-items-properties-targetblock.md "undefined#/properties/Wires/items/properties/TargetBlock") |
-| [SourceIndex](#sourceindex) | `number` | Required | cannot be null | [Generated schema for Root](schema-properties-wires-items-properties-sourceindex.md "undefined#/properties/Wires/items/properties/SourceIndex") |
-| [TargetIndex](#targetindex) | `number` | Required | cannot be null | [Generated schema for Root](schema-properties-wires-items-properties-targetindex.md "undefined#/properties/Wires/items/properties/TargetIndex") |
+| Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                          |
+| :-------------------------- | :------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ID](#id)                   | `string` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-wires-items-properties-id.md "undefined#/properties/Wires/items/properties/ID")                   |
+| [Parent](#parent)           | `string` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-wires-items-properties-parent.md "undefined#/properties/Wires/items/properties/Parent")           |
+| [SourceBlock](#sourceblock) | `string` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-wires-items-properties-sourceblock.md "undefined#/properties/Wires/items/properties/SourceBlock") |
+| [TargetBlock](#targetblock) | `string` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-wires-items-properties-targetblock.md "undefined#/properties/Wires/items/properties/TargetBlock") |
+| [SourceIndex](#sourceindex) | `number` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-wires-items-properties-sourceindex.md "undefined#/properties/Wires/items/properties/SourceIndex") |
+| [TargetIndex](#targetindex) | `number` | Required | cannot be null | [Block Diagram Protocol Schema](schema-properties-wires-items-properties-targetindex.md "undefined#/properties/Wires/items/properties/TargetIndex") |
 
 ## ID
 
@@ -37,7 +37,7 @@ undefined#/properties/Wires/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-wires-items-properties-id.md "undefined#/properties/Wires/items/properties/ID")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-wires-items-properties-id.md "undefined#/properties/Wires/items/properties/ID")
 
 ### ID Type
 
@@ -55,7 +55,7 @@ undefined#/properties/Wires/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-wires-items-properties-parent.md "undefined#/properties/Wires/items/properties/Parent")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-wires-items-properties-parent.md "undefined#/properties/Wires/items/properties/Parent")
 
 ### Parent Type
 
@@ -73,7 +73,7 @@ undefined#/properties/Wires/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-wires-items-properties-sourceblock.md "undefined#/properties/Wires/items/properties/SourceBlock")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-wires-items-properties-sourceblock.md "undefined#/properties/Wires/items/properties/SourceBlock")
 
 ### SourceBlock Type
 
@@ -91,7 +91,7 @@ undefined#/properties/Wires/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-wires-items-properties-targetblock.md "undefined#/properties/Wires/items/properties/TargetBlock")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-wires-items-properties-targetblock.md "undefined#/properties/Wires/items/properties/TargetBlock")
 
 ### TargetBlock Type
 
@@ -109,7 +109,7 @@ undefined#/properties/Wires/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-wires-items-properties-sourceindex.md "undefined#/properties/Wires/items/properties/SourceIndex")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-wires-items-properties-sourceindex.md "undefined#/properties/Wires/items/properties/SourceIndex")
 
 ### SourceIndex Type
 
@@ -127,7 +127,7 @@ undefined#/properties/Wires/items
 
 *   cannot be null
 
-*   defined in: [Generated schema for Root](schema-properties-wires-items-properties-targetindex.md "undefined#/properties/Wires/items/properties/TargetIndex")
+*   defined in: [Block Diagram Protocol Schema](schema-properties-wires-items-properties-targetindex.md "undefined#/properties/Wires/items/properties/TargetIndex")
 
 ### TargetIndex Type
 

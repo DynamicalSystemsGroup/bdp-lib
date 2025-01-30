@@ -1,4 +1,4 @@
-# Untitled array in Generated schema for Root Schema
+# Untitled array in Block Diagram Protocol Schema Schema
 
 ```txt
 undefined#/properties/Spaces
@@ -12,4 +12,4 @@ undefined#/properties/Spaces
 
 ## Spaces Type
 
-`object[]` ([Details](schema-properties-spaces-items.md))
+`object[]` ([Space Schema](space.md))

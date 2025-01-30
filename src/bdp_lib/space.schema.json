@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Space Schema",
+    "type": "object",
+    "properties": {
+      "ID": {
+        "type": "string"
+      },
+      "Name": {
+        "type": "string"
+      },
+      "Description": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "ID",
+      "Name"
+    ]
+  }
