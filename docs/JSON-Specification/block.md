@@ -26,13 +26,13 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.sche
 
 ## ID
 
-
+A unique identifier for the block.
 
 `ID`
 
 *   is required
 
-*   Type: `string`
+*   Type: `string` ([ID](block-properties-id.md))
 
 *   cannot be null
 
@@ -40,17 +40,17 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.sche
 
 ### ID Type
 
-`string`
+`string` ([ID](block-properties-id.md))
 
 ## Name
 
-
+The name of the block.
 
 `Name`
 
 *   is required
 
-*   Type: `string`
+*   Type: `string` ([Name](block-properties-name.md))
 
 *   cannot be null
 
@@ -58,17 +58,17 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.sche
 
 ### Name Type
 
-`string`
+`string` ([Name](block-properties-name.md))
 
 ## Description
 
-
+A description of the block.
 
 `Description`
 
 *   is optional
 
-*   Type: `string`
+*   Type: `string` ([Description](block-properties-description.md))
 
 *   cannot be null
 
@@ -76,11 +76,11 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.sche
 
 ### Description Type
 
-`string`
+`string` ([Description](block-properties-description.md))
 
 ## Domain
 
-
+The domain of the block which are IDs of spaces. Spaces may be repeated or it may be an empty array.
 
 `Domain`
 
@@ -98,7 +98,7 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.sche
 
 ## Codomain
 
-
+The codomain of the block which are IDs of spaces. Spaces may be repeated or it may be an empty array.
 
 `Codomain`
 

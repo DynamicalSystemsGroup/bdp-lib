@@ -25,13 +25,13 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBl
 
 ## ID
 
-
+A unique identifier for the concrete block.
 
 `ID`
 
 *   is required
 
-*   Type: `string`
+*   Type: `string` ([ID](concreteblock-properties-id.md))
 
 *   cannot be null
 
@@ -39,17 +39,17 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBl
 
 ### ID Type
 
-`string`
+`string` ([ID](concreteblock-properties-id.md))
 
 ## Name
 
-
+The name of the concrete block.
 
 `Name`
 
 *   is required
 
-*   Type: `string`
+*   Type: `string` ([Name](concreteblock-properties-name.md))
 
 *   cannot be null
 
@@ -57,17 +57,17 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBl
 
 ### Name Type
 
-`string`
+`string` ([Name](concreteblock-properties-name.md))
 
 ## Description
 
-
+A description of the concrete block.
 
 `Description`
 
 *   is optional
 
-*   Type: `string`
+*   Type: `string` ([Description](concreteblock-properties-description.md))
 
 *   cannot be null
 
@@ -75,17 +75,17 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBl
 
 ### Description Type
 
-`string`
+`string` ([Description](concreteblock-properties-description.md))
 
 ## Parent
 
-
+The ID of the block that the concrete block is an instance of.
 
 `Parent`
 
 *   is required
 
-*   Type: `string`
+*   Type: `string` ([Parent](concreteblock-properties-parent.md))
 
 *   cannot be null
 
@@ -93,4 +93,4 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBl
 
 ### Parent Type
 
-`string`
+`string` ([Parent](concreteblock-properties-parent.md))

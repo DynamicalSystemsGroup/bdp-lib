@@ -1,10 +1,10 @@
-# Untitled string in System Schema Schema
+# Name Schema
 
 ```txt
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Name
 ```
 
-
+The name of the system.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                  |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
@@ -12,4 +12,4 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.sch
 
 ## Name Type
 
-`string`
+`string` ([Name](system-properties-name.md))

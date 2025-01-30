@@ -1,10 +1,10 @@
-# Untitled string in Wire Schema Schema
+# SourceBlock Schema
 
 ```txt
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/SourceBlock
 ```
 
-
+The ID of the block that the wire is coming from.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |
@@ -12,4 +12,4 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schem
 
 ## SourceBlock Type
 
-`string`
+`string` ([SourceBlock](wire-properties-sourceblock.md))

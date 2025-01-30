@@ -1,10 +1,10 @@
-# Untitled string in Concrete Block Schema Schema
+# ID Schema
 
 ```txt
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBlock.schema.json#/properties/ID
 ```
 
-
+A unique identifier for the concrete block.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------------------------- |
@@ -12,4 +12,4 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBl
 
 ## ID Type
 
-`string`
+`string` ([ID](concreteblock-properties-id.md))

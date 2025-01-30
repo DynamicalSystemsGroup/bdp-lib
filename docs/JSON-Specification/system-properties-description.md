@@ -1,10 +1,10 @@
-# Untitled string in System Schema Schema
+# Description Schema
 
 ```txt
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Description
 ```
 
-
+A description of the system.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                  |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
@@ -12,4 +12,4 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.sch
 
 ## Description Type
 
-`string`
+`string` ([Description](system-properties-description.md))

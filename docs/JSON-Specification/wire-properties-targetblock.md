@@ -1,10 +1,10 @@
-# Untitled string in Wire Schema Schema
+# TargetBlock Schema
 
 ```txt
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/TargetBlock
 ```
 
-
+The ID of the block that the wire is going to.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |
@@ -12,4 +12,4 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schem
 
 ## TargetBlock Type
 
-`string`
+`string` ([TargetBlock](wire-properties-targetblock.md))

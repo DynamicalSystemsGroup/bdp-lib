@@ -1,10 +1,10 @@
-# Untitled string in Wire Schema Schema
+# ID Schema
 
 ```txt
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/ID
 ```
 
-
+A unique identifier for the wire.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |
@@ -12,4 +12,4 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schem
 
 ## ID Type
 
-`string`
+`string` ([ID](wire-properties-id.md))

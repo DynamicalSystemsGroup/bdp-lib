@@ -27,13 +27,13 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schem
 
 ## ID
 
-
+A unique identifier for the wire.
 
 `ID`
 
 *   is required
 
-*   Type: `string`
+*   Type: `string` ([ID](wire-properties-id.md))
 
 *   cannot be null
 
@@ -41,17 +41,17 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schem
 
 ### ID Type
 
-`string`
+`string` ([ID](wire-properties-id.md))
 
 ## Parent
 
-
+The ID of the space that the wire is passing.
 
 `Parent`
 
 *   is required
 
-*   Type: `string`
+*   Type: `string` ([Parent](wire-properties-parent.md))
 
 *   cannot be null
 
@@ -59,17 +59,17 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schem
 
 ### Parent Type
 
-`string`
+`string` ([Parent](wire-properties-parent.md))
 
 ## SourceBlock
 
-
+The ID of the block that the wire is coming from.
 
 `SourceBlock`
 
 *   is required
 
-*   Type: `string`
+*   Type: `string` ([SourceBlock](wire-properties-sourceblock.md))
 
 *   cannot be null
 
@@ -77,17 +77,17 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schem
 
 ### SourceBlock Type
 
-`string`
+`string` ([SourceBlock](wire-properties-sourceblock.md))
 
 ## TargetBlock
 
-
+The ID of the block that the wire is going to.
 
 `TargetBlock`
 
 *   is required
 
-*   Type: `string`
+*   Type: `string` ([TargetBlock](wire-properties-targetblock.md))
 
 *   cannot be null
 
@@ -95,17 +95,17 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schem
 
 ### TargetBlock Type
 
-`string`
+`string` ([TargetBlock](wire-properties-targetblock.md))
 
 ## SourceIndex
 
-
+The index of the codomain of the source block that the wire is coming from.
 
 `SourceIndex`
 
 *   is required
 
-*   Type: `number`
+*   Type: `number` ([SourceIndex](wire-properties-sourceindex.md))
 
 *   cannot be null
 
@@ -113,17 +113,17 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schem
 
 ### SourceIndex Type
 
-`number`
+`number` ([SourceIndex](wire-properties-sourceindex.md))
 
 ## TargetIndex
 
-
+The index of the domain of the target block that the wire is going to.
 
 `TargetIndex`
 
 *   is required
 
-*   Type: `number`
+*   Type: `number` ([TargetIndex](wire-properties-targetindex.md))
 
 *   cannot be null
 
@@ -131,4 +131,4 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schem
 
 ### TargetIndex Type
 
-`number`
+`number` ([TargetIndex](wire-properties-targetindex.md))

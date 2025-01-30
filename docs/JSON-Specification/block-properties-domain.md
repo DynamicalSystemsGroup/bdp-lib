@@ -1,10 +1,10 @@
-# Untitled array in Block Schema Schema
+# Domain Schema
 
 ```txt
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Domain
 ```
 
-
+The domain of the block which are IDs of spaces. Spaces may be repeated or it may be an empty array.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |

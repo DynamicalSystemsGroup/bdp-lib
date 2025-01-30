@@ -1,10 +1,10 @@
-# Untitled string in Concrete Block Schema Schema
+# Parent Schema
 
 ```txt
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBlock.schema.json#/properties/Parent
 ```
 
-
+The ID of the block that the concrete block is an instance of.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------------------------- |
@@ -12,4 +12,4 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBl
 
 ## Parent Type
 
-`string`
+`string` ([Parent](concreteblock-properties-parent.md))

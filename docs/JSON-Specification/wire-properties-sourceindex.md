@@ -1,10 +1,10 @@
-# Untitled number in Wire Schema Schema
+# SourceIndex Schema
 
 ```txt
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/SourceIndex
 ```
 
-
+The index of the codomain of the source block that the wire is coming from.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |
@@ -12,4 +12,4 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schem
 
 ## SourceIndex Type
 
-`number`
+`number` ([SourceIndex](wire-properties-sourceindex.md))

@@ -26,13 +26,13 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.sch
 
 ## ID
 
-
+A unique identifier for the system.
 
 `ID`
 
 *   is required
 
-*   Type: `string`
+*   Type: `string` ([ID](system-properties-id.md))
 
 *   cannot be null
 
@@ -40,17 +40,17 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.sch
 
 ### ID Type
 
-`string`
+`string` ([ID](system-properties-id.md))
 
 ## Name
 
-
+The name of the system.
 
 `Name`
 
 *   is required
 
-*   Type: `string`
+*   Type: `string` ([Name](system-properties-name.md))
 
 *   cannot be null
 
@@ -58,17 +58,17 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.sch
 
 ### Name Type
 
-`string`
+`string` ([Name](system-properties-name.md))
 
 ## Description
 
-
+A description of the system.
 
 `Description`
 
 *   is optional
 
-*   Type: `string`
+*   Type: `string` ([Description](system-properties-description.md))
 
 *   cannot be null
 
@@ -76,11 +76,11 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.sch
 
 ### Description Type
 
-`string`
+`string` ([Description](system-properties-description.md))
 
 ## ConcreteBlocks
 
-
+A list of concrete block IDs that are part of the system.
 
 `ConcreteBlocks`
 
@@ -98,7 +98,7 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.sch
 
 ## Wires
 
-
+A list of wire IDs that are part of the system.
 
 `Wires`
 

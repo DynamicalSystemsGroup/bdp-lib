@@ -5,22 +5,34 @@
     "additionalProperties": false,
     "properties": {
       "ID": {
-        "type": "string"
+        "type": "string",
+        "title": "ID",
+        "description": "A unique identifier for the wire."
       },
       "Parent": {
-        "type": "string"
+        "type": "string",
+        "title": "Parent",
+        "description": "The ID of the space that the wire is passing."
       },
       "SourceBlock": {
-        "type": "string"
+        "type": "string",
+        "title": "SourceBlock",
+        "description": "The ID of the block that the wire is coming from."
       },
       "TargetBlock": {
-        "type": "string"
+        "type": "string",
+        "title": "TargetBlock",
+        "description": "The ID of the block that the wire is going to."
       },
       "SourceIndex": {
-        "type": "number"
+        "type": "number",
+        "title": "SourceIndex",
+        "description": "The index of the codomain of the source block that the wire is coming from."
       },
       "TargetIndex": {
-        "type": "number"
+        "type": "number",
+        "title": "TargetIndex",
+        "description": "The index of the domain of the target block that the wire is going to."
       }
     },
     "required": [

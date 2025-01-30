@@ -1,10 +1,10 @@
-# Untitled string in Concrete Block Schema Schema
+# Name Schema
 
 ```txt
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBlock.schema.json#/properties/Name
 ```
 
-
+The name of the concrete block.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------------------------- |
@@ -12,4 +12,4 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBl
 
 ## Name Type
 
-`string`
+`string` ([Name](concreteblock-properties-name.md))
