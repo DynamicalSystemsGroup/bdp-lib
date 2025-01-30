@@ -1,0 +1,115 @@
+# Untitled object in Block Diagram Protocol Schema Schema
+
+```txt
+undefined#/properties/Systems/items
+```
+
+
+
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                            |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------ |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [bdp.schema.json\*](../../out/bdp_lib/schemas/bdp.schema.json "open original schema") |
+
+## items Type
+
+`object` ([Details](bdp-properties-systems-items.md))
+
+# items Properties
+
+| Property                          | Type     | Required | Nullable       | Defined by                                                                                                                                                 |
+| :-------------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ID](#id)                         | `string` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-systems-items-properties-id.md "undefined#/properties/Systems/items/properties/ID")                         |
+| [Name](#name)                     | `string` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-systems-items-properties-name.md "undefined#/properties/Systems/items/properties/Name")                     |
+| [Description](#description)       | `string` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-systems-items-properties-description.md "undefined#/properties/Systems/items/properties/Description")       |
+| [ConcreteBlocks](#concreteblocks) | `array`  | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-systems-items-properties-concreteblocks.md "undefined#/properties/Systems/items/properties/ConcreteBlocks") |
+| [Wires](#wires)                   | `array`  | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-systems-items-properties-wires.md "undefined#/properties/Systems/items/properties/Wires")                   |
+
+## ID
+
+
+
+`ID`
+
+*   is required
+
+*   Type: `string`
+
+*   cannot be null
+
+*   defined in: [Block Diagram Protocol Schema](bdp-properties-systems-items-properties-id.md "undefined#/properties/Systems/items/properties/ID")
+
+### ID Type
+
+`string`
+
+## Name
+
+
+
+`Name`
+
+*   is required
+
+*   Type: `string`
+
+*   cannot be null
+
+*   defined in: [Block Diagram Protocol Schema](bdp-properties-systems-items-properties-name.md "undefined#/properties/Systems/items/properties/Name")
+
+### Name Type
+
+`string`
+
+## Description
+
+
+
+`Description`
+
+*   is required
+
+*   Type: `string`
+
+*   cannot be null
+
+*   defined in: [Block Diagram Protocol Schema](bdp-properties-systems-items-properties-description.md "undefined#/properties/Systems/items/properties/Description")
+
+### Description Type
+
+`string`
+
+## ConcreteBlocks
+
+
+
+`ConcreteBlocks`
+
+*   is required
+
+*   Type: `string[]`
+
+*   cannot be null
+
+*   defined in: [Block Diagram Protocol Schema](bdp-properties-systems-items-properties-concreteblocks.md "undefined#/properties/Systems/items/properties/ConcreteBlocks")
+
+### ConcreteBlocks Type
+
+`string[]`
+
+## Wires
+
+
+
+`Wires`
+
+*   is required
+
+*   Type: `string[]`
+
+*   cannot be null
+
+*   defined in: [Block Diagram Protocol Schema](bdp-properties-systems-items-properties-wires.md "undefined#/properties/Systems/items/properties/Wires")
+
+### Wires Type
+
+`string[]`

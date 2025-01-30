@@ -1,4 +1,4 @@
-# Untitled string in Space Schema Schema
+# Untitled string in Block Schema Schema
 
 ```txt
 undefined#/properties/ID
@@ -8,7 +8,7 @@ undefined#/properties/ID
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [space.schema.json\*](../../out/bdp_lib/schemas/space.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [block.schema.json\*](../../out/bdp_lib/schemas/block.schema.json "open original schema") |
 
 ## ID Type
 

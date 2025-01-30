@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Concrete Block Schema",
+    "type": "object",
+    "properties": {
+      "ID": {
+        "type": "string"
+      },
+      "Name": {
+        "type": "string"
+      },
+      "Description": {
+        "type": "string"
+      },
+      "Parent": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "ID",
+      "Name",
+      "Parent"
+    ]
+  }

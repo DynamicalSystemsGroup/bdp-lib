@@ -1,0 +1,102 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Block Diagram Protocol Schema",
+    "type": "object",
+    "properties": {
+      "Spaces": {
+        "type": "array",
+        "items": {
+          "$ref": "./space.schema.json"
+        }
+      },
+      "Blocks": {
+        "type": "array",
+        "items": {
+          "$ref": "./space.schema.json"
+        }
+      },
+      "ConcreteBlocks": {
+        "type": "array",
+        "items": {
+          "$ref": "./concreteBlock.schema.json"
+        }
+      },
+      "Wires": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "ID": {
+              "type": "string"
+            },
+            "Parent": {
+              "type": "string"
+            },
+            "SourceBlock": {
+              "type": "string"
+            },
+            "TargetBlock": {
+              "type": "string"
+            },
+            "SourceIndex": {
+              "type": "number"
+            },
+            "TargetIndex": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "ID",
+            "Parent",
+            "SourceBlock",
+            "TargetBlock",
+            "SourceIndex",
+            "TargetIndex"
+          ]
+        }
+      },
+      "Systems": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "ID": {
+              "type": "string"
+            },
+            "Name": {
+              "type": "string"
+            },
+            "Description": {
+              "type": "string"
+            },
+            "ConcreteBlocks": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "Wires": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "ID",
+            "Name",
+            "Description",
+            "ConcreteBlocks",
+            "Wires"
+          ]
+        }
+      }
+    },
+    "required": [
+      "Spaces",
+      "Blocks",
+      "ConcreteBlocks",
+      "Wires",
+      "Systems"
+    ]
+  }
