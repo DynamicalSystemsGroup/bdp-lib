@@ -1,10 +1,10 @@
-# Untitled string in Space Schema Schema
+# Name Schema
 
 ```txt
 undefined#/properties/Name
 ```
 
-
+The name of the space.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
@@ -12,4 +12,4 @@ undefined#/properties/Name
 
 ## Name Type
 
-`string`
+`string` ([Name](space-properties-name.md))

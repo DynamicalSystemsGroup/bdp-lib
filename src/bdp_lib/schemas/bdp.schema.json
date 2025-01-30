@@ -8,6 +8,7 @@
       "Spaces": {
         "type": "array",
         "description": "A list of spaces in the block diagram protocol that follow the space schema.",
+        "title": "Spaces",
         "items": {
           "$ref": "./space.schema.json"
         }
@@ -15,6 +16,7 @@
       "Blocks": {
         "type": "array",
         "description": "A list of blocks in the block diagram protocol that follow the block schema.",
+        "title": "Blocks",
         "items": {
           "$ref": "./block.schema.json"
         }
@@ -22,6 +24,7 @@
       "ConcreteBlocks": {
         "type": "array",
         "description": "A list of concrete blocks in the block diagram protocol that follow the concrete block schema.",
+        "title": "ConcreteBlocks",
         "items": {
           "$ref": "./concreteBlock.schema.json"
         }
@@ -29,6 +32,7 @@
       "Wires": {
         "type": "array",
         "description": "A list of wires in the block diagram protocol that follow the wire schema.",
+        "title": "Wires",
         "items": {
           "$ref": "./wire.schema.json"
         }
@@ -36,6 +40,7 @@
       "Systems": {
         "type": "array",
         "description": "A list of systems in the block diagram protocol that follow the system schema.",
+        "title": "Systems",
         "items": {
           "$ref": "./system.schema.json"
         }

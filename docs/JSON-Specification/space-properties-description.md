@@ -1,10 +1,10 @@
-# Untitled string in Space Schema Schema
+# Description Schema
 
 ```txt
 undefined#/properties/Description
 ```
 
-
+The description of the space.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
@@ -12,4 +12,4 @@ undefined#/properties/Description
 
 ## Description Type
 
-`string`
+`string` ([Description](space-properties-description.md))

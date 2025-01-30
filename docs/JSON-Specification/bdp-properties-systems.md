@@ -1,4 +1,4 @@
-# Untitled array in Block Diagram Protocol Schema Schema
+# Systems Schema
 
 ```txt
 undefined#/properties/Systems

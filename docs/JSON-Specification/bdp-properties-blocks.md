@@ -1,4 +1,4 @@
-# Untitled array in Block Diagram Protocol Schema Schema
+# Blocks Schema
 
 ```txt
 undefined#/properties/Blocks

@@ -1,4 +1,4 @@
-# Untitled array in Block Diagram Protocol Schema Schema
+# Wires Schema
 
 ```txt
 undefined#/properties/Wires

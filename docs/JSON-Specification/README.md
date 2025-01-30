@@ -22,15 +22,13 @@
 
 ### Arrays
 
-*   [Untitled array in Block Diagram Protocol Schema](./bdp-properties-spaces.md "A list of spaces in the block diagram protocol that follow the space schema") – `undefined#/properties/Spaces`
+*   [Blocks](./bdp-properties-blocks.md "A list of blocks in the block diagram protocol that follow the block schema") – `undefined#/properties/Blocks`
 
-*   [Untitled array in Block Diagram Protocol Schema](./bdp-properties-blocks.md "A list of blocks in the block diagram protocol that follow the block schema") – `undefined#/properties/Blocks`
+*   [ConcreteBlocks](./bdp-properties-concreteblocks.md "A list of concrete blocks in the block diagram protocol that follow the concrete block schema") – `undefined#/properties/ConcreteBlocks`
 
-*   [Untitled array in Block Diagram Protocol Schema](./bdp-properties-concreteblocks.md "A list of concrete blocks in the block diagram protocol that follow the concrete block schema") – `undefined#/properties/ConcreteBlocks`
+*   [Spaces](./bdp-properties-spaces.md "A list of spaces in the block diagram protocol that follow the space schema") – `undefined#/properties/Spaces`
 
-*   [Untitled array in Block Diagram Protocol Schema](./bdp-properties-wires.md "A list of wires in the block diagram protocol that follow the wire schema") – `undefined#/properties/Wires`
-
-*   [Untitled array in Block Diagram Protocol Schema](./bdp-properties-systems.md "A list of systems in the block diagram protocol that follow the system schema") – `undefined#/properties/Systems`
+*   [Systems](./bdp-properties-systems.md "A list of systems in the block diagram protocol that follow the system schema") – `undefined#/properties/Systems`
 
 *   [Untitled array in Block Schema](./block-properties-domain.md) – `undefined#/properties/Domain`
 
@@ -39,6 +37,8 @@
 *   [Untitled array in System Schema](./system-properties-concreteblocks.md) – `undefined#/properties/ConcreteBlocks`
 
 *   [Untitled array in System Schema](./system-properties-wires.md) – `undefined#/properties/Wires`
+
+*   [Wires](./bdp-properties-wires.md "A list of wires in the block diagram protocol that follow the wire schema") – `undefined#/properties/Wires`
 
 ## Version Note
 

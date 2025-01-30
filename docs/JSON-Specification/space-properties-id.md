@@ -1,10 +1,10 @@
-# Untitled string in Space Schema Schema
+# ID Schema
 
 ```txt
 undefined#/properties/ID
 ```
 
-
+The unique identifier of the space.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
@@ -12,4 +12,4 @@ undefined#/properties/ID
 
 ## ID Type
 
-`string`
+`string` ([ID](space-properties-id.md))

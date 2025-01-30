@@ -5,13 +5,19 @@
     "additionalProperties": false,
     "properties": {
       "ID": {
+        "title": "ID",
+        "description": "The unique identifier of the space.",
         "type": "string"
       },
       "Name": {
-        "type": "string"
+        "type": "string",
+        "description": "The name of the space.",
+        "title": "Name"
       },
       "Description": {
-        "type": "string"
+        "type": "string",
+        "description": "The description of the space.",
+        "title": "Description"
       }
     },
     "required": [

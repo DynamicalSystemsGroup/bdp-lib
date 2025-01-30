@@ -1,4 +1,4 @@
-# Untitled array in Block Diagram Protocol Schema Schema
+# Spaces Schema
 
 ```txt
 undefined#/properties/Spaces

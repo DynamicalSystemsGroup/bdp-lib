@@ -24,13 +24,13 @@ undefined
 
 ## ID
 
-
+The unique identifier of the space.
 
 `ID`
 
 *   is required
 
-*   Type: `string`
+*   Type: `string` ([ID](space-properties-id.md))
 
 *   cannot be null
 
@@ -38,17 +38,17 @@ undefined
 
 ### ID Type
 
-`string`
+`string` ([ID](space-properties-id.md))
 
 ## Name
 
-
+The name of the space.
 
 `Name`
 
 *   is required
 
-*   Type: `string`
+*   Type: `string` ([Name](space-properties-name.md))
 
 *   cannot be null
 
@@ -56,17 +56,17 @@ undefined
 
 ### Name Type
 
-`string`
+`string` ([Name](space-properties-name.md))
 
 ## Description
 
-
+The description of the space.
 
 `Description`
 
 *   is optional
 
-*   Type: `string`
+*   Type: `string` ([Description](space-properties-description.md))
 
 *   cannot be null
 
@@ -74,4 +74,4 @@ undefined
 
 ### Description Type
 
-`string`
+`string` ([Description](space-properties-description.md))
