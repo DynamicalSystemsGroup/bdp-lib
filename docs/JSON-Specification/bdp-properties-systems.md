@@ -4,7 +4,7 @@
 undefined#/properties/Systems
 ```
 
-
+A list of systems in the block diagram protocol that follow the system schema.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                            |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------ |

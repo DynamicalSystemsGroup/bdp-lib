@@ -4,11 +4,11 @@
 undefined
 ```
 
-
+This schema is used to validate the JSON file that is used to store the block diagram protocol.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                          |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [bdp.schema.json](../../out/bdp_lib/schemas/bdp.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [bdp.schema.json](../../out/bdp_lib/schemas/bdp.schema.json "open original schema") |
 
 ## Block Diagram Protocol Schema Type
 
@@ -26,7 +26,7 @@ undefined
 
 ## Spaces
 
-
+A list of spaces in the block diagram protocol that follow the space schema.
 
 `Spaces`
 
@@ -44,13 +44,13 @@ undefined
 
 ## Blocks
 
-
+A list of blocks in the block diagram protocol that follow the block schema.
 
 `Blocks`
 
 *   is required
 
-*   Type: `object[]` ([Space Schema](space.md))
+*   Type: `object[]` ([Block Schema](block.md))
 
 *   cannot be null
 
@@ -58,11 +58,11 @@ undefined
 
 ### Blocks Type
 
-`object[]` ([Space Schema](space.md))
+`object[]` ([Block Schema](block.md))
 
 ## ConcreteBlocks
 
-
+A list of concrete blocks in the block diagram protocol that follow the concrete block schema.
 
 `ConcreteBlocks`
 
@@ -80,7 +80,7 @@ undefined
 
 ## Wires
 
-
+A list of wires in the block diagram protocol that follow the wire schema.
 
 `Wires`
 
@@ -98,7 +98,7 @@ undefined
 
 ## Systems
 
-
+A list of systems in the block diagram protocol that follow the system schema.
 
 `Systems`
 

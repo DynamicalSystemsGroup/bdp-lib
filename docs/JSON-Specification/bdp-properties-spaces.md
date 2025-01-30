@@ -4,7 +4,7 @@
 undefined#/properties/Spaces
 ```
 
-
+A list of spaces in the block diagram protocol that follow the space schema.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                            |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------ |

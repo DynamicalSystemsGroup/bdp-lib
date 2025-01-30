@@ -4,7 +4,7 @@
 undefined#/properties/Blocks
 ```
 
-
+A list of blocks in the block diagram protocol that follow the block schema.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                            |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------ |
@@ -12,4 +12,4 @@ undefined#/properties/Blocks
 
 ## Blocks Type
 
-`object[]` ([Space Schema](space.md))
+`object[]` ([Block Schema](block.md))

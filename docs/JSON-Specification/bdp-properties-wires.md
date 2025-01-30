@@ -4,7 +4,7 @@
 undefined#/properties/Wires
 ```
 
-
+A list of wires in the block diagram protocol that follow the wire schema.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                            |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------ |

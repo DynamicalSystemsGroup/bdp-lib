@@ -4,7 +4,7 @@
 undefined#/properties/ConcreteBlocks
 ```
 
-
+A list of concrete blocks in the block diagram protocol that follow the concrete block schema.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                            |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------ |

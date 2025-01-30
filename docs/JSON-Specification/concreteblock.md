@@ -8,7 +8,7 @@ undefined
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                              |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [concreteBlock.schema.json](../../out/bdp_lib/schemas/concreteBlock.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [concreteBlock.schema.json](../../out/bdp_lib/schemas/concreteBlock.schema.json "open original schema") |
 
 ## Concrete Block Schema Type
 

@@ -2,33 +2,40 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Block Diagram Protocol Schema",
     "type": "object",
+    "additionalProperties": false,
+    "description": "This schema is used to validate the JSON file that is used to store the block diagram protocol.",
     "properties": {
       "Spaces": {
         "type": "array",
+        "description": "A list of spaces in the block diagram protocol that follow the space schema.",
         "items": {
           "$ref": "./space.schema.json"
         }
       },
       "Blocks": {
         "type": "array",
+        "description": "A list of blocks in the block diagram protocol that follow the block schema.",
         "items": {
-          "$ref": "./space.schema.json"
+          "$ref": "./block.schema.json"
         }
       },
       "ConcreteBlocks": {
         "type": "array",
+        "description": "A list of concrete blocks in the block diagram protocol that follow the concrete block schema.",
         "items": {
           "$ref": "./concreteBlock.schema.json"
         }
       },
       "Wires": {
         "type": "array",
+        "description": "A list of wires in the block diagram protocol that follow the wire schema.",
         "items": {
           "$ref": "./wire.schema.json"
         }
       },
       "Systems": {
         "type": "array",
+        "description": "A list of systems in the block diagram protocol that follow the system schema.",
         "items": {
           "$ref": "./system.schema.json"
         }
