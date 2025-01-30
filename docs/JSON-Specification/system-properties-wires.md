@@ -1,7 +1,7 @@
 # Untitled array in System Schema Schema
 
 ```txt
-undefined#/properties/Wires
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Wires
 ```
 
 

@@ -1,7 +1,7 @@
 # Wires Schema
 
 ```txt
-undefined#/properties/Wires
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Wires
 ```
 
 A list of wires in the block diagram protocol that follow the wire schema.

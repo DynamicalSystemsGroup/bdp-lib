@@ -1,7 +1,7 @@
 # Concrete Block Schema Schema
 
 ```txt
-undefined
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBlock.schema.json
 ```
 
 
@@ -16,12 +16,12 @@ undefined
 
 # Concrete Block Schema Properties
 
-| Property                    | Type     | Required | Nullable       | Defined by                                                                                           |
-| :-------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------- |
-| [ID](#id)                   | `string` | Required | cannot be null | [Concrete Block Schema](concreteblock-properties-id.md "undefined#/properties/ID")                   |
-| [Name](#name)               | `string` | Required | cannot be null | [Concrete Block Schema](concreteblock-properties-name.md "undefined#/properties/Name")               |
-| [Description](#description) | `string` | Optional | cannot be null | [Concrete Block Schema](concreteblock-properties-description.md "undefined#/properties/Description") |
-| [Parent](#parent)           | `string` | Required | cannot be null | [Concrete Block Schema](concreteblock-properties-parent.md "undefined#/properties/Parent")           |
+| Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                                                                 |
+| :-------------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ID](#id)                   | `string` | Required | cannot be null | [Concrete Block Schema](concreteblock-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBlock.schema.json#/properties/ID")                   |
+| [Name](#name)               | `string` | Required | cannot be null | [Concrete Block Schema](concreteblock-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBlock.schema.json#/properties/Name")               |
+| [Description](#description) | `string` | Optional | cannot be null | [Concrete Block Schema](concreteblock-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBlock.schema.json#/properties/Description") |
+| [Parent](#parent)           | `string` | Required | cannot be null | [Concrete Block Schema](concreteblock-properties-parent.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBlock.schema.json#/properties/Parent")           |
 
 ## ID
 
@@ -35,7 +35,7 @@ undefined
 
 *   cannot be null
 
-*   defined in: [Concrete Block Schema](concreteblock-properties-id.md "undefined#/properties/ID")
+*   defined in: [Concrete Block Schema](concreteblock-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBlock.schema.json#/properties/ID")
 
 ### ID Type
 
@@ -53,7 +53,7 @@ undefined
 
 *   cannot be null
 
-*   defined in: [Concrete Block Schema](concreteblock-properties-name.md "undefined#/properties/Name")
+*   defined in: [Concrete Block Schema](concreteblock-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBlock.schema.json#/properties/Name")
 
 ### Name Type
 
@@ -71,7 +71,7 @@ undefined
 
 *   cannot be null
 
-*   defined in: [Concrete Block Schema](concreteblock-properties-description.md "undefined#/properties/Description")
+*   defined in: [Concrete Block Schema](concreteblock-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBlock.schema.json#/properties/Description")
 
 ### Description Type
 
@@ -89,7 +89,7 @@ undefined
 
 *   cannot be null
 
-*   defined in: [Concrete Block Schema](concreteblock-properties-parent.md "undefined#/properties/Parent")
+*   defined in: [Concrete Block Schema](concreteblock-properties-parent.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBlock.schema.json#/properties/Parent")
 
 ### Parent Type
 

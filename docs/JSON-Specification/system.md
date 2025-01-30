@@ -1,7 +1,7 @@
 # System Schema Schema
 
 ```txt
-undefined
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json
 ```
 
 
@@ -16,13 +16,13 @@ undefined
 
 # System Schema Properties
 
-| Property                          | Type     | Required | Nullable       | Defined by                                                                                  |
-| :-------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------ |
-| [ID](#id)                         | `string` | Required | cannot be null | [System Schema](system-properties-id.md "undefined#/properties/ID")                         |
-| [Name](#name)                     | `string` | Required | cannot be null | [System Schema](system-properties-name.md "undefined#/properties/Name")                     |
-| [Description](#description)       | `string` | Optional | cannot be null | [System Schema](system-properties-description.md "undefined#/properties/Description")       |
-| [ConcreteBlocks](#concreteblocks) | `array`  | Required | cannot be null | [System Schema](system-properties-concreteblocks.md "undefined#/properties/ConcreteBlocks") |
-| [Wires](#wires)                   | `array`  | Required | cannot be null | [System Schema](system-properties-wires.md "undefined#/properties/Wires")                   |
+| Property                          | Type     | Required | Nullable       | Defined by                                                                                                                                                                 |
+| :-------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ID](#id)                         | `string` | Required | cannot be null | [System Schema](system-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ID")                         |
+| [Name](#name)                     | `string` | Required | cannot be null | [System Schema](system-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Name")                     |
+| [Description](#description)       | `string` | Optional | cannot be null | [System Schema](system-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Description")       |
+| [ConcreteBlocks](#concreteblocks) | `array`  | Required | cannot be null | [System Schema](system-properties-concreteblocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ConcreteBlocks") |
+| [Wires](#wires)                   | `array`  | Required | cannot be null | [System Schema](system-properties-wires.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Wires")                   |
 
 ## ID
 
@@ -36,7 +36,7 @@ undefined
 
 *   cannot be null
 
-*   defined in: [System Schema](system-properties-id.md "undefined#/properties/ID")
+*   defined in: [System Schema](system-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ID")
 
 ### ID Type
 
@@ -54,7 +54,7 @@ undefined
 
 *   cannot be null
 
-*   defined in: [System Schema](system-properties-name.md "undefined#/properties/Name")
+*   defined in: [System Schema](system-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Name")
 
 ### Name Type
 
@@ -72,7 +72,7 @@ undefined
 
 *   cannot be null
 
-*   defined in: [System Schema](system-properties-description.md "undefined#/properties/Description")
+*   defined in: [System Schema](system-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Description")
 
 ### Description Type
 
@@ -90,7 +90,7 @@ undefined
 
 *   cannot be null
 
-*   defined in: [System Schema](system-properties-concreteblocks.md "undefined#/properties/ConcreteBlocks")
+*   defined in: [System Schema](system-properties-concreteblocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ConcreteBlocks")
 
 ### ConcreteBlocks Type
 
@@ -108,7 +108,7 @@ undefined
 
 *   cannot be null
 
-*   defined in: [System Schema](system-properties-wires.md "undefined#/properties/Wires")
+*   defined in: [System Schema](system-properties-wires.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Wires")
 
 ### Wires Type
 

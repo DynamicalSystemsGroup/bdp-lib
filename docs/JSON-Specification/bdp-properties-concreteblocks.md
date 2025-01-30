@@ -1,7 +1,7 @@
 # ConcreteBlocks Schema
 
 ```txt
-undefined#/properties/ConcreteBlocks
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/ConcreteBlocks
 ```
 
 A list of concrete blocks in the block diagram protocol that follow the concrete block schema.

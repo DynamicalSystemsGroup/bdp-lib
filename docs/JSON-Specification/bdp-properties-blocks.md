@@ -1,7 +1,7 @@
 # Blocks Schema
 
 ```txt
-undefined#/properties/Blocks
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Blocks
 ```
 
 A list of blocks in the block diagram protocol that follow the block schema.

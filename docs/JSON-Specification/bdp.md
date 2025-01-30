@@ -1,7 +1,7 @@
 # Block Diagram Protocol Schema Schema
 
 ```txt
-undefined
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json
 ```
 
 This schema is used to validate the JSON file that is used to store the block diagram protocol.
@@ -16,13 +16,13 @@ This schema is used to validate the JSON file that is used to store the block di
 
 # Block Diagram Protocol Schema Properties
 
-| Property                          | Type    | Required | Nullable       | Defined by                                                                                               |
-| :-------------------------------- | :------ | :------- | :------------- | :------------------------------------------------------------------------------------------------------- |
-| [Spaces](#spaces)                 | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-spaces.md "undefined#/properties/Spaces")                 |
-| [Blocks](#blocks)                 | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-blocks.md "undefined#/properties/Blocks")                 |
-| [ConcreteBlocks](#concreteblocks) | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-concreteblocks.md "undefined#/properties/ConcreteBlocks") |
-| [Wires](#wires)                   | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-wires.md "undefined#/properties/Wires")                   |
-| [Systems](#systems)               | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-systems.md "undefined#/properties/Systems")               |
+| Property                          | Type    | Required | Nullable       | Defined by                                                                                                                                                                           |
+| :-------------------------------- | :------ | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Spaces](#spaces)                 | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-spaces.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Spaces")                 |
+| [Blocks](#blocks)                 | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-blocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Blocks")                 |
+| [ConcreteBlocks](#concreteblocks) | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-concreteblocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/ConcreteBlocks") |
+| [Wires](#wires)                   | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-wires.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Wires")                   |
+| [Systems](#systems)               | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-systems.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Systems")               |
 
 ## Spaces
 
@@ -36,7 +36,7 @@ A list of spaces in the block diagram protocol that follow the space schema.
 
 *   cannot be null
 
-*   defined in: [Block Diagram Protocol Schema](bdp-properties-spaces.md "undefined#/properties/Spaces")
+*   defined in: [Block Diagram Protocol Schema](bdp-properties-spaces.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Spaces")
 
 ### Spaces Type
 
@@ -54,7 +54,7 @@ A list of blocks in the block diagram protocol that follow the block schema.
 
 *   cannot be null
 
-*   defined in: [Block Diagram Protocol Schema](bdp-properties-blocks.md "undefined#/properties/Blocks")
+*   defined in: [Block Diagram Protocol Schema](bdp-properties-blocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Blocks")
 
 ### Blocks Type
 
@@ -72,7 +72,7 @@ A list of concrete blocks in the block diagram protocol that follow the concrete
 
 *   cannot be null
 
-*   defined in: [Block Diagram Protocol Schema](bdp-properties-concreteblocks.md "undefined#/properties/ConcreteBlocks")
+*   defined in: [Block Diagram Protocol Schema](bdp-properties-concreteblocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/ConcreteBlocks")
 
 ### ConcreteBlocks Type
 
@@ -90,7 +90,7 @@ A list of wires in the block diagram protocol that follow the wire schema.
 
 *   cannot be null
 
-*   defined in: [Block Diagram Protocol Schema](bdp-properties-wires.md "undefined#/properties/Wires")
+*   defined in: [Block Diagram Protocol Schema](bdp-properties-wires.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Wires")
 
 ### Wires Type
 
@@ -108,7 +108,7 @@ A list of systems in the block diagram protocol that follow the system schema.
 
 *   cannot be null
 
-*   defined in: [Block Diagram Protocol Schema](bdp-properties-systems.md "undefined#/properties/Systems")
+*   defined in: [Block Diagram Protocol Schema](bdp-properties-systems.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Systems")
 
 ### Systems Type
 

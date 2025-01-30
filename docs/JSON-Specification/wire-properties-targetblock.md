@@ -1,7 +1,7 @@
 # Untitled string in Wire Schema Schema
 
 ```txt
-undefined#/properties/TargetBlock
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/TargetBlock
 ```
 
 

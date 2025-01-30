@@ -1,7 +1,7 @@
 # Untitled array in Block Schema Schema
 
 ```txt
-undefined#/properties/Codomain
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Codomain
 ```
 
 

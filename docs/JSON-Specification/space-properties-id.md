@@ -1,7 +1,7 @@
 # ID Schema
 
 ```txt
-undefined#/properties/ID
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/space.schema.json#/properties/ID
 ```
 
 The unique identifier of the space.

@@ -1,7 +1,7 @@
 # Name Schema
 
 ```txt
-undefined#/properties/Name
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/space.schema.json#/properties/Name
 ```
 
 The name of the space.

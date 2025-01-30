@@ -1,7 +1,7 @@
 # Space Schema Schema
 
 ```txt
-undefined
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/space.schema.json
 ```
 
 
@@ -16,11 +16,11 @@ undefined
 
 # Space Schema Properties
 
-| Property                    | Type     | Required | Nullable       | Defined by                                                                          |
-| :-------------------------- | :------- | :------- | :------------- | :---------------------------------------------------------------------------------- |
-| [ID](#id)                   | `string` | Required | cannot be null | [Space Schema](space-properties-id.md "undefined#/properties/ID")                   |
-| [Name](#name)               | `string` | Required | cannot be null | [Space Schema](space-properties-name.md "undefined#/properties/Name")               |
-| [Description](#description) | `string` | Optional | cannot be null | [Space Schema](space-properties-description.md "undefined#/properties/Description") |
+| Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                                        |
+| :-------------------------- | :------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ID](#id)                   | `string` | Required | cannot be null | [Space Schema](space-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/space.schema.json#/properties/ID")                   |
+| [Name](#name)               | `string` | Required | cannot be null | [Space Schema](space-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/space.schema.json#/properties/Name")               |
+| [Description](#description) | `string` | Optional | cannot be null | [Space Schema](space-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/space.schema.json#/properties/Description") |
 
 ## ID
 
@@ -34,7 +34,7 @@ The unique identifier of the space.
 
 *   cannot be null
 
-*   defined in: [Space Schema](space-properties-id.md "undefined#/properties/ID")
+*   defined in: [Space Schema](space-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/space.schema.json#/properties/ID")
 
 ### ID Type
 
@@ -52,7 +52,7 @@ The name of the space.
 
 *   cannot be null
 
-*   defined in: [Space Schema](space-properties-name.md "undefined#/properties/Name")
+*   defined in: [Space Schema](space-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/space.schema.json#/properties/Name")
 
 ### Name Type
 
@@ -70,7 +70,7 @@ The description of the space.
 
 *   cannot be null
 
-*   defined in: [Space Schema](space-properties-description.md "undefined#/properties/Description")
+*   defined in: [Space Schema](space-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/space.schema.json#/properties/Description")
 
 ### Description Type
 

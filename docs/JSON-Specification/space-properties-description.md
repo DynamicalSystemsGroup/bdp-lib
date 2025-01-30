@@ -1,7 +1,7 @@
 # Description Schema
 
 ```txt
-undefined#/properties/Description
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/space.schema.json#/properties/Description
 ```
 
 The description of the space.

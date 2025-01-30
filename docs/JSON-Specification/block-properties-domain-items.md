@@ -1,7 +1,7 @@
 # Untitled string in Block Schema Schema
 
 ```txt
-undefined#/properties/Domain/items
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Domain/items
 ```
 
 

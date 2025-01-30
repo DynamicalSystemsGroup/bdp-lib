@@ -1,7 +1,7 @@
 # Untitled string in System Schema Schema
 
 ```txt
-undefined#/properties/ConcreteBlocks/items
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ConcreteBlocks/items
 ```
 
 
