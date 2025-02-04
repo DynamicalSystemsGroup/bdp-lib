@@ -6,7 +6,7 @@
 
 *   [Block Schema](./block.md) – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json`
 
-*   [Concrete Block Schema](./concreteblock.md) – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/concreteBlock.schema.json`
+*   [Processor Schema](./processor.md) – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json`
 
 *   [Space Schema](./space.md) – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/space.schema.json`
 
@@ -26,11 +26,11 @@
 
 *   [Codomain](./block-properties-codomain.md "The codomain of the block which are IDs of spaces") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Codomain`
 
-*   [ConcreteBlocks](./bdp-properties-concreteblocks.md "A list of concrete blocks in the block diagram protocol that follow the concrete block schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/ConcreteBlocks`
-
 *   [ConcreteBlocks](./system-properties-concreteblocks.md "A list of concrete block IDs that are part of the system") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ConcreteBlocks`
 
 *   [Domain](./block-properties-domain.md "The domain of the block which are IDs of spaces") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Domain`
+
+*   [Processors](./bdp-properties-processors.md "A list of processors in the block diagram protocol that follow the processor schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Processors`
 
 *   [Spaces](./bdp-properties-spaces.md "A list of spaces in the block diagram protocol that follow the space schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Spaces`
 
