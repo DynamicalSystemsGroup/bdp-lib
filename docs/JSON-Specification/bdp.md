@@ -16,13 +16,13 @@ This schema is used to validate the JSON file that is used to store the block di
 
 # Block Diagram Protocol Schema Properties
 
-| Property                          | Type    | Required | Nullable       | Defined by                                                                                                                                                                           |
-| :-------------------------------- | :------ | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Spaces](#spaces)                 | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-spaces.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Spaces")                 |
-| [Blocks](#blocks)                 | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-blocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Blocks")                 |
-| [ConcreteBlocks](#concreteblocks) | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-concreteblocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/ConcreteBlocks") |
-| [Wires](#wires)                   | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-wires.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Wires")                   |
-| [Systems](#systems)               | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-systems.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Systems")               |
+| Property                  | Type    | Required | Nullable       | Defined by                                                                                                                                                                   |
+| :------------------------ | :------ | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Spaces](#spaces)         | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-spaces.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Spaces")         |
+| [Blocks](#blocks)         | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-blocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Blocks")         |
+| [Processors](#processors) | `array` | Optional | cannot be null | [Block Diagram Protocol Schema](bdp-properties-processors.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Processors") |
+| [Wires](#wires)           | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-wires.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Wires")           |
+| [Systems](#systems)       | `array` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-systems.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Systems")       |
 
 ## Spaces
 
@@ -60,23 +60,23 @@ A list of blocks in the block diagram protocol that follow the block schema.
 
 `object[]` ([Block Schema](block.md))
 
-## ConcreteBlocks
+## Processors
 
-A list of concrete blocks in the block diagram protocol that follow the concrete block schema.
+A list of processors in the block diagram protocol that follow the processor schema.
 
-`ConcreteBlocks`
+`Processors`
 
-*   is required
+*   is optional
 
-*   Type: `object[]` ([Concrete Block Schema](concreteblock.md))
+*   Type: `object[]` ([Processor Schema](processor.md))
 
 *   cannot be null
 
-*   defined in: [Block Diagram Protocol Schema](bdp-properties-concreteblocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/ConcreteBlocks")
+*   defined in: [Block Diagram Protocol Schema](bdp-properties-processors.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Processors")
 
-### ConcreteBlocks Type
+### Processors Type
 
-`object[]` ([Concrete Block Schema](concreteblock.md))
+`object[]` ([Processor Schema](processor.md))
 
 ## Wires
 
