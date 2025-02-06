@@ -14,26 +14,41 @@
         "title": "Parent",
         "description": "The ID of the space that the wire is passing."
       },
-      "SourceBlock": {
-        "type": "string",
-        "title": "SourceBlock",
-        "description": "The ID of the block that the wire is coming from."
+      "Source": {
+        "type": "object",
+        "title": "Source",
+        "description": "The source of the wire/space.",
+        "properties": {
+          "Processor": {
+            "type": "string",
+            "title": "Processor",
+            "description": "The ID of the processor that the wire is coming from."
+          },
+          "Index": {
+            "type": "integer",
+            "title": "Index",
+            "description": "The index of the terminal that the wire is coming from."
+          }
+        }
       },
-      "TargetBlock": {
-        "type": "string",
-        "title": "TargetBlock",
-        "description": "The ID of the block that the wire is going to."
-      },
-      "SourceIndex": {
-        "type": "number",
-        "title": "SourceIndex",
-        "description": "The index of the codomain of the source block that the wire is coming from."
-      },
-      "TargetIndex": {
-        "type": "number",
-        "title": "TargetIndex",
-        "description": "The index of the domain of the target block that the wire is going to."
+      "Target": {
+        "type": "object",
+        "title": "Target",
+        "description": "The target of the wire/space.",
+        "properties": {
+          "Processor": {
+            "type": "string",
+            "title": "Processor",
+            "description": "The ID of the processor that the wire is going to."
+          },
+          "Index": {
+            "type": "integer",
+            "title": "Index",
+            "description": "The index of the port that the wire is going to."
+          }
+        }
       }
+
     },
     "required": [
       "ID",
