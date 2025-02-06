@@ -22,6 +22,8 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.
 | [Name](#name)               | `string` | Required | cannot be null | [Processor Schema](processor-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Name")               |
 | [Description](#description) | `string` | Optional | cannot be null | [Processor Schema](processor-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Description") |
 | [Parent](#parent)           | `string` | Required | cannot be null | [Processor Schema](processor-properties-parent.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Parent")           |
+| [Ports](#ports)             | `array`  | Optional | cannot be null | [Processor Schema](processor-properties-ports.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Ports")             |
+| [Terminals](#terminals)     | `array`  | Required | cannot be null | [Processor Schema](processor-properties-terminals.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Terminals")     |
 
 ## ID
 
@@ -94,3 +96,39 @@ The ID of the block that the processor is an instance of.
 ### Parent Type
 
 `string` ([Parent](processor-properties-parent.md))
+
+## Ports
+
+The IDs of spaces which must match the domain of the parent block.
+
+`Ports`
+
+*   is optional
+
+*   Type: `string[]`
+
+*   cannot be null
+
+*   defined in: [Processor Schema](processor-properties-ports.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Ports")
+
+### Ports Type
+
+`string[]`
+
+## Terminals
+
+The IDs of spaces which must match the codomain of the parent block.
+
+`Terminals`
+
+*   is required
+
+*   Type: `string[]`
+
+*   cannot be null
+
+*   defined in: [Processor Schema](processor-properties-terminals.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Terminals")
+
+### Terminals Type
+
+`string[]`

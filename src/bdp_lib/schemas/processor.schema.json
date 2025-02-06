@@ -23,11 +23,29 @@
         "type": "string",
         "title": "Parent",
         "description": "The ID of the block that the processor is an instance of."
+      },
+      "Ports": {
+        "type": "array",
+        "title": "Ports",
+        "description": "The IDs of spaces which must match the domain of the parent block.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "Terminals": {
+        "type": "array",
+        "title": "Terminals",
+        "description": "The IDs of spaces which must match the codomain of the parent block.",
+        "items": {
+          "type": "string"
+        }
       }
     },
     "required": [
       "ID",
       "Name",
-      "Parent"
+      "Parent",
+      "Port",
+      "Terminals"
     ]
   }
