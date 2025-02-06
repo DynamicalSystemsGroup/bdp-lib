@@ -1,15 +1,15 @@
-# TargetIndex Schema
+# Index Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/TargetIndex
+https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target/properties/Index
 ```
 
-The index of the domain of the target block that the wire is going to.
+The index of the port that the wire is going to.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [wire.schema.json\*](../../out/bdp_lib/schemas/wire.schema.json "open original schema") |
 
-## TargetIndex Type
+## Index Type
 
-`number` ([TargetIndex](wire-properties-targetindex.md))
+`integer` ([Index](wire-properties-target-properties-index.md))

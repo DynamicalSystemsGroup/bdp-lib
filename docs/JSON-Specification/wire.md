@@ -16,14 +16,12 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schem
 
 # Wire Schema Properties
 
-| Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                                     |
-| :-------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ID](#id)                   | `string` | Required | cannot be null | [Wire Schema](wire-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/ID")                   |
-| [Parent](#parent)           | `string` | Required | cannot be null | [Wire Schema](wire-properties-parent.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Parent")           |
-| [SourceBlock](#sourceblock) | `string` | Required | cannot be null | [Wire Schema](wire-properties-sourceblock.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/SourceBlock") |
-| [TargetBlock](#targetblock) | `string` | Required | cannot be null | [Wire Schema](wire-properties-targetblock.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/TargetBlock") |
-| [SourceIndex](#sourceindex) | `number` | Required | cannot be null | [Wire Schema](wire-properties-sourceindex.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/SourceIndex") |
-| [TargetIndex](#targetindex) | `number` | Required | cannot be null | [Wire Schema](wire-properties-targetindex.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/TargetIndex") |
+| Property          | Type     | Required | Nullable       | Defined by                                                                                                                                           |
+| :---------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ID](#id)         | `string` | Required | cannot be null | [Wire Schema](wire-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/ID")         |
+| [Parent](#parent) | `string` | Required | cannot be null | [Wire Schema](wire-properties-parent.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Parent") |
+| [Source](#source) | `object` | Optional | cannot be null | [Wire Schema](wire-properties-source.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source") |
+| [Target](#target) | `object` | Optional | cannot be null | [Wire Schema](wire-properties-target.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target") |
 
 ## ID
 
@@ -61,74 +59,38 @@ The ID of the space that the wire is passing.
 
 `string` ([Parent](wire-properties-parent.md))
 
-## SourceBlock
+## Source
 
-The ID of the block that the wire is coming from.
+The source of the wire/space.
 
-`SourceBlock`
+`Source`
 
-*   is required
+*   is optional
 
-*   Type: `string` ([SourceBlock](wire-properties-sourceblock.md))
-
-*   cannot be null
-
-*   defined in: [Wire Schema](wire-properties-sourceblock.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/SourceBlock")
-
-### SourceBlock Type
-
-`string` ([SourceBlock](wire-properties-sourceblock.md))
-
-## TargetBlock
-
-The ID of the block that the wire is going to.
-
-`TargetBlock`
-
-*   is required
-
-*   Type: `string` ([TargetBlock](wire-properties-targetblock.md))
+*   Type: `object` ([Source](wire-properties-source.md))
 
 *   cannot be null
 
-*   defined in: [Wire Schema](wire-properties-targetblock.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/TargetBlock")
+*   defined in: [Wire Schema](wire-properties-source.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source")
 
-### TargetBlock Type
+### Source Type
 
-`string` ([TargetBlock](wire-properties-targetblock.md))
+`object` ([Source](wire-properties-source.md))
 
-## SourceIndex
+## Target
 
-The index of the codomain of the source block that the wire is coming from.
+The target of the wire/space.
 
-`SourceIndex`
+`Target`
 
-*   is required
+*   is optional
 
-*   Type: `number` ([SourceIndex](wire-properties-sourceindex.md))
-
-*   cannot be null
-
-*   defined in: [Wire Schema](wire-properties-sourceindex.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/SourceIndex")
-
-### SourceIndex Type
-
-`number` ([SourceIndex](wire-properties-sourceindex.md))
-
-## TargetIndex
-
-The index of the domain of the target block that the wire is going to.
-
-`TargetIndex`
-
-*   is required
-
-*   Type: `number` ([TargetIndex](wire-properties-targetindex.md))
+*   Type: `object` ([Target](wire-properties-target.md))
 
 *   cannot be null
 
-*   defined in: [Wire Schema](wire-properties-targetindex.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/TargetIndex")
+*   defined in: [Wire Schema](wire-properties-target.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target")
 
-### TargetIndex Type
+### Target Type
 
-`number` ([TargetIndex](wire-properties-targetindex.md))
+`object` ([Target](wire-properties-target.md))

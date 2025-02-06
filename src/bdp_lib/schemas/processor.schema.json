@@ -1,0 +1,51 @@
+{"$id": "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Processor Schema",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "ID": {
+        "type": "string",
+        "title": "ID",
+        "description": "A unique identifier for the processor."
+      },
+      "Name": {
+        "type": "string",
+        "title": "Name",
+        "description": "The name of the processor."
+      },
+      "Description": {
+        "type": "string",
+        "title": "Description",
+        "description": "A description of the processor."
+      },
+      "Parent": {
+        "type": "string",
+        "title": "Parent",
+        "description": "The ID of the block that the processor is an instance of."
+      },
+      "Ports": {
+        "type": "array",
+        "title": "Ports",
+        "description": "The IDs of spaces which must match the domain of the parent block.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "Terminals": {
+        "type": "array",
+        "title": "Terminals",
+        "description": "The IDs of spaces which must match the codomain of the parent block.",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "ID",
+      "Name",
+      "Parent",
+      "Port",
+      "Terminals"
+    ]
+  }
