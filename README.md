@@ -38,7 +38,7 @@ Defines out the spaces, blocks, concrete blocks and wirings used in a system
 
 ## JSON Spec
 
-The JSON spec is held within docs/JSON-Spec, schema.md has the high level schema and then individual components are further defined in the linked files.
+The JSON spec is held within docs/JSON-Spec, schema.md has the high level schema and then individual components are further defined in the linked files in great detail. That being said, the following is the underlying schema in terms of purely types.
 
 ## Example bdp-lib Input
 

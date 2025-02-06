@@ -21,12 +21,12 @@
           "$ref": "./block.schema.json"
         }
       },
-      "ConcreteBlocks": {
+      "Processors": {
         "type": "array",
-        "description": "A list of concrete blocks in the block diagram protocol that follow the concrete block schema.",
-        "title": "ConcreteBlocks",
+        "description": "A list of processors in the block diagram protocol that follow the processor schema.",
+        "title": "Processors",
         "items": {
-          "$ref": "./concreteBlock.schema.json"
+          "$ref": "./processor.schema.json"
         }
       },
       "Wires": {
