@@ -1,0 +1,15 @@
+title: Block Diagram Protocol
+description: Documentation for the block diagram protocol
+theme: just-the-docs
+
+url: https://blockscience.github.io/BDP/
+
+defaults:
+  - scope:
+      path: "docs"
+      type: "pages"
+    values:
+      layout: "default"
+
+aux_links:
+  Block Diagram Protocol Repository: https://github.com/BlockScience/BDP
