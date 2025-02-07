@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"083ec75f92d6abb2","type":"group","x":-440,"y":-230,"width":1140,"height":370,"label":"System 1"},
+		{"id":"bcf9f2ce3c76378f","type":"text","text":"Processor A","x":-280,"y":-180,"width":240,"height":80},
+		{"id":"f8c5fce350454fa0","type":"text","text":"Space 1","x":-420,"y":-160,"width":140,"height":50},
+		{"id":"2245d731eb4ec86b","type":"text","text":"Processor B","x":-280,"y":60,"width":250,"height":60},
+		{"id":"c06c030f8049a467","type":"text","text":"Space 2","x":-40,"y":-150,"width":140,"height":50},
+		{"id":"148c11079a039816","type":"text","text":"Space 3","x":-30,"y":65,"width":140,"height":50},
+		{"id":"8584493ec363f0b7","type":"text","text":"Space 2","x":-420,"y":65,"width":140,"height":50},
+		{"id":"6efd61e1f0660889","type":"text","text":"Space 3","x":40,"y":-55,"width":140,"height":50},
+		{"id":"7d86437001579259","type":"text","text":"Space 1","x":-600,"y":-100,"width":150,"height":70},
+		{"id":"81d164589dac6377","type":"text","text":"Schema:\n\nProcessors: [{\"ID\": \"P1\", \"Name\": \"Processor A\", \"Description\": \"This is my processor\", \"Parent\": \"B1\", \"Ports\": [\"S1\"], \"Terminals\": [\"S1\",\"S2\"],....}]\nWires: [{\"ID\": \"W1\", \"Parent\": \"S2\", \"Source\": {\"Processor\": \"P1\", \"Index\": 1}, \"Target\": {\"Processor\": \"P2\", \"Index\": 0}}, ....]\nSystems: []","x":-380,"y":-620,"width":1060,"height":280},
+		{"id":"b30c16997f1c1df9","type":"text","text":"Space 1","x":-40,"y":-210,"width":140,"height":60},
+		{"id":"13091aa5c9b7a3e7","type":"text","text":"Processor B","x":180,"y":-60,"width":250,"height":60},
+		{"id":"0bc10eb5578f9961","type":"text","text":"Space 4","x":430,"y":-60,"width":250,"height":60},
+		{"id":"303c46463b29411f","type":"text","text":"Space 1","x":720,"y":-180,"width":250,"height":60},
+		{"id":"679a077eff3b4db5","type":"text","text":"Space 4","x":720,"y":-90,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"a07485ec02cd88e7","fromNode":"c06c030f8049a467","fromSide":"bottom","toNode":"8584493ec363f0b7","toSide":"top"},
+		{"id":"1919edadaba0c284","fromNode":"148c11079a039816","fromSide":"right","toNode":"6efd61e1f0660889","toSide":"left"},
+		{"id":"0505142f0991f705","fromNode":"f8c5fce350454fa0","fromSide":"left","toNode":"7d86437001579259","toSide":"right"},
+		{"id":"a6386a52f47a2ef3","fromNode":"0bc10eb5578f9961","fromSide":"right","toNode":"679a077eff3b4db5","toSide":"left"},
+		{"id":"2ead8dd2d39ab4b8","fromNode":"b30c16997f1c1df9","fromSide":"right","toNode":"303c46463b29411f","toSide":"left"}
+	]
+}
