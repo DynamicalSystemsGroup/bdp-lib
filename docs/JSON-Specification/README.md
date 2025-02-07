@@ -12,6 +12,8 @@
 
 *   [System Schema](./system.md) – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json`
 
+*   [Toolbox Schema](./toolbox.md "This schema is used for describing a toolbox in bdp-lib") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json`
+
 *   [Wire Schema](./wire.md) – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json`
 
 ## Other Schemas
@@ -26,6 +28,8 @@
 
 *   [Blocks](./bdp-properties-blocks.md "A list of blocks in the block diagram protocol that follow the block schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Blocks`
 
+*   [Blocks](./toolbox-properties-blocks.md "A list of blocks in the block diagram protocol that follow the block schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Blocks`
+
 *   [Codomain](./block-properties-codomain.md "The codomain of the block which are IDs of spaces") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Codomain`
 
 *   [ConcreteBlocks](./system-properties-concreteblocks.md "A list of concrete block IDs that are part of the system") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ConcreteBlocks`
@@ -37,6 +41,8 @@
 *   [Processors](./bdp-properties-processors.md "A list of processors in the block diagram protocol that follow the processor schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Processors`
 
 *   [Spaces](./bdp-properties-spaces.md "A list of spaces in the block diagram protocol that follow the space schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Spaces`
+
+*   [Spaces](./toolbox-properties-spaces.md "A list of spaces in the block diagram protocol that follow the space schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Spaces`
 
 *   [Systems](./bdp-properties-systems.md "A list of systems in the block diagram protocol that follow the system schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Systems`
 
