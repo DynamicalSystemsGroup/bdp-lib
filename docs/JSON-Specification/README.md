@@ -22,13 +22,13 @@
 
 ### Objects
 
+*   [Model](./bdp-properties-model.md "A model of the instances of processors, wires and systems") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Model`
+
 *   [Source](./wire-properties-source.md "The source of the wire/space") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source`
 
 *   [Target](./wire-properties-target.md "The target of the wire/space") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target`
 
 ### Arrays
-
-*   [Blocks](./bdp-properties-blocks.md "A list of blocks in the block diagram protocol that follow the block schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Blocks`
 
 *   [Blocks](./toolbox-properties-blocks.md "A list of blocks in the block diagram protocol that follow the block schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Blocks`
 
@@ -40,25 +40,17 @@
 
 *   [Ports](./processor-properties-ports.md "The IDs of spaces which must match the domain of the parent block") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Ports`
 
-*   [Processors](./bdp-properties-processors.md "A list of processors in the block diagram protocol that follow the processor schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Processors`
-
 *   [Processors](./model-properties-processors.md "A list of processors in the block diagram protocol that follow the processor schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/model.schema.json#/properties/Processors`
 
-*   [Spaces](./bdp-properties-spaces.md "A list of spaces in the block diagram protocol that follow the space schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Spaces`
-
 *   [Spaces](./toolbox-properties-spaces.md "A list of spaces in the block diagram protocol that follow the space schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Spaces`
-
-*   [Systems](./bdp-properties-systems.md "A list of systems in the block diagram protocol that follow the system schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Systems`
 
 *   [Systems](./model-properties-systems.md "A list of systems in the block diagram protocol that follow the system schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/model.schema.json#/properties/Systems`
 
 *   [Terminals](./processor-properties-terminals.md "The IDs of spaces which must match the codomain of the parent block") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Terminals`
 
-*   [Wires](./bdp-properties-wires.md "A list of wires in the block diagram protocol that follow the wire schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Wires`
+*   [Wires](./model-properties-wires.md "A list of wires in the block diagram protocol that follow the wire schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/model.schema.json#/properties/Wires`
 
 *   [Wires](./system-properties-wires.md "A list of wire IDs that are part of the system") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Wires`
-
-*   [Wires](./model-properties-wires.md "A list of wires in the block diagram protocol that follow the wire schema") – `https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/model.schema.json#/properties/Wires`
 
 ## Version Note
 
