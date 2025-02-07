@@ -3,54 +3,25 @@
     "title": "Block Diagram Protocol Schema",
     "type": "object",
     "additionalProperties": false,
-    "description": "This schema is used to validate the JSON file that is used to store the block diagram protocol.",
+    "description": "This schema is used to validate the JSON file that is used to store the block diagram protocol. There are two components, a toolbox which describes the abstract blocks and spaces and the model which has the actual instances of the toolbox - processors, wires and systems.",
     "properties": {
-      "Spaces": {
-        "type": "array",
-        "description": "A list of spaces in the block diagram protocol that follow the space schema.",
-        "title": "Spaces",
-        "items": {
-          "$ref": "./space.schema.json"
-        }
+      "Toolbox": {
+        "type": "object",
+        "description": "A toolbox of abstract blocks and spaces.",
+        "title": "Toolbox",
+        "$ref": "./toolbox.schema.json"
       },
-      "Blocks": {
-        "type": "array",
-        "description": "A list of blocks in the block diagram protocol that follow the block schema.",
-        "title": "Blocks",
+      "Model": {
+        "type": "object",
+        "description": "A model of the instances of processors, wires and systems.",
+        "title": "Model",
         "items": {
-          "$ref": "./block.schema.json"
-        }
-      },
-      "Processors": {
-        "type": "array",
-        "description": "A list of processors in the block diagram protocol that follow the processor schema.",
-        "title": "Processors",
-        "items": {
-          "$ref": "./processor.schema.json"
-        }
-      },
-      "Wires": {
-        "type": "array",
-        "description": "A list of wires in the block diagram protocol that follow the wire schema.",
-        "title": "Wires",
-        "items": {
-          "$ref": "./wire.schema.json"
-        }
-      },
-      "Systems": {
-        "type": "array",
-        "description": "A list of systems in the block diagram protocol that follow the system schema.",
-        "title": "Systems",
-        "items": {
-          "$ref": "./system.schema.json"
+          "$ref": "./model.schema.json"
         }
       }
     },
     "required": [
-      "Spaces",
-      "Blocks",
-      "ConcreteBlocks",
-      "Wires",
-      "Systems"
+      "Toolbox",
+      "Model"
     ]
   }
