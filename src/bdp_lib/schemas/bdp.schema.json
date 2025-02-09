@@ -15,9 +15,7 @@
         "type": "object",
         "description": "A model of the instances of processors, wires and systems.",
         "title": "Model",
-        "items": {
-          "$ref": "./model.schema.json"
-        }
+        "$ref": "./model.schema.json"
       }
     },
     "required": [
