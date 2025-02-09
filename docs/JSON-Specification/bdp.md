@@ -16,10 +16,10 @@ This schema is used to validate the JSON file that is used to store the block di
 
 # Block Diagram Protocol Schema Properties
 
-| Property            | Type     | Required | Nullable       | Defined by                                                                                                                                                         |
-| :------------------ | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Toolbox](#toolbox) | `object` | Required | cannot be null | [Block Diagram Protocol Schema](toolbox.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Toolbox")        |
-| [Model](#model)     | `object` | Required | cannot be null | [Block Diagram Protocol Schema](bdp-properties-model.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Model") |
+| Property            | Type     | Required | Nullable       | Defined by                                                                                                                                                  |
+| :------------------ | :------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Toolbox](#toolbox) | `object` | Required | cannot be null | [Block Diagram Protocol Schema](toolbox.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Toolbox") |
+| [Model](#model)     | `object` | Required | cannot be null | [Block Diagram Protocol Schema](model.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/model.schema.json#/properties/Model")       |
 
 ## Toolbox
 
@@ -41,18 +41,18 @@ This schema is used for describing a toolbox in bdp-lib.
 
 ## Model
 
-A model of the instances of processors, wires and systems.
+This schema is used to describe a model in bdp-lib which is the actual instances of the toolbox which it would be paired with in the large bdp schema.
 
 `Model`
 
 *   is required
 
-*   Type: `object` ([Model](bdp-properties-model.md))
+*   Type: `object` ([Model Schema](model.md))
 
 *   cannot be null
 
-*   defined in: [Block Diagram Protocol Schema](bdp-properties-model.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json#/properties/Model")
+*   defined in: [Block Diagram Protocol Schema](model.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/model.schema.json#/properties/Model")
 
 ### Model Type
 
-`object` ([Model](bdp-properties-model.md))
+`object` ([Model Schema](model.md))
