@@ -16,13 +16,13 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.sch
 
 # System Schema Properties
 
-| Property                          | Type     | Required | Nullable       | Defined by                                                                                                                                                                 |
-| :-------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ID](#id)                         | `string` | Required | cannot be null | [System Schema](system-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ID")                         |
-| [Name](#name)                     | `string` | Required | cannot be null | [System Schema](system-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Name")                     |
-| [Description](#description)       | `string` | Optional | cannot be null | [System Schema](system-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Description")       |
-| [ConcreteBlocks](#concreteblocks) | `array`  | Required | cannot be null | [System Schema](system-properties-concreteblocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ConcreteBlocks") |
-| [Wires](#wires)                   | `array`  | Required | cannot be null | [System Schema](system-properties-wires.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Wires")                   |
+| Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                                           |
+| :-------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ID](#id)                   | `string` | Required | cannot be null | [System Schema](system-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ID")                   |
+| [Name](#name)               | `string` | Required | cannot be null | [System Schema](system-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Name")               |
+| [Description](#description) | `string` | Optional | cannot be null | [System Schema](system-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Description") |
+| [Processors](#processors)   | `array`  | Required | cannot be null | [System Schema](system-properties-processors.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Processors")   |
+| [Wires](#wires)             | `array`  | Required | cannot be null | [System Schema](system-properties-wires.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Wires")             |
 
 ## ID
 
@@ -78,11 +78,11 @@ A description of the system.
 
 `string` ([Description](system-properties-description.md))
 
-## ConcreteBlocks
+## Processors
 
-A list of concrete block IDs that are part of the system.
+A list of processor IDs that are part of the system.
 
-`ConcreteBlocks`
+`Processors`
 
 *   is required
 
@@ -90,9 +90,9 @@ A list of concrete block IDs that are part of the system.
 
 *   cannot be null
 
-*   defined in: [System Schema](system-properties-concreteblocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ConcreteBlocks")
+*   defined in: [System Schema](system-properties-processors.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Processors")
 
-### ConcreteBlocks Type
+### Processors Type
 
 `string[]`
 

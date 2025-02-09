@@ -20,10 +20,10 @@
       "title": "Description",
       "description": "A description of the system."
     },
-    "ConcreteBlocks": {
+    "Processors": {
       "type": "array",
-      "title": "ConcreteBlocks",
-      "description": "A list of concrete block IDs that are part of the system.",
+      "title": "Processors",
+      "description": "A list of processor IDs that are part of the system.",
       "items": {
         "type": "string"
       }
@@ -40,7 +40,7 @@
   "required": [
     "ID",
     "Name",
-    "ConcreteBlocks",
+    "Processors",
     "Wires"
   ]
 }

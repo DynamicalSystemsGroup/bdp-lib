@@ -1,0 +1,38 @@
+{"$id": "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/model.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Model Schema",
+    "type": "object",
+    "additionalProperties": false,
+    "description": "This schema is used to describe a model in bdp-lib which is the actual instances of the toolbox which it would be paired with in the large bdp schema.",
+    "properties": {
+      "Processors": {
+        "type": "array",
+        "description": "A list of processors in the block diagram protocol that follow the processor schema.",
+        "title": "Processors",
+        "items": {
+          "$ref": "./processor.schema.json"
+        }
+      },
+      "Wires": {
+        "type": "array",
+        "description": "A list of wires in the block diagram protocol that follow the wire schema.",
+        "title": "Wires",
+        "items": {
+          "$ref": "./wire.schema.json"
+        }
+      },
+      "Systems": {
+        "type": "array",
+        "description": "A list of systems in the block diagram protocol that follow the system schema.",
+        "title": "Systems",
+        "items": {
+          "$ref": "./system.schema.json"
+        }
+      }
+    },
+    "required": [
+      "Processors",
+      "Wires",
+      "Systems"
+    ]
+  }
