@@ -1,0 +1,41 @@
+---
+title: Glossary
+nav_order: 2
+layout: default
+---
+
+ - Block Diagram Protocol Schema: This schema is used to validate the JSON file that is used to store the block diagram protocol. There are two components, a toolbox which describes the abstract blocks and spaces and the model which has the actual instances of the toolbox - processors, wires and systems.
+   - Toolbox Schema: This schema is used for describing a toolbox in bdp-lib.
+     - Spaces: A list of spaces in the block diagram protocol that follow the space schema. It defines the abstract classes of blocks and spaces which models will instantiate.
+       - ID: The unique identifier of the space.
+       - Name: The name of the space.
+       - Description: The description of the space.
+     - Blocks: A list of blocks in the block diagram protocol that follow the block schema.
+       - ID: A unique identifier for the block.
+       - Name: The name of the block.
+       - Description: A description of the block.
+       - Domain: The domain of the block which are IDs of spaces. Spaces may be repeated or it may be an empty array.
+       - Codomain: The codomain of the block which are IDs of spaces. Spaces may be repeated or it may be an empty array.
+   - Model Schema: This schema is used to describe a model in bdp-lib which is the actual instances of the toolbox which it would be paired with in the large bdp schema.
+     - Processors: A list of processors in the block diagram protocol that follow the processor schema.
+       - ID: A unique identifier for the processor.
+       - Name: The name of the processor.
+       - Description: A description of the processor.
+       - Parent: The ID of the block that the processor is an instance of.
+       - Ports: The IDs of spaces which must match the domain of the parent block.
+       - Terminals: The IDs of spaces which must match the codomain of the parent block.
+     - Wires: A list of wires in the block diagram protocol that follow the wire schema.
+       - ID: A unique identifier for the wire.
+       - Parent: The ID of the space that the wire is passing.
+       - Source: The source of the wire/space.
+         - Processor: The ID of the processor that the wire is coming from.
+         - Index: The index of the terminal that the wire is coming from.
+       - Target: The target of the wire/space.
+         - Processor: The ID of the processor that the wire is going to.
+         - Index: The index of the port that the wire is going to.
+     - Systems: A list of systems in the block diagram protocol that follow the system schema.
+       - ID: A unique identifier for the system.
+       - Name: The name of the system.
+       - Description: A description of the system.
+       - Processors: A list of processor IDs that are part of the system.
+       - Wires: A list of wire IDs that are part of the system.
