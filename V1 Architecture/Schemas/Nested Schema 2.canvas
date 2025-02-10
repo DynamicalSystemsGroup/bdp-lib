@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"b85cac658e0be5d8","type":"text","text":"# Project\nComponents:\nToolbox\nModel\nSystem","x":-260,"y":-260,"width":160,"height":160},
+		{"id":"36c7bb7558bd8423","type":"text","text":"# TBD\nComponents:\nList[Processor]\nList[Wire]","x":-100,"y":-60,"width":180,"height":160},
+		{"id":"a6c8b3c6a4f5119d","type":"text","text":"# Toolbox\nComponents:\nList[Block]\nList[Space]","x":-420,"y":-60,"width":160,"height":160},
+		{"id":"d1cb9ff711b8f260","type":"text","text":"# Block\n\nobject {  \n    ID: string (required)  \n    Name: string (required)  \n    Description: string  \n    Domain: array[string] (required)  \n    Codomain: array[string] (required)  \n  }","x":-640,"y":140,"width":180,"height":440},
+		{"id":"e8e3dc56af167b9d","type":"text","text":"# Space\n\nobject {  \n    ID: string (required)  \n    Name: string (required)  \n    Description: string  \n  }","x":-430,"y":140,"width":170,"height":320},
+		{"id":"01dba3a1997580de","type":"text","text":"# Processor\n\nobject {  \n    ID: string (required)  \n    Name: string (required)  \n    Description: string  \n    Parent: string (required)  \n    Ports: array[string]  \n    Terminals: array[string] (required)  \n  }","x":-220,"y":140,"width":210,"height":380},
+		{"id":"9688e60d90987eaa","type":"text","text":"# Wire\n\nobject {  \n    ID: string (required)  \n    Parent: string (required)  \n    Source: object {  \n      Processor: string  \n      Index: integer  \n    }  \n    Target: object {  \n      Processor: string  \n      Index: integer  \n    }  \n  }","x":40,"y":140,"width":240,"height":390},
+		{"id":"0c6c353a547cd024","x":200,"y":-60,"width":240,"height":160,"type":"text","text":"# System\nComponents:\nList[Model]"},
+		{"id":"5560569354d5ad7d","type":"text","text":"# Model\n\nobject {  \n    ID: string (required)  \n    Name: string (required)  \n    Description: string  \n    Processors: array[string] (required)  \n    Wires: array[string] (required)  \n  }","x":320,"y":140,"width":180,"height":460}
+	],
+	"edges":[
+		{"id":"cec7d3463cb5b5b1","fromNode":"b85cac658e0be5d8","fromSide":"bottom","toNode":"a6c8b3c6a4f5119d","toSide":"top"},
+		{"id":"9d8784d3de3d6701","fromNode":"b85cac658e0be5d8","fromSide":"bottom","toNode":"36c7bb7558bd8423","toSide":"top"},
+		{"id":"d37277c3f33a36ff","fromNode":"a6c8b3c6a4f5119d","fromSide":"bottom","toNode":"d1cb9ff711b8f260","toSide":"top"},
+		{"id":"1dedaf213781a121","fromNode":"a6c8b3c6a4f5119d","fromSide":"bottom","toNode":"e8e3dc56af167b9d","toSide":"top"},
+		{"id":"8bc1bb451b392015","fromNode":"36c7bb7558bd8423","fromSide":"bottom","toNode":"01dba3a1997580de","toSide":"top"},
+		{"id":"6ab6e94d56a20ec0","fromNode":"36c7bb7558bd8423","fromSide":"bottom","toNode":"9688e60d90987eaa","toSide":"top"},
+		{"id":"ec8def08d27fcca4","fromNode":"b85cac658e0be5d8","fromSide":"bottom","toNode":"0c6c353a547cd024","toSide":"top"},
+		{"id":"52f334ac5a75e2d1","fromNode":"0c6c353a547cd024","fromSide":"bottom","toNode":"5560569354d5ad7d","toSide":"top"}
+	]
+}
