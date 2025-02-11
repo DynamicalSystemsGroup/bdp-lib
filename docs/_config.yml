@@ -11,5 +11,10 @@ defaults:
     values:
       layout: "default"
 
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.3"
+
 aux_links:
   Block Diagram Protocol Repository: https://github.com/BlockScience/bdp-lib
