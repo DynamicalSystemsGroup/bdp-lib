@@ -4,7 +4,7 @@
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json
 ```
 
-A processor is an instance of a block where computation or actions would happen.
+A processor is an instance of a block where computation or actions would happen. When the optional parameter of subsystem is present, the processor is a composite processor and it represents a system as a processor with the systsem ID it is a processor for as well as the wires that connect the processor ports and terminals to the system ports and terminals.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                      |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------------- |
@@ -24,6 +24,7 @@ A processor is an instance of a block where computation or actions would happen.
 | [Parent](#parent)           | `string` | Required | cannot be null | [Processor](processor-properties-parent.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Parent")           |
 | [Ports](#ports)             | `array`  | Optional | cannot be null | [Processor](processor-properties-ports.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Ports")             |
 | [Terminals](#terminals)     | `array`  | Required | cannot be null | [Processor](processor-properties-terminals.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Terminals")     |
+| [Subsystem](#subsystem)     | `object` | Optional | cannot be null | [Processor](processor-properties-subsystem.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem")     |
 
 ## ID
 
@@ -132,3 +133,21 @@ The IDs of spaces which must match the codomain of the parent block.
 ### Terminals Type
 
 `string[]`
+
+## Subsystem
+
+The subsystem of the processor which is a system that the processor represents and passes its ports to and receives spaces to its terminals from.
+
+`Subsystem`
+
+*   is optional
+
+*   Type: `object` ([Subsystem](processor-properties-subsystem.md))
+
+*   cannot be null
+
+*   defined in: [Processor](processor-properties-subsystem.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem")
+
+### Subsystem Type
+
+`object` ([Subsystem](processor-properties-subsystem.md))
