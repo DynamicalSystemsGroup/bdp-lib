@@ -23,13 +23,13 @@ A project within the block diagram protocol. The toolbox contains the abstract r
 
 ## Toolbox
 
-This schema is used for describing a toolbox in bdp-lib.
+The abstract classes of blocks and spaces which the workbench will instantiate.
 
 `Toolbox`
 
 *   is required
 
-*   Type: `object` ([Toolbox Schema](toolbox.md))
+*   Type: `object` ([Toolbox](toolbox.md))
 
 *   cannot be null
 
@@ -37,7 +37,7 @@ This schema is used for describing a toolbox in bdp-lib.
 
 ### Toolbox Type
 
-`object` ([Toolbox Schema](toolbox.md))
+`object` ([Toolbox](toolbox.md))
 
 ## Workbench
 

@@ -30,7 +30,7 @@ A list of processors in the block diagram protocol that follow the processor sch
 
 *   is required
 
-*   Type: `object[]` ([Processor Schema](processor.md))
+*   Type: `object[]` ([Processor](processor.md))
 
 *   cannot be null
 
@@ -38,7 +38,7 @@ A list of processors in the block diagram protocol that follow the processor sch
 
 ### Processors Type
 
-`object[]` ([Processor Schema](processor.md))
+`object[]` ([Processor](processor.md))
 
 ## Wires
 
@@ -48,7 +48,7 @@ A list of wires in the block diagram protocol that follow the wire schema.
 
 *   is required
 
-*   Type: `object[]` ([Wire Schema](wire.md))
+*   Type: `object[]` ([Wire](wire.md))
 
 *   cannot be null
 
@@ -56,7 +56,7 @@ A list of wires in the block diagram protocol that follow the wire schema.
 
 ### Wires Type
 
-`object[]` ([Wire Schema](wire.md))
+`object[]` ([Wire](wire.md))
 
 ## Systems
 
@@ -66,7 +66,7 @@ A list of systems in the block diagram protocol that follow the system schema.
 
 *   is required
 
-*   Type: `object[]` ([System Schema](system.md))
+*   Type: `object[]` ([System](system.md))
 
 *   cannot be null
 
@@ -74,4 +74,4 @@ A list of systems in the block diagram protocol that follow the system schema.
 
 ### Systems Type
 
-`object[]` ([System Schema](system.md))
+`object[]` ([System](system.md))

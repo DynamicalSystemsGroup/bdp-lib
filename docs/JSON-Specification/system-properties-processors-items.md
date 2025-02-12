@@ -1,4 +1,4 @@
-# Untitled string in System Schema Schema
+# Untitled string in System Schema
 
 ```txt
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Processors/items

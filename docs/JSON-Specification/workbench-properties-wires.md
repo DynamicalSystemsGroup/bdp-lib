@@ -12,4 +12,4 @@ A list of wires in the block diagram protocol that follow the wire schema.
 
 ## Wires Type
 
-`object[]` ([Wire Schema](wire.md))
+`object[]` ([Wire](wire.md))
