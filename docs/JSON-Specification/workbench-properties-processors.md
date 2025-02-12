@@ -12,4 +12,4 @@ A list of processors in the block diagram protocol that follow the processor sch
 
 ## Processors Type
 
-`object[]` ([Processor Schema](processor.md))
+`object[]` ([Processor](processor.md))

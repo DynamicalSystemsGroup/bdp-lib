@@ -12,4 +12,4 @@ A list of systems in the block diagram protocol that follow the system schema.
 
 ## Systems Type
 
-`object[]` ([System Schema](system.md))
+`object[]` ([System](system.md))

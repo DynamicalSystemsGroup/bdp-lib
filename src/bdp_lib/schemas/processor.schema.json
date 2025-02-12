@@ -1,8 +1,9 @@
 {"$id": "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Processor Schema",
+    "title": "Processor",
     "type": "object",
     "additionalProperties": false,
+    "description": "A processor is an instance of a block where computation or actions would happen.",
     "properties": {
       "ID": {
         "type": "string",

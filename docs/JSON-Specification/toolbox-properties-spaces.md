@@ -4,7 +4,7 @@
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Spaces
 ```
 
-A list of spaces in the block diagram protocol that follow the space schema. It defines the abstract classes of blocks and spaces which models will instantiate.
+A list of spaces in the block diagram protocol that follow the space schema. One can think of a space as a typed dictionary of data.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                    |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------------- |
@@ -12,4 +12,4 @@ A list of spaces in the block diagram protocol that follow the space schema. It 
 
 ## Spaces Type
 
-`object[]` ([Space Schema](space.md))
+`object[]` ([Space](space.md))
