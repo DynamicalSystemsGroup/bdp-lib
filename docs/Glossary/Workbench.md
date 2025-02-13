@@ -5,25 +5,24 @@ layout: default
 parent: Schema & Glossary
 ---
 
-WORK IN PROGRESS - NOT READY
-
 # Workbench
 
 A workbench consists of the concrete components implemented from the abstract components of the toolbox.
 
+A workbench contains the following:
+- **Processors**: The implementations of blocks
+- **Wires**: The implementations of spaces which are passed from one processor terminal to another processor port
+- **Systems**: The definitions of wires and processors that form unique systems
 
 ## Schema
 
 The top level schema of a workbench is:
 
-```json
-{
-  "ID": "string (required)",
-  "Parent": "block_id (required)",
-  "Name": "string (required)",
-  "Description": "string (optional)",
-  "Ports": "array[Space] (must match parent block Domain)",
-  "Terminals": "array[Space] (must match parent block Codomain)"
+```
+object {
+  Processors: array[Processor] (required)
+  Wires: array[Wire] (required)
+  Systems: array[System] (required)
 }
 ```
 
@@ -32,39 +31,46 @@ And the children schemas are as follows below.
 ### Processor Schema
 
 
-```json
-{
-  "ID": "string (required)",
-  "Parent": "block_id (required)",
-  "Name": "string (required)",
-  "Description": "string (optional)",
-  "Ports": "array[Space] (must match parent block Domain)",
-  "Terminals": "array[Space] (must match parent block Codomain)"
-}
+```
+object {
+    ID: string (required)
+    Name: string (required)
+    Description: string
+    Parent: string (required)
+    Ports: array[string]
+    Terminals: array[string] (required)
+    Subsystem: object {
+      System ID: string (required)
+      Wires: array[string] (required)
+    }
+  }
 ```
 
 ### Wire Schema
 
-```json
-{
-  "ID": "string (required)",
-  "Parent": "space_id (required)",
-  "Name": "string (optional)",
-  "Description": "string (optional)",
-  "Source": "tuple(processor_id, int) (must be valid terminal)",
-  "Destination": "tuple(processor_id, int) (must be valid port)"
-}
+```
+object {
+    ID: string (required)
+    Parent: string (required)
+    Source: object {
+      Processor: string
+      Index: integer
+    }
+    Target: object {
+      Processor: string
+      Index: integer
+    }
+  }
 ```
 
 ### System Schema
 
-```json
-{
-  "ID": "string (required)",
-  "Parent": "space_id (required)",
-  "Name": "string (optional)",
-  "Description": "string (optional)",
-  "Source": "tuple(processor_id, int) (must be valid terminal)",
-  "Destination": "tuple(processor_id, int) (must be valid port)"
-}
+```
+object {
+    ID: string (required)
+    Name: string (required)
+    Description: string
+    Processors: array[string] (required)
+    Wires: array[string] (required)
+  }
 ```
