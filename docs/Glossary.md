@@ -4,9 +4,9 @@ nav_order: 2
 layout: default
 ---
 
- - Block Diagram Protocol Schema: This schema is used to validate the JSON file that is used to store the block diagram protocol. There are two components, a toolbox which describes the abstract blocks and spaces and the model which has the actual instances of the toolbox - processors, wires and systems.
-   - Toolbox Schema: This schema is used for describing a toolbox in bdp-lib.
-     - Spaces: A list of spaces in the block diagram protocol that follow the space schema. It defines the abstract classes of blocks and spaces which models will instantiate.
+ - Project: A project within the block diagram protocol. The toolbox contains the abstract representations and the workbench contains the implementations.
+   - Toolbox: The abstract classes of blocks and spaces which the workbench will instantiate.
+     - Spaces: A list of spaces in the block diagram protocol that follow the space schema. One can think of a space as a typed dictionary of data.
        - ID: The unique identifier of the space.
        - Name: The name of the space.
        - Description: The description of the space.
@@ -16,7 +16,7 @@ layout: default
        - Description: A description of the block.
        - Domain: The domain of the block which are IDs of spaces. Spaces may be repeated or it may be an empty array.
        - Codomain: The codomain of the block which are IDs of spaces. Spaces may be repeated or it may be an empty array.
-   - Model Schema: This schema is used to describe a model in bdp-lib which is the actual instances of the toolbox which it would be paired with in the large bdp schema.
+   - Workbench: The actual instances in bdp-lib which is the actual instances of the toolbox which it would be paired with in the large bdp project.
      - Processors: A list of processors in the block diagram protocol that follow the processor schema.
        - ID: A unique identifier for the processor.
        - Name: The name of the processor.
@@ -24,6 +24,9 @@ layout: default
        - Parent: The ID of the block that the processor is an instance of.
        - Ports: The IDs of spaces which must match the domain of the parent block.
        - Terminals: The IDs of spaces which must match the codomain of the parent block.
+       - Subsystem: The subsystem of the processor which is a system that the processor represents and passes its ports to and receives spaces to its terminals from.
+         - System ID: The ID of the system that the processor is a processor for.
+         - Wires: The IDs of the wires that connect the processor ports and terminals to the system ports and terminals.
      - Wires: A list of wires in the block diagram protocol that follow the wire schema.
        - ID: A unique identifier for the wire.
        - Parent: The ID of the space that the wire is passing.
