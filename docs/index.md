@@ -55,3 +55,7 @@ In summary, **spaces and blocks define the abstract model**, while **wires and p
 ## Protocol vs. Clients
 
 An important distinction is that this repository defines the **protocol** which different **clients** can utilize. Found in the documentation is the json data schema which needs to stay the same for interoperability as well as the functionality and rules that an implementation should have. This distinction is important because the separation ensures that many views on block diagrams can be created in many languages but they will all satisfy the same basic requirements and formalisms.
+
+The bdp-lib schema is purposely verbose with regards to things such as requiring declaring of the space for a wire. This attribute could very well be implied given the port and terminal have to have the matching space, but if one wants to remove it they can simply create the UX on a client which hides this part and auto-fills it.
+
+As well, there can be many output types from different clients and the protocol makes no restrictions on this. Outputted diagrams could be made with mermaid.js or with graphviz, but that is left up to client implementations.
