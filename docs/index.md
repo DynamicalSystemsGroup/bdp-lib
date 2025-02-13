@@ -6,6 +6,10 @@ nav_order: 1
 
 # Block Diagram Protocol Library
 
+What is bdp
+
+## Why bdp-lib?
+
 ## Functional Requirements
 
 1. The library provides a schema for defining out the elements of a basic block diagram.
@@ -44,3 +48,5 @@ This classification provides a clear distinction between the elements of the sys
 - **Concrete Behavior (Processor)**: An instance of a block that interacts within the system based on its structure.
 
 In summary, **spaces and blocks define the abstract model**, while **wires and processors bring it into concrete implementation** through instantiation and connectivity.
+
+## Protocol vs. Client
