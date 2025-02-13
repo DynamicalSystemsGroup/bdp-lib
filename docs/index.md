@@ -10,8 +10,9 @@ The block diagram protocol defines a schema for data that represents a block dia
 
 ## Why bdp-lib?
 
+- **Standardization**: The json schema provides a standardized way to define a block diagram
 - **Interoperability**: The protocol can be used to communicate through different clients that may enhance the base schema or use it as-is
-
+- **Open Source Software Implementations**: The bdp-lib has open source software implementations which handle a variety of use cases
 
 ## Functional Requirements
 
