@@ -1,8 +1,8 @@
 ---
-title: Toolbox Functions
-nav_order: 4
+title: Workbench Functions
+nav_order: 5
 layout: default
 parent: Functions & Validation Rules
 ---
 
-# Toolbox Functions
+# Workbench Functions
