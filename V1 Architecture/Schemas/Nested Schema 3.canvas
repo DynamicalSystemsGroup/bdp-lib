@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"b6fab004d256f8de","type":"text","text":"# Project\nComponents:\nToolbox\nWorkbench","x":-190,"y":-430,"width":160,"height":160},
+		{"id":"3df945f3f7d36b92","type":"text","text":"# Workbench\nComponents:\nList[Processor]\nList[Wire]\nList[System]","x":-30,"y":-230,"width":285,"height":160},
+		{"id":"3d7dedce274a492e","type":"text","text":"# Toolbox\nComponents:\nList[Block]\nList[Space]","x":-350,"y":-230,"width":160,"height":160},
+		{"id":"630f2a5feaf2fb22","type":"text","text":"# Processor\n\n**NOTE**: Subsystem is optional and if present turns it into a composite processor representing a system\n\nID: string (required) \n\nName: string (required) \n\nDescription: string \n\nParent: BlockID (required)\n\nPorts: array[Space.ID] \n\nTerminals: array[Space.ID] (required) \n\nSubsystem: { System ID: System.ID (required) Wires: array[string] (required) }","x":-150,"y":-30,"width":263,"height":590},
+		{"id":"110e3e478c6c326c","type":"text","text":"# System\n\nID: string (required)\n\nName: string (required) \n\nDescription: string \n\nProcessors: array[Processor.ID] (required) \n\nWires: array[Wire.ID] (required)","x":390,"y":-30,"width":310,"height":590},
+		{"id":"ae7731c5dabfb8ce","type":"text","text":"# Wire\n\nID: string (required) \n\nParent: Space.ID (required) \n\nSource:  { Processor: Processor.ID, \nIndex: integer } \n\nTarget:  { Processor: Processor.ID,\nIndex: integer }","x":135,"y":-30,"width":225,"height":590},
+		{"id":"a0eb3ee9cbb2cdd3","type":"text","text":"Similar to nodes (typed by blocks)","x":-150,"y":620,"width":263,"height":60,"color":"3"},
+		{"id":"e135c0917ca5d3a8","type":"text","text":"Similar to edges (typed by spaces)","x":135,"y":620,"width":225,"height":60,"color":"3"},
+		{"id":"f2682c67d9b9edff","type":"text","text":"Similar to Typed Multi-Digraphs with extra rules * ports can only be used once * terminals can be used any number of times","x":390,"y":590,"width":310,"height":110,"color":"3"},
+		{"id":"3e2434525fcc8541","type":"text","text":"- Project can be thought of as your working directory \n- Each level down in the actual schema refers to nesting, i.e. a project has one toolbox and this one toolbox has a list of blocks and a list of spaces which follow the schemas described under it","x":-810,"y":-450,"width":380,"height":200,"color":"3"},
+		{"id":"2575ee7921d36820","type":"text","text":"# Block\n\n{ ID: string (required)\n\nName: string (required) \n\nDescription: string\n\nDomain: array[Space.ID] (required) \n\nCodomain: array[Space.ID] (required) }","x":-880,"y":-30,"width":200,"height":590},
+		{"id":"ae9da3db023837af","type":"text","text":"# Space\n\n{ ID: string (required) \n\nName: string (required) \n\nDescription: string }","x":-655,"y":-30,"width":165,"height":590},
+		{"id":"11cab3f937d7e1eb","type":"text","text":"# Architecture\n\n- Future component that will be an abstract representation of a system\n- To be implemented much later after dogfooding","x":-470,"y":-30,"width":240,"height":590,"color":"1"}
+	],
+	"edges":[
+		{"id":"0980aa1c29d50d33","fromNode":"b6fab004d256f8de","fromSide":"bottom","toNode":"3d7dedce274a492e","toSide":"top"},
+		{"id":"7b72b0c4fb473461","fromNode":"b6fab004d256f8de","fromSide":"bottom","toNode":"3df945f3f7d36b92","toSide":"top"},
+		{"id":"d32d2f9521cbe7e2","fromNode":"3df945f3f7d36b92","fromSide":"bottom","toNode":"630f2a5feaf2fb22","toSide":"top"},
+		{"id":"72a268db645b3f47","fromNode":"3df945f3f7d36b92","fromSide":"bottom","toNode":"ae7731c5dabfb8ce","toSide":"top"},
+		{"id":"f81624a9699cd0ba","fromNode":"3d7dedce274a492e","fromSide":"left","toNode":"2575ee7921d36820","toSide":"top"},
+		{"id":"6110bad326407cae","fromNode":"3df945f3f7d36b92","fromSide":"right","toNode":"110e3e478c6c326c","toSide":"top"},
+		{"id":"934ba36f96e6eb2a","fromNode":"630f2a5feaf2fb22","fromSide":"bottom","toNode":"a0eb3ee9cbb2cdd3","toSide":"top"},
+		{"id":"1bbb0af8fcb604ad","fromNode":"ae7731c5dabfb8ce","fromSide":"bottom","toNode":"e135c0917ca5d3a8","toSide":"top"},
+		{"id":"96ad533a3d4601a6","fromNode":"110e3e478c6c326c","fromSide":"bottom","toNode":"f2682c67d9b9edff","toSide":"top"},
+		{"id":"09aa3f8d7e40bc35","fromNode":"b6fab004d256f8de","fromSide":"left","toNode":"3e2434525fcc8541","toSide":"right"},
+		{"id":"ac47d6e396332dc5","fromNode":"3d7dedce274a492e","fromSide":"left","toNode":"ae9da3db023837af","toSide":"top"},
+		{"id":"94464c9d19a4d5a4","fromNode":"3d7dedce274a492e","fromSide":"left","toNode":"11cab3f937d7e1eb","toSide":"top"}
+	]
+}

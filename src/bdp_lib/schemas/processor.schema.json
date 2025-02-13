@@ -1,8 +1,9 @@
 {"$id": "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Processor Schema",
+    "title": "Processor",
     "type": "object",
     "additionalProperties": false,
+    "description": "A processor is an instance of a block where computation or actions would happen. When the optional parameter of subsystem is present, the processor is a composite processor and it represents a system as a processor with the systsem ID it is a processor for as well as the wires that connect the processor ports and terminals to the system ports and terminals.",
     "properties": {
       "ID": {
         "type": "string",
@@ -39,6 +40,30 @@
         "items": {
           "type": "string"
         }
+      },
+      "Subsystem": {
+        "type": "object",
+        "title": "Subsystem",
+        "description": "The subsystem of the processor which is a system that the processor represents and passes its ports to and receives spaces to its terminals from.",
+        "properties": {
+          "System ID": {
+            "type": "string",
+            "title": "System ID",
+            "description": "The ID of the system that the processor is a processor for."
+          },
+          "Wires": {
+            "type": "array",
+            "title": "Wires",
+            "description": "The IDs of the wires that connect the processor ports and terminals to the system ports and terminals.",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "System ID",
+          "Wires"
+        ]
       }
     },
     "required": [

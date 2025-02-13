@@ -1,9 +1,9 @@
-{"$id": "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/model.schema.json",
+{"$id": "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/workbench.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Model Schema",
+    "title": "Workbench",
     "type": "object",
     "additionalProperties": false,
-    "description": "This schema is used to describe a model in bdp-lib which is the actual instances of the toolbox which it would be paired with in the large bdp schema.",
+    "description": "The actual instances in bdp-lib which is the actual instances of the toolbox which it would be paired with in the large bdp project.",
     "properties": {
       "Processors": {
         "type": "array",

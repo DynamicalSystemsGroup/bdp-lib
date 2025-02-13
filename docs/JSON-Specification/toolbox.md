@@ -1,43 +1,43 @@
-# Toolbox Schema Schema
+# Toolbox Schema
 
 ```txt
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json
 ```
 
-This schema is used for describing a toolbox in bdp-lib.
+The abstract classes of blocks and spaces which the workbench will instantiate.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                  |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------ |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [toolbox.schema.json](../../out/bdp_lib/schemas/toolbox.schema.json "open original schema") |
 
-## Toolbox Schema Type
+## Toolbox Type
 
-`object` ([Toolbox Schema](toolbox.md))
+`object` ([Toolbox](toolbox.md))
 
-# Toolbox Schema Properties
+# Toolbox Properties
 
-| Property          | Type    | Required | Nullable       | Defined by                                                                                                                                                    |
-| :---------------- | :------ | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Spaces](#spaces) | `array` | Required | cannot be null | [Toolbox Schema](toolbox-properties-spaces.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Spaces") |
-| [Blocks](#blocks) | `array` | Required | cannot be null | [Toolbox Schema](toolbox-properties-blocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Blocks") |
+| Property          | Type    | Required | Nullable       | Defined by                                                                                                                                             |
+| :---------------- | :------ | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Spaces](#spaces) | `array` | Required | cannot be null | [Toolbox](toolbox-properties-spaces.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Spaces") |
+| [Blocks](#blocks) | `array` | Required | cannot be null | [Toolbox](toolbox-properties-blocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Blocks") |
 
 ## Spaces
 
-A list of spaces in the block diagram protocol that follow the space schema. It defines the abstract classes of blocks and spaces which models will instantiate.
+A list of spaces in the block diagram protocol that follow the space schema. One can think of a space as a typed dictionary of data.
 
 `Spaces`
 
 *   is required
 
-*   Type: `object[]` ([Space Schema](space.md))
+*   Type: `object[]` ([Space](space.md))
 
 *   cannot be null
 
-*   defined in: [Toolbox Schema](toolbox-properties-spaces.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Spaces")
+*   defined in: [Toolbox](toolbox-properties-spaces.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Spaces")
 
 ### Spaces Type
 
-`object[]` ([Space Schema](space.md))
+`object[]` ([Space](space.md))
 
 ## Blocks
 
@@ -47,12 +47,12 @@ A list of blocks in the block diagram protocol that follow the block schema.
 
 *   is required
 
-*   Type: `object[]` ([Block Schema](block.md))
+*   Type: `object[]` ([Block](block.md))
 
 *   cannot be null
 
-*   defined in: [Toolbox Schema](toolbox-properties-blocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Blocks")
+*   defined in: [Toolbox](toolbox-properties-blocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Blocks")
 
 ### Blocks Type
 
-`object[]` ([Block Schema](block.md))
+`object[]` ([Block](block.md))
