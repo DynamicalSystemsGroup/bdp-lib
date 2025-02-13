@@ -19,11 +19,10 @@ A toolbox consists of:
 
 The top level schema of a toolbox is:
 
-```json
-{
-  "ID": "string (required)",
-  "Name": "string (required)",
-  "Description": "string (optional)"
+```
+object {
+  Spaces: array[Space] (required)
+  Blocks: array[Block] (required)
 }
 ```
 
@@ -31,22 +30,22 @@ And the children schemas are as follows below.
 
 ### Block Schema
 
-```json
-{
-  "ID": "string (required)",
-  "Name": "string (required)",
-  "Description": "string (optional)"
+```
+object {
+  ID: string (required)
+  Name: string (required)
+  Description: string
+  Domain: array[string] (required)
+  Codomain: array[string] (required)
 }
 ```
 
 ### Space Schema
 
-```json
-{
-  "ID": "string (required)",
-  "Name": "string (required)",
-  "Description": "string (optional)",
-  "Domain": "array[Space] (required, can be empty)",
-  "Codomain": "array[Space] (required, can be empty)"
+```
+object {
+  ID: string (required)
+  Name: string (required)
+  Description: string
 }
 ```
