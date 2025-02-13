@@ -5,8 +5,6 @@ layout: default
 parent: Schema & Glossary
 ---
 
-WORK IN PROGRESS - NOT READY
-
 # Toolbox
 
 A toolbox is full of abstract objects that can be thought of as reusable patterns or templates that the concrete components in a workbench satisfy.
