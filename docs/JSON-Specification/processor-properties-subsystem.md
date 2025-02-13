@@ -16,26 +16,26 @@ The subsystem of the processor which is a system that the processor represents a
 
 # Subsystem Properties
 
-| Property        | Type     | Required | Nullable       | Defined by                                                                                                                                                                                            |
-| :-------------- | :------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ID](#id)       | `string` | Optional | cannot be null | [Processor](processor-properties-subsystem-properties-system-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/ID") |
-| [Wires](#wires) | `array`  | Required | cannot be null | [Processor](processor-properties-subsystem-properties-wires.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Wires")  |
+| Property                | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                   |
+| :---------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [System ID](#system-id) | `string` | Required | cannot be null | [Processor](processor-properties-subsystem-properties-system-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/System ID") |
+| [Wires](#wires)         | `array`  | Required | cannot be null | [Processor](processor-properties-subsystem-properties-wires.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Wires")         |
 
-## ID
+## System ID
 
 The ID of the system that the processor is a processor for.
 
-`ID`
+`System ID`
 
-*   is optional
+*   is required
 
 *   Type: `string` ([System ID](processor-properties-subsystem-properties-system-id.md))
 
 *   cannot be null
 
-*   defined in: [Processor](processor-properties-subsystem-properties-system-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/ID")
+*   defined in: [Processor](processor-properties-subsystem-properties-system-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/System ID")
 
-### ID Type
+### System ID Type
 
 `string` ([System ID](processor-properties-subsystem-properties-system-id.md))
 

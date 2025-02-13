@@ -46,7 +46,7 @@
         "title": "Subsystem",
         "description": "The subsystem of the processor which is a system that the processor represents and passes its ports to and receives spaces to its terminals from.",
         "properties": {
-          "ID": {
+          "System ID": {
             "type": "string",
             "title": "System ID",
             "description": "The ID of the system that the processor is a processor for."

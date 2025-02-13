@@ -4,7 +4,7 @@
   "title": "System",
   "type": "object",
   "additionalProperties": false,
-  "description": "A system is a collection of processors and wires which when loaded represent an actual block diagram.",
+  "description": "A system is a collection of processors and wires which when loaded represent an actual block diagram. A system can be thought of as a directed multigraph.",
   "properties": {
     "ID": {
       "type": "string",
