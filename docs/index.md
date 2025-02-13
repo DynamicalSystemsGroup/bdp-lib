@@ -6,9 +6,12 @@ nav_order: 1
 
 # Block Diagram Protocol Library
 
-What is bdp
+The block diagram protocol defines a schema for data that represents a block diagram as well as functionality for these block diagrams.
 
 ## Why bdp-lib?
+
+- **Interoperability**: The protocol can be used to communicate through different clients that may enhance the base schema or use it as-is
+
 
 ## Functional Requirements
 
