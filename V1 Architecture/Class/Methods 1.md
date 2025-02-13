@@ -19,3 +19,7 @@
 - isPrimitive: Process $\rightarrow$ Bool
 - getSystem: processor $\rightarrow$ System
 - getShape: processor $\rightarrow$ Block
+
+## Project Methods
+
+- lazyLoadCompositeProcessor
