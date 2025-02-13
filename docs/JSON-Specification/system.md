@@ -4,7 +4,7 @@
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json
 ```
 
-A system is a collection of processors and wires which when loaded represent an actual block diagram.
+A system is a collection of processors and wires which when loaded represent an actual block diagram. A system can be thought of as a directed multigraph.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
