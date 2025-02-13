@@ -52,4 +52,6 @@ This classification provides a clear distinction between the elements of the sys
 
 In summary, **spaces and blocks define the abstract model**, while **wires and processors bring it into concrete implementation** through instantiation and connectivity.
 
-## Protocol vs. Client
+## Protocol vs. Clients
+
+An important distinction is that this repository defines the **protocol** which different **clients** can utilize. Found in the documentation is the json data schema which needs to stay the same for interoperability as well as the functionality and rules that an implementation should have. This distinction is important because the separation ensures that many views on block diagrams can be created in many languages but they will all satisfy the same basic requirements and formalisms.
