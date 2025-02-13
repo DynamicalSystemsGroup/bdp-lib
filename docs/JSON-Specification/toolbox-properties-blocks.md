@@ -12,4 +12,4 @@ A list of blocks in the block diagram protocol that follow the block schema.
 
 ## Blocks Type
 
-`object[]` ([Block Schema](block.md))
+`object[]` ([Block](block.md))

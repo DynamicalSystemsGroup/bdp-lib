@@ -16,10 +16,10 @@ The target of the wire/space.
 
 # Target Properties
 
-| Property                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                     |
-| :---------------------- | :-------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Processor](#processor) | `string`  | Optional | cannot be null | [Wire Schema](wire-properties-target-properties-processor.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target/properties/Processor") |
-| [Index](#index)         | `integer` | Optional | cannot be null | [Wire Schema](wire-properties-target-properties-index.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target/properties/Index")         |
+| Property                | Type      | Required | Nullable       | Defined by                                                                                                                                                                              |
+| :---------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Processor](#processor) | `string`  | Optional | cannot be null | [Wire](wire-properties-target-properties-processor.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target/properties/Processor") |
+| [Index](#index)         | `integer` | Optional | cannot be null | [Wire](wire-properties-target-properties-index.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target/properties/Index")         |
 
 ## Processor
 
@@ -33,7 +33,7 @@ The ID of the processor that the wire is going to.
 
 *   cannot be null
 
-*   defined in: [Wire Schema](wire-properties-target-properties-processor.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target/properties/Processor")
+*   defined in: [Wire](wire-properties-target-properties-processor.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target/properties/Processor")
 
 ### Processor Type
 
@@ -51,7 +51,7 @@ The index of the port that the wire is going to.
 
 *   cannot be null
 
-*   defined in: [Wire Schema](wire-properties-target-properties-index.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target/properties/Index")
+*   defined in: [Wire](wire-properties-target-properties-index.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target/properties/Index")
 
 ### Index Type
 

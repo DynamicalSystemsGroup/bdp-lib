@@ -1,4 +1,4 @@
-# Untitled string in Processor Schema Schema
+# Untitled string in Processor Schema
 
 ```txt
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Ports/items

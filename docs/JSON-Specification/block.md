@@ -1,28 +1,28 @@
-# Block Schema Schema
+# Block Schema
 
 ```txt
 https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json
 ```
 
-
+A block in the block diagram protocol which represents a function/computation that maps from a domain to a codomain.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [block.schema.json](../../out/bdp_lib/schemas/block.schema.json "open original schema") |
 
-## Block Schema Type
+## Block Type
 
-`object` ([Block Schema](block.md))
+`object` ([Block](block.md))
 
-# Block Schema Properties
+# Block Properties
 
-| Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                                        |
-| :-------------------------- | :------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ID](#id)                   | `string` | Required | cannot be null | [Block Schema](block-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/ID")                   |
-| [Name](#name)               | `string` | Required | cannot be null | [Block Schema](block-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Name")               |
-| [Description](#description) | `string` | Optional | cannot be null | [Block Schema](block-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Description") |
-| [Domain](#domain)           | `array`  | Required | cannot be null | [Block Schema](block-properties-domain.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Domain")           |
-| [Codomain](#codomain)       | `array`  | Required | cannot be null | [Block Schema](block-properties-codomain.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Codomain")       |
+| Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                                 |
+| :-------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ID](#id)                   | `string` | Required | cannot be null | [Block](block-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/ID")                   |
+| [Name](#name)               | `string` | Required | cannot be null | [Block](block-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Name")               |
+| [Description](#description) | `string` | Optional | cannot be null | [Block](block-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Description") |
+| [Domain](#domain)           | `array`  | Required | cannot be null | [Block](block-properties-domain.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Domain")           |
+| [Codomain](#codomain)       | `array`  | Required | cannot be null | [Block](block-properties-codomain.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Codomain")       |
 
 ## ID
 
@@ -36,7 +36,7 @@ A unique identifier for the block.
 
 *   cannot be null
 
-*   defined in: [Block Schema](block-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/ID")
+*   defined in: [Block](block-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/ID")
 
 ### ID Type
 
@@ -54,7 +54,7 @@ The name of the block.
 
 *   cannot be null
 
-*   defined in: [Block Schema](block-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Name")
+*   defined in: [Block](block-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Name")
 
 ### Name Type
 
@@ -72,7 +72,7 @@ A description of the block.
 
 *   cannot be null
 
-*   defined in: [Block Schema](block-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Description")
+*   defined in: [Block](block-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Description")
 
 ### Description Type
 
@@ -90,7 +90,7 @@ The domain of the block which are IDs of spaces. Spaces may be repeated or it ma
 
 *   cannot be null
 
-*   defined in: [Block Schema](block-properties-domain.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Domain")
+*   defined in: [Block](block-properties-domain.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Domain")
 
 ### Domain Type
 
@@ -108,7 +108,7 @@ The codomain of the block which are IDs of spaces. Spaces may be repeated or it 
 
 *   cannot be null
 
-*   defined in: [Block Schema](block-properties-codomain.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Codomain")
+*   defined in: [Block](block-properties-codomain.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Codomain")
 
 ### Codomain Type
 
