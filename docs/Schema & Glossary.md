@@ -4,6 +4,16 @@ nav_order: 2
 layout: default
 ---
 
+# Project, Schema & Glossary
+
+The following is the definition of a project in the block diagram protocol, a glossary of all the terms, and the entire schema.
+
+## Project
+
+A project is defined by two components: a toolbox which has the abstract components and a workbench which has the concrete components. If the data presented follows the schema, then any client should be able to interact with it.
+
+## Glossary
+
  - Project: A project within the block diagram protocol. The toolbox contains the abstract representations and the workbench contains the implementations.
    - Toolbox: The abstract classes of blocks and spaces which the workbench will instantiate.
      - Spaces: A list of spaces in the block diagram protocol that follow the space schema. One can think of a space as a typed dictionary of data.
@@ -42,3 +52,67 @@ layout: default
        - Description: A description of the system.
        - Processors: A list of processor IDs that are part of the system.
        - Wires: A list of wire IDs that are part of the system.
+
+
+## Schema
+
+The schema defined here is the entire thing, however, there are two other places which give more detailed descriptions:
+
+1. The component documentation in this section goes through each component, its schema, and any important notes about it
+2. The [JSON Documentation](./JSON-Specification/bdp.md) has highly detailed documentation on each part of the JSON schema
+
+There is also a visual representation of the nested schema below as well.
+
+```
+object {
+  Toolbox: object {
+    Spaces: array[object {
+      ID: string (required)
+      Name: string (required)
+      Description: string
+    }] (required)
+    Blocks: array[object {
+      ID: string (required)
+      Name: string (required)
+      Description: string
+      Domain: array[string] (required)
+      Codomain: array[string] (required)
+    }] (required)
+  } (required)
+  Workbench: object {
+    Processors: array[object {
+      ID: string (required)
+      Name: string (required)
+      Description: string
+      Parent: string (required)
+      Ports: array[string]
+      Terminals: array[string] (required)
+      Subsystem: object {
+        System ID: string (required)
+        Wires: array[string] (required)
+      }
+    }] (required)
+    Wires: array[object {
+      ID: string (required)
+      Parent: string (required)
+      Source: object {
+        Processor: string
+        Index: integer
+      }
+      Target: object {
+        Processor: string
+        Index: integer
+      }
+    }] (required)
+    Systems: array[object {
+      ID: string (required)
+      Name: string (required)
+      Description: string
+      Processors: array[string] (required)
+      Wires: array[string] (required)
+    }] (required)
+  } (required)
+}
+```
+
+![Nested Schema](Nested-Schema.png)
