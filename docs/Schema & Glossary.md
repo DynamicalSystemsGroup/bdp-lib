@@ -1,5 +1,5 @@
 ---
-title: Glossary
+title: Schema & Glossary
 nav_order: 2
 layout: default
 ---
