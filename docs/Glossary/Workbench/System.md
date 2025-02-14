@@ -5,4 +5,16 @@ layout: default
 parent: Workbench
 ---
 
-WORK IN PROGRESS - NOT READY
+# System
+
+## Schema
+
+```
+object {
+    ID: string (required)
+    Name: string (required)
+    Description: string
+    Processors: array[string] (required)
+    Wires: array[string] (required)
+  }
+```
