@@ -20,8 +20,8 @@ A wire connects a terminal to a port and is the implementation of an underlying 
 | :---------------- | :------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
 | [ID](#id)         | `string` | Required | cannot be null | [Wire](wire-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/ID")         |
 | [Parent](#parent) | `string` | Required | cannot be null | [Wire](wire-properties-parent.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Parent") |
-| [Source](#source) | `object` | Optional | cannot be null | [Wire](wire-properties-source.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source") |
-| [Target](#target) | `object` | Optional | cannot be null | [Wire](wire-properties-target.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target") |
+| [Source](#source) | `object` | Required | cannot be null | [Wire](wire-properties-source.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source") |
+| [Target](#target) | `object` | Required | cannot be null | [Wire](wire-properties-target.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target") |
 
 ## ID
 
@@ -65,7 +65,7 @@ The source of the wire/space.
 
 `Source`
 
-*   is optional
+*   is required
 
 *   Type: `object` ([Source](wire-properties-source.md))
 
@@ -83,7 +83,7 @@ The target of the wire/space.
 
 `Target`
 
-*   is optional
+*   is required
 
 *   Type: `object` ([Target](wire-properties-target.md))
 
