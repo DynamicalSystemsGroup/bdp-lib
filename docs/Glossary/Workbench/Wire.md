@@ -5,4 +5,21 @@ layout: default
 parent: Workbench
 ---
 
-WORK IN PROGRESS - NOT READY
+# Wire
+
+## Schema
+
+```
+object {
+    ID: string (required)
+    Parent: string (required)
+    Source: object {
+      Processor: string
+      Index: integer
+    }
+    Target: object {
+      Processor: string
+      Index: integer
+    }
+  }
+```
