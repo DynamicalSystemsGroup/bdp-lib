@@ -7,10 +7,6 @@ parent: Functions & Validation Rules
 
 # Processor Functions
 
-## Is Subsystem
-
-- isSubsystem: processor $\rightarrow$ Bool
-
 ## Is Primitive
 
 - isPrimitive: Process $\rightarrow$ Bool
