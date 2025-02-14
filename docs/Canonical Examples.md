@@ -29,3 +29,5 @@ layout: default
 ## Full Models
 
 - Placeholder for future full models represented in separate repositories
+1. Homicidal Chauffeur
+2. KOI?
