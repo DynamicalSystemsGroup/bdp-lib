@@ -22,7 +22,7 @@ A processor is an instance of a block where computation or actions would happen.
 | [Name](#name)               | `string` | Required | cannot be null | [Processor](processor-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Name")               |
 | [Description](#description) | `string` | Optional | cannot be null | [Processor](processor-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Description") |
 | [Parent](#parent)           | `string` | Required | cannot be null | [Processor](processor-properties-parent.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Parent")           |
-| [Ports](#ports)             | `array`  | Optional | cannot be null | [Processor](processor-properties-ports.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Ports")             |
+| [Ports](#ports)             | `array`  | Required | cannot be null | [Processor](processor-properties-ports.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Ports")             |
 | [Terminals](#terminals)     | `array`  | Required | cannot be null | [Processor](processor-properties-terminals.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Terminals")     |
 | [Subsystem](#subsystem)     | `object` | Optional | cannot be null | [Processor](processor-properties-subsystem.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem")     |
 
@@ -104,7 +104,7 @@ The IDs of spaces which must match the domain of the parent block.
 
 `Ports`
 
-*   is optional
+*   is required
 
 *   Type: `string[]`
 
