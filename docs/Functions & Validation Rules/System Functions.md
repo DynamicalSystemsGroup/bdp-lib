@@ -9,48 +9,51 @@ parent: Functions & Validation Rules
 
 ## Is Valid
 
-- isValid: system $\rightarrow$ Bool
+- $$\text{isValid}: \text{system} \rightarrow \text{Bool}$$
 
 ## Is Directed
 
-- isDirected: system $\rightarrow$ Bool
+- $$\text{isDirected}: \text{system} \rightarrow \text{Bool}$$
 
 ## Is Connected
 
-- isConnected: system $\rightarrow$ Bool
+- $$\text{isConnected}: \text{system} \rightarrow \text{Bool}$$
 
 ## Is Dynamical
 
-- isDynamical: system $\rightarrow$ Bool
+- $$\text{isDynamical}: \text{system} \rightarrow \text{Bool}$$
 
 ## Get Open Ports
 
-- getOpenPorts: system $\rightarrow$ List[Terminal] = List[\{Processor, Index, Type\}]
+- $$\text{getOpenPorts}: \text{system} \rightarrow \text{List[Terminal]} = \text{List}[\{\text{Processor, Index, Type}\}]$$
 
 ## Get Available Terminals
 
-- getAvailableTerminals: system $\rightarrow$ List[Terminal] = List[\{Processor, Index, Type\}]
+- $$\text{getAvailableTerminals}: \text{system} \rightarrow \text{List[Terminal]} = \text{List}[\{\text{Processor, Index, Type}\}]$$
 
 ## Get Connected Components
 
-- getConnectedComponents: $$\text{system} \rightarrow \text{List[System]}$$
+- $$\text{getConnectedComponents}: \text{system} \rightarrow \text{List[System]}$$
 
 ## Get Subsystems
 
-- getSubsystems: system $\rightarrow$ List[Processor] (subset of the processor list which isSubsystem)
+- $$\text{getSubsystems}: \text{system} \rightarrow \text{List[Processor]}$$  
+  (subset of the processor list which isSubsystem)
 
 ## Get Hierarchy
 
-- getHierarchy: system $\rightarrow$ NestedDict (primitive processors are leaves in this tree)
+- $$\text{getHierarchy}: \text{system} \rightarrow \text{NestedDict}$$  
+  (primitive processors are leaves in this tree)
 
 ## Get Spaces
 
-- getSpaces: system $\rightarrow$ List[Space]
+- $$\text{getSpaces}: \text{system} \rightarrow \text{List[Space]}$$
 
 ## Make Processor
 
-- makeProcessor:system x block x List[wires] $\rightarrow$ Processor
+- $$\text{makeProcessor}: \text{system} \times \text{block} \times \text{List[wires]} \rightarrow \text{Processor}$$
 
 ## Lazy Make Processor
 
-- Imp: system $\rightarrow$ Processor (aka "lazy make processor)
+- $$\text{Imp}: \text{system} \rightarrow \text{Processor}$$  
+  (aka "lazy make processor")  
