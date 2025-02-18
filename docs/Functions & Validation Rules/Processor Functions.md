@@ -11,12 +11,40 @@ Here’s the revised version with consistent LaTeX formatting:
 
 ## Is Primitive  
 
-- $$\text{isPrimitive}: \text{Processor} \rightarrow \text{Bool}$$  
+$$\text{isPrimitive}: \text{Processor} \rightarrow \text{Bool}$$
+
+### Description
+
+- The function will return true if there is no linked subsystem which it may be representing, i.e. it is NOT a composite block
+
+### Python Implementation
 
 ## Get System  
 
-- $$\text{getSystem}: \text{Processor} \rightarrow \text{System}$$  
+$$\text{getSystem}: \text{Processor} \rightarrow \text{System}$$  
 
-## Get Shape  
+### Description
 
-- $$\text{getShape}: \text{Processor} \rightarrow \text{Block}$$  
+- Function for getting the linked system that this processor represents
+- If there is no linked function it will return NULL
+
+### Python Implementation
+
+## Get Shape
+
+$$\text{getShape}: \text{Processor} \rightarrow \text{Block}$$  
+
+### Description
+
+- A function which returns the block that a processor is meant to be implementing
+
+### Python Implementation
+
+- The following is implemented on the python client's Processor class:
+
+```python
+class Processor:
+    ...
+    def get_shape(self):
+        return self.parent
+```
