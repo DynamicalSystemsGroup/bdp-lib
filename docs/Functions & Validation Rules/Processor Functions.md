@@ -19,4 +19,15 @@ Here’s the revised version with consistent LaTeX formatting:
 
 ## Get Shape  
 
-- $$\text{getShape}: \text{Processor} \rightarrow \text{Block}$$  
+$$\text{getShape}: \text{Processor} \rightarrow \text{Block}$$  
+
+### Description
+
+- A function which returns the block that a processor is meant to be implementing
+
+### Python Implementation
+
+- The following is implemented on the python client's Processor class:
+
+```python
+```
