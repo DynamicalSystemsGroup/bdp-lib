@@ -5,8 +5,6 @@ layout: default
 parent: Functions & Validation Rules
 ---
 
-Here’s the revised version with consistent LaTeX formatting:  
-
 # Processor Functions  
 
 ## Is Primitive  
