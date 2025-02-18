@@ -33,7 +33,7 @@ parent: Functions & Validation Rules
 
 ## Get Connected Components
 
-- getConnectedComponents: system $\rightarrow$ List[System]
+- getConnectedComponents: $$\text{system} \rightarrow \text{List[System]}$$
 
 ## Get Subsystems
 
