@@ -13,6 +13,13 @@ $$\text{isValid}: \text{system} \rightarrow \text{Bool}$$
 
 ### Description
 
+- A function which checks the following is true of the system:
+    - All inputs follow the schemas supplied
+    - All references (through IDs) are present
+    - There is one and only one wire into every port [NOTE: This means that systems which are part of composite processors are NOT valid outide of that context]
+    - All blocks are connected to at least one other block
+
+
 ### Python Implementation
 
 ## Is Directed
@@ -20,6 +27,8 @@ $$\text{isValid}: \text{system} \rightarrow \text{Bool}$$
 $$\text{isDirected}: \text{system} \rightarrow \text{Bool}$$
 
 ### Description
+
+- A function which checks that there are no loops in the system
 
 ### Python Implementation
 
@@ -74,9 +83,9 @@ $$\text{getSubsystems}: \text{system} \rightarrow \text{List[Processor]}$$
 
 
 ### Description
-
-### Python Implementation
   (subset of the processor list which isSubsystem)
+### Python Implementation
+
 
 ## Get Hierarchy
 
