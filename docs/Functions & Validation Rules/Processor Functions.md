@@ -11,13 +11,21 @@ Here’s the revised version with consistent LaTeX formatting:
 
 ## Is Primitive  
 
-- $$\text{isPrimitive}: \text{Processor} \rightarrow \text{Bool}$$  
+$$\text{isPrimitive}: \text{Processor} \rightarrow \text{Bool}$$
+
+### Description
+
+### Python Implementation
 
 ## Get System  
 
-- $$\text{getSystem}: \text{Processor} \rightarrow \text{System}$$  
+$$\text{getSystem}: \text{Processor} \rightarrow \text{System}$$  
 
-## Get Shape  
+### Description
+
+### Python Implementation
+
+## Get Shape
 
 $$\text{getShape}: \text{Processor} \rightarrow \text{Block}$$  
 
