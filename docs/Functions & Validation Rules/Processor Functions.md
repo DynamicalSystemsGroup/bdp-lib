@@ -5,16 +5,18 @@ layout: default
 parent: Functions & Validation Rules
 ---
 
-# Processor Functions
+Here’s the revised version with consistent LaTeX formatting:  
 
-## Is Primitive
+# Processor Functions  
 
-- isPrimitive: Process $\rightarrow$ Bool
+## Is Primitive  
 
-## Get System
+- $$\text{isPrimitive}: \text{Processor} \rightarrow \text{Bool}$$  
 
-- getSystem: processor $\rightarrow$ System
+## Get System  
 
-## Get Shape
+- $$\text{getSystem}: \text{Processor} \rightarrow \text{System}$$  
 
-- getShape: processor $\rightarrow$ Block
+## Get Shape  
+
+- $$\text{getShape}: \text{Processor} \rightarrow \text{Block}$$  
