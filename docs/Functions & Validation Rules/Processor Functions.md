@@ -30,4 +30,8 @@ $$\text{getShape}: \text{Processor} \rightarrow \text{Block}$$
 - The following is implemented on the python client's Processor class:
 
 ```python
+class Processor:
+    ...
+    def get_shape(self):
+        return self.parent
 ```
