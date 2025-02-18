@@ -15,6 +15,8 @@ $$\text{isPrimitive}: \text{Processor} \rightarrow \text{Bool}$$
 
 ### Description
 
+- The function will return true if there is no linked subsystem which it may be representing, i.e. it is NOT a composite block
+
 ### Python Implementation
 
 ## Get System  
@@ -22,6 +24,9 @@ $$\text{isPrimitive}: \text{Processor} \rightarrow \text{Bool}$$
 $$\text{getSystem}: \text{Processor} \rightarrow \text{System}$$  
 
 ### Description
+
+- Function for getting the linked system that this processor represents
+- If there is no linked function it will return NULL
 
 ### Python Implementation
 
