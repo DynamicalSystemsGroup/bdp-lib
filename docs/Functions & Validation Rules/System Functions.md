@@ -37,6 +37,8 @@ $$\text{isDirected}: \text{system} \rightarrow \text{Bool}$$
 $$\text{isConnected}: \text{system} \rightarrow \text{Bool}$$
 
 ### Description
+- A function which determines if there is a path between any two nodes
+- [NOTE] Do we want it to be that direction matters, i.e. there has to be looping behavior for this to be true (and everything needs to be reached by that loop even if downstream) or have it be that it just means that you couldn't partition the system into two subsystems without breaking a wiring?
 
 ### Python Implementation
 
@@ -45,6 +47,8 @@ $$\text{isConnected}: \text{system} \rightarrow \text{Bool}$$
 $$\text{isDynamical}: \text{system} \rightarrow \text{Bool}$$
 
 ### Description
+
+- [NOTE]: Is this just the opposite of is directed?
 
 ### Python Implementation
 
