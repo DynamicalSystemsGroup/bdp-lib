@@ -1,0 +1,3 @@
+[submodule "src/bdp_lib/schemas"]
+	path = src/bdp_lib/schemas
+	url = https://github.com/BlockScience/bdp-schema.git
