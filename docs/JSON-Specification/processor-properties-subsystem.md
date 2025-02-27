@@ -16,10 +16,11 @@ The subsystem of the processor which is a system that the processor represents a
 
 # Subsystem Properties
 
-| Property                | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                   |
-| :---------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [System ID](#system-id) | `string` | Required | cannot be null | [Processor](processor-properties-subsystem-properties-system-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/System ID") |
-| [Wires](#wires)         | `array`  | Required | cannot be null | [Processor](processor-properties-subsystem-properties-wires.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Wires")         |
+| Property                                | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                   |
+| :-------------------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [System ID](#system-id)                 | `string` | Required | cannot be null | [Processor](processor-properties-subsystem-properties-system-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/System ID")                 |
+| [Port Mappings](#port-mappings)         | `array`  | Required | cannot be null | [Processor](processor-properties-subsystem-properties-port-mappings.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings")         |
+| [Terminal Mappings](#terminal-mappings) | `array`  | Required | cannot be null | [Processor](processor-properties-subsystem-properties-terminal-mappings.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Terminal Mappings") |
 
 ## System ID
 
@@ -39,20 +40,38 @@ The ID of the system that the processor is a processor for.
 
 `string` ([System ID](processor-properties-subsystem-properties-system-id.md))
 
-## Wires
+## Port Mappings
 
-The IDs of the wires that connect the processor ports and terminals to the system ports and terminals.
+This array, which is equal in length to the number of ports on the processor, maps each port to an internal processor within the subsystem and its port index that the port should be passed on to.
 
-`Wires`
+`Port Mappings`
 
 *   is required
 
-*   Type: `string[]`
+*   Type: `object[]` ([Details](processor-properties-subsystem-properties-port-mappings-items.md))
 
 *   cannot be null
 
-*   defined in: [Processor](processor-properties-subsystem-properties-wires.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Wires")
+*   defined in: [Processor](processor-properties-subsystem-properties-port-mappings.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings")
 
-### Wires Type
+### Port Mappings Type
 
-`string[]`
+`object[]` ([Details](processor-properties-subsystem-properties-port-mappings-items.md))
+
+## Terminal Mappings
+
+This array, which is equal in length to the number of terminals on the processor, maps terminal port to an internal processor within the subsystem and its terminal index that the outer terminal should receive output from.
+
+`Terminal Mappings`
+
+*   is required
+
+*   Type: `object[]` ([Details](processor-properties-subsystem-properties-terminal-mappings-items.md))
+
+*   cannot be null
+
+*   defined in: [Processor](processor-properties-subsystem-properties-terminal-mappings.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Terminal Mappings")
+
+### Terminal Mappings Type
+
+`object[]` ([Details](processor-properties-subsystem-properties-terminal-mappings-items.md))
