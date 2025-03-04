@@ -246,6 +246,19 @@ $$\text{getHierarchy}: \text{system} \rightarrow \text{NestedDict}$$
 
 ### Python Implementation
 
+```python
+class System:
+    ...
+    def get_hierarchy(self):
+        out = {}
+        for processor in self.processors:
+            if processor.is_primitive():
+                out[processor.id] = processor
+            else:
+                out[processor.id] = processor.subsystem.get_hierachy()
+        return out
+```
+
 ## Get Spaces
 
 $$\text{getSpaces}: \text{system} \rightarrow \text{List[Space]}$$
