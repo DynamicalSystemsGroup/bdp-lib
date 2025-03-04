@@ -35,6 +35,17 @@ $$\text{getSystem}: \text{Processor} \rightarrow \text{System}$$
 
 ### Python Implementation
 
+```python
+class Processor:
+    ...
+    def get_system(self):
+        if self.is_primitive():
+            return None
+        else:
+            return self.subsystem
+```
+
+
 ## Get Shape
 
 $$\text{getShape}: \text{Processor} \rightarrow \text{Block}$$  
@@ -44,8 +55,6 @@ $$\text{getShape}: \text{Processor} \rightarrow \text{Block}$$
 - A function which returns the block that a processor is meant to be implementing
 
 ### Python Implementation
-
-- The following is implemented on the python client's Processor class:
 
 ```python
 class Processor:
