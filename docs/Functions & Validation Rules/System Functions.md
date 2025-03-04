@@ -179,10 +179,42 @@ $$\text{getConnectedComponents}: \text{system} \rightarrow \text{List[Processor]
 
 ### Description
 
-- Returns a list of all processors which have at least one connection
-- [NOTE]: Is this supposed to be something else?
+- This will return a nested list of processors which corresponds to different clusters of processors that are connected
+- If all components are connected, the list will be of length 1 with the that one element being a list of all processors
 
 ### Python Implementation
+
+```python
+class System:
+    ...
+    def get_connected_components(self):
+        processors = set([x.id for x in self.processors])
+        clusters = []
+        while len(processors) > 0:
+            cluster = []
+            q = [processors.pop()]
+            while len(q) > 0:
+                cur = q.pop()
+                cur = self.processors_map[cur]
+                cluster.append(cur)
+                wires = [
+                    x
+                    for x in self.wires
+                    if x.source["Processor"].id == cur.id
+                    or x.target["Processor"].id == cur.id
+                ]
+                for y in wires:
+                    x = y.target["Processor"].id
+                    if x in processors:
+                        q.append(x)
+                        processors.remove(x)
+                    x = y.source["Processor"].id
+                    if x in processors:
+                        q.append(x)
+                        processors.remove(x)
+            clusters.append(cluster)
+        return clusters
+```
 
 ## Get Subsystems
 
@@ -191,11 +223,17 @@ $$\text{getSubsystems}: \text{system} \rightarrow \text{List[Processor]}$$
 
 ### Description
 
-- This function will return the processors of the system which are also subsystems (meaning the isPrimitive function is false)
+- This function will return the subsystems that are part of this system by extracting systems from any composite processors present
 - It will only return the top level, i.e. nested subsystems will not be returned, but the getHierachy function can achieve that
 
 ### Python Implementation
 
+```python
+class System:
+    ...
+    def get_subsystems(self):
+        return [x.subsystem for x in self.processors if not x.is_primitive()]
+```
 
 ## Get Hierarchy
 
@@ -208,6 +246,19 @@ $$\text{getHierarchy}: \text{system} \rightarrow \text{NestedDict}$$
 
 ### Python Implementation
 
+```python
+class System:
+    ...
+    def get_hierarchy(self):
+        out = {}
+        for processor in self.processors:
+            if processor.is_primitive():
+                out[processor.id] = processor
+            else:
+                out[processor.id] = processor.subsystem.get_hierachy()
+        return out
+```
+
 ## Get Spaces
 
 $$\text{getSpaces}: \text{system} \rightarrow \text{List[Space]}$$
@@ -219,15 +270,30 @@ $$\text{getSpaces}: \text{system} \rightarrow \text{List[Space]}$$
 
 ### Python Implementation
 
-## Make Processor
+```python
+class System:
+    ...
+    def get_spaces(self, nested=False):
+        if not nested:
+            spaces = set().union(
+                *(
+                    [x.ports for x in self.processors]
+                    + [x.terminals for x in self.processors]
+                )
+            )
+            spaces = list(spaces)
+        else:
+            spaces = set()
+            for processor in self.processors:
+                if processor.is_primitive():
+                    spaces.update(processor.ports)
+                    spaces.update(processor.terminals)
+                else:
+                    spaces.update(processor.subsystem.get_spaces(nested=True))
+            spaces = list(spaces)
+        return spaces
+```
 
-$$\text{makeProcessor}: \text{system} \times \text{block} \times \text{List[wires]} \rightarrow \text{Processor}$$
-
-### Description
-
-- A function which takes a system, a block it should represent, and the wires necessary to link up the composite processor and then turns it into a composite processor
-
-### Python Implementation
 
 ## Lazy Make Processor
 
@@ -235,7 +301,7 @@ $$\text{Imp}: \text{system} \rightarrow \text{Processor}$$
 
 ### Description
 
-- A function which lazily makes the composite processor following these steps:
+- A function which lazily makes the composite processor that could represent a system following these steps:
 
 1. get the ports using getOpenPorts(system)
 2. assign open ports to the new processors ports (inner wiring)
@@ -247,3 +313,60 @@ $$\text{Imp}: \text{system} \rightarrow \text{Processor}$$
 8. write the new processor record to the local workbench
 
 ### Python Implementation
+
+```python
+class System:
+    ...
+    def make_processor_lazy(self):
+        # Get open ports and terminals
+        ports = self.get_open_ports()
+        terminals = self.get_available_terminals(open_only=True)
+
+        # Get spaces
+        domain = list(map(lambda x: x[2].id, ports))
+        codomain = list(map(lambda x: x[2].id, terminals))
+
+        block_id = self.id + "-CP Block"
+        processor_id = self.id + "-CP"
+
+        block_scaffold = {
+            "ID": block_id,
+            "Name": self.name + "-CP Block",
+            "Description": "A lazy loaded composite processor block for {}".format(
+                self.name
+            ),
+            "Domain": domain,
+            "Codomain": codomain,
+        }
+
+        port_mappings = []
+        for d in ports:
+            port_mappings.append({"Processor": d[0].id, "Index": d[1]})
+        terminal_mappings = []
+        for d in terminals:
+            terminal_mappings.append({"Processor": d[0].id, "Index": d[1]})
+
+        processor_scaffold = {
+            "ID": processor_id,
+            "Name": self.name + "-CP",
+            "Description": "A lazy loaded composite processor block for {}".format(
+                self.name
+            ),
+            "Parent": block_id,
+            "Ports": domain,
+            "Terminals": codomain,
+            "Subsystem": {
+                "System ID": self.id,
+                "Port Mappings": port_mappings,
+                "Terminal Mappings": terminal_mappings,
+            },
+        }
+
+        print("-----Add the following to your JSON-----")
+        print()
+        print("Add to blocks:")
+        pprint(block_scaffold)
+        print()
+        print("Add to processors:")
+        pprint(processor_scaffold)
+```
