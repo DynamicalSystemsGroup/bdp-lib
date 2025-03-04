@@ -158,6 +158,21 @@ $$\text{getAvailableTerminals}: \text{system} \rightarrow \text{List[Terminal]} 
 
 ### Python Implementation
 
+```python
+class System:
+    ...
+    def get_available_terminals(self, open_only=False):
+        out = []
+        for processor in self.processor_terminals_map:
+            for i, terminal_list in enumerate(self.processor_terminals_map[processor]):
+                if open_only:
+                    if len(terminal_list) == 0:
+                        out.append([processor, i, processor.terminals[i]])
+                else:
+                    out.append([processor, i, processor.terminals[i]])
+        return out
+```
+
 ## Get Connected Components
 
 $$\text{getConnectedComponents}: \text{system} \rightarrow \text{List[Processor]}$$
