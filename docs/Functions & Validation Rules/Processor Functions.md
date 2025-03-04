@@ -17,6 +17,13 @@ $$\text{isPrimitive}: \text{Processor} \rightarrow \text{Bool}$$
 
 ### Python Implementation
 
+```python
+class Processor:
+    ...
+    def is_primitive(self):
+        return self.subsystem is None
+```
+
 ## Get System  
 
 $$\text{getSystem}: \text{Processor} \rightarrow \text{System}$$  
