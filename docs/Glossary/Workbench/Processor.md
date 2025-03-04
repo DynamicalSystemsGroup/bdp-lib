@@ -13,22 +13,30 @@ A processor is an instance of a block that interacts within the system based on 
 
 ```
 object {
-    ID: string (required)
-    Name: string (required)
-    Description: string
-    Parent: string (required)
-    Ports: array[string]
-    Terminals: array[string] (required)
-    Subsystem: object {
-      System ID: string (required)
-      Wires: array[string] (required)
-    }
+  ID: string (required)
+  Name: string (required)
+  Description: string
+  Parent: string (required)
+  Ports: array[string] (required)
+  Terminals: array[string] (required)
+  Subsystem: object {
+    System ID: string (required)
+    Port Mappings: array[object {
+      Processor: string (required)
+      Index: integer (required)
+    }] (required)
+    Terminal Mappings: array[object {
+      Processor: string (required)
+      Index: integer (required)
+    }] (required)
   }
+}
 ```
 
 - Parent should reference an ID of a block which is the abstract class this processor implements
 - Ports and terminals should be arrays of strings which match up to IDs that spaces have
-- If the processor is a composite process, the system ID should be an ID of one of the systems in the toolbox and the wires attribute should be an array of strings which are IDs for different wires in the toolbox
+- If the processor is a composite process, the system ID should be an ID of one of the systems in the toolbox and the terminal mappings and ports mappings attribute should be an array of of processor IDs and indices which maps the sequential ports/terminals of the composite processor to where they should be passed to.
+- In the toy examples, there are examples in much more detail of how to build composite processors.
 
 ## Composite Processor
 
