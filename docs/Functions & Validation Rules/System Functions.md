@@ -43,14 +43,66 @@ $$\text{isDirected}: \text{system} \rightarrow \text{Bool}$$
 
 ### Python Implementation
 
+```python
+class System:
+    ...
+    def is_directed(self):
+        processors = set([x.id for x in self.processors])
+        while len(processors) > 0:
+            q = [processors.pop()]
+            visited = []
+            while len(q) > 0:
+                cur = q.pop()
+                visited.append(cur)
+                cur = self.processors_map[cur]
+                wires = [x for x in self.wires if x.source["Processor"].id == cur.id]
+                for x in wires:
+                    x = x.target["Processor"].id
+                    if x in processors:
+                        q.append(x)
+                        processors.remove(x)
+                    if x in visited:
+                        return False
+        return True
+```
+
 ## Is Connected
 
 $$\text{isConnected}: \text{system} \rightarrow \text{Bool}$$
 
 ### Description
-- A function which determines if there is a path between any two nodes, in the weakly connected sense
+
+- A function which determines if there is a path between any two nodes, in the weakly connected sense, i.e. either A->B or B->A would suffice for A and be being connected.
 
 ### Python Implementation
+
+```python
+class System:
+    ...
+    def is_connected(self):
+        processors = set([x.id for x in self.processors])
+
+        q = [processors.pop()]
+        while len(q) > 0:
+            cur = q.pop()
+            cur = self.processors_map[cur]
+            wires = [
+                x
+                for x in self.wires
+                if x.source["Processor"].id == cur.id
+                or x.target["Processor"].id == cur.id
+            ]
+            for y in wires:
+                x = y.target["Processor"].id
+                if x in processors:
+                    q.append(x)
+                    processors.remove(x)
+                x = y.source["Processor"].id
+                if x in processors:
+                    q.append(x)
+                    processors.remove(x)
+        return len(processors) == 0
+```
 
 ## Is Dynamical
 
