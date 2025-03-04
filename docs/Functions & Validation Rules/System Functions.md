@@ -110,9 +110,16 @@ $$\text{isDynamical}: \text{system} \rightarrow \text{Bool}$$
 
 ### Description
 
-- [NOTE]: Is this just the opposite of is directed?
+- The opposite of `IsDirected` in the sense that there is looping behavior in the system
 
 ### Python Implementation
+
+```python
+class System:
+    ...
+    def is_dynamical(self):
+        return not self.is_directed()
+```
 
 ## Get Open Ports
 
@@ -124,6 +131,18 @@ $$\text{getOpenPorts}: \text{system} \rightarrow \text{List[Port]} = \text{List}
 - The data type has a reference to the processor, the index of the port that is open and the space which that port is a type of
 
 ### Python Implementation
+
+```python
+class System:
+    ...
+    def get_open_ports(self):
+        out = []
+        for processor in self.processor_ports_map:
+            for i, port_list in enumerate(self.processor_ports_map[processor]):
+                if len(port_list) == 0:
+                    out.append([processor, i, processor.ports[i]])
+        return out
+```
 
 ## Get Available Terminals
 
