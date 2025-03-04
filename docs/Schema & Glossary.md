@@ -36,7 +36,12 @@ A project is defined by two components: a toolbox which has the abstract compone
        - Terminals: The IDs of spaces which must match the codomain of the parent block.
        - Subsystem: The subsystem of the processor which is a system that the processor represents and passes its ports to and receives spaces to its terminals from.
          - System ID: The ID of the system that the processor is a processor for.
-         - Wires: The IDs of the wires that connect the processor ports and terminals to the system ports and terminals.
+         - Port Mappings: This array, which is equal in length to the number of ports on the processor, maps each port to an internal processor within the subsystem and its port index that the port should be passed on to.
+           - Processor: The ID of the processor in the system.
+           - Index: The index of the terminal.
+         - Terminal Mappings: This array, which is equal in length to the number of terminals on the processor, maps terminal port to an internal processor within the subsystem and its terminal index that the outer terminal should receive output from.
+           - Processor: The ID of the processor in the system.
+           - Index: The index of the terminal.
      - Wires: A list of wires in the block diagram protocol that follow the wire schema.
        - ID: A unique identifier for the wire.
        - Parent: The ID of the space that the wire is passing.
@@ -85,11 +90,18 @@ object {
       Name: string (required)
       Description: string
       Parent: string (required)
-      Ports: array[string]
+      Ports: array[string] (required)
       Terminals: array[string] (required)
       Subsystem: object {
         System ID: string (required)
-        Wires: array[string] (required)
+        Port Mappings: array[object {
+          Processor: string (required)
+          Index: integer (required)
+        }] (required)
+        Terminal Mappings: array[object {
+          Processor: string (required)
+          Index: integer (required)
+        }] (required)
       }
     }] (required)
     Wires: array[object {
@@ -98,11 +110,11 @@ object {
       Source: object {
         Processor: string
         Index: integer
-      }
+      } (required)
       Target: object {
         Processor: string
         Index: integer
-      }
+      } (required)
     }] (required)
     Systems: array[object {
       ID: string (required)

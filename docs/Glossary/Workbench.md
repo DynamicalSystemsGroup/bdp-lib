@@ -33,17 +33,24 @@ And the children schemas are as follows below.
 
 ```
 object {
-    ID: string (required)
-    Name: string (required)
-    Description: string
-    Parent: string (required)
-    Ports: array[string]
-    Terminals: array[string] (required)
-    Subsystem: object {
-      System ID: string (required)
-      Wires: array[string] (required)
-    }
+  ID: string (required)
+  Name: string (required)
+  Description: string
+  Parent: string (required)
+  Ports: array[string] (required)
+  Terminals: array[string] (required)
+  Subsystem: object {
+    System ID: string (required)
+    Port Mappings: array[object {
+      Processor: string (required)
+      Index: integer (required)
+    }] (required)
+    Terminal Mappings: array[object {
+      Processor: string (required)
+      Index: integer (required)
+    }] (required)
   }
+}
 ```
 
 ### Wire Schema
