@@ -22,6 +22,17 @@ $$\text{isValid}: \text{system} \rightarrow \text{Bool}$$
 
 ### Python Implementation
 
+- The python implementation assumes certain conditions, such as all inputs adhering to the schema, during loading. If these assumptions were incorrect, an error would already occur at that stage, making additional checks in this function redundant.
+
+```python
+class System:
+    ...
+    def is_valid(self):
+        condition1 = len(self.get_open_ports()) == 0
+        condition2 = self.is_connected()
+        return condition1 and condition2
+```
+
 ## Is Directed
 
 $$\text{isDirected}: \text{system} \rightarrow \text{Bool}$$
