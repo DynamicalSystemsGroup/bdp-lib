@@ -270,15 +270,30 @@ $$\text{getSpaces}: \text{system} \rightarrow \text{List[Space]}$$
 
 ### Python Implementation
 
-## Make Processor
+```python
+class System:
+    ...
+    def get_spaces(self, nested=False):
+        if not nested:
+            spaces = set().union(
+                *(
+                    [x.ports for x in self.processors]
+                    + [x.terminals for x in self.processors]
+                )
+            )
+            spaces = list(spaces)
+        else:
+            spaces = set()
+            for processor in self.processors:
+                if processor.is_primitive():
+                    spaces.update(processor.ports)
+                    spaces.update(processor.terminals)
+                else:
+                    spaces.update(processor.subsystem.get_spaces(nested=True))
+            spaces = list(spaces)
+        return spaces
+```
 
-$$\text{makeProcessor}: \text{system} \times \text{block} \times \text{List[wires]} \rightarrow \text{Processor}$$
-
-### Description
-
-- A function which takes a system, a block it should represent, and the wires necessary to link up the composite processor and then turns it into a composite processor
-
-### Python Implementation
 
 ## Lazy Make Processor
 
@@ -286,7 +301,7 @@ $$\text{Imp}: \text{system} \rightarrow \text{Processor}$$
 
 ### Description
 
-- A function which lazily makes the composite processor following these steps:
+- A function which lazily makes the composite processor that could represent a system following these steps:
 
 1. get the ports using getOpenPorts(system)
 2. assign open ports to the new processors ports (inner wiring)
@@ -298,3 +313,60 @@ $$\text{Imp}: \text{system} \rightarrow \text{Processor}$$
 8. write the new processor record to the local workbench
 
 ### Python Implementation
+
+```python
+class System:
+    ...
+    def make_processor_lazy(self):
+        # Get open ports and terminals
+        ports = self.get_open_ports()
+        terminals = self.get_available_terminals(open_only=True)
+
+        # Get spaces
+        domain = list(map(lambda x: x[2].id, ports))
+        codomain = list(map(lambda x: x[2].id, terminals))
+
+        block_id = self.id + "-CP Block"
+        processor_id = self.id + "-CP"
+
+        block_scaffold = {
+            "ID": block_id,
+            "Name": self.name + "-CP Block",
+            "Description": "A lazy loaded composite processor block for {}".format(
+                self.name
+            ),
+            "Domain": domain,
+            "Codomain": codomain,
+        }
+
+        port_mappings = []
+        for d in ports:
+            port_mappings.append({"Processor": d[0].id, "Index": d[1]})
+        terminal_mappings = []
+        for d in terminals:
+            terminal_mappings.append({"Processor": d[0].id, "Index": d[1]})
+
+        processor_scaffold = {
+            "ID": processor_id,
+            "Name": self.name + "-CP",
+            "Description": "A lazy loaded composite processor block for {}".format(
+                self.name
+            ),
+            "Parent": block_id,
+            "Ports": domain,
+            "Terminals": codomain,
+            "Subsystem": {
+                "System ID": self.id,
+                "Port Mappings": port_mappings,
+                "Terminal Mappings": terminal_mappings,
+            },
+        }
+
+        print("-----Add the following to your JSON-----")
+        print()
+        print("Add to blocks:")
+        pprint(block_scaffold)
+        print()
+        print("Add to processors:")
+        pprint(processor_scaffold)
+```
