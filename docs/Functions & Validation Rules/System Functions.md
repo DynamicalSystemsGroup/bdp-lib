@@ -22,6 +22,17 @@ $$\text{isValid}: \text{system} \rightarrow \text{Bool}$$
 
 ### Python Implementation
 
+- The python implementation assumes certain conditions, such as all inputs adhering to the schema, during loading. If these assumptions were incorrect, an error would already occur at that stage, making additional checks in this function redundant.
+
+```python
+class System:
+    ...
+    def is_valid(self):
+        condition1 = len(self.get_open_ports()) == 0
+        condition2 = self.is_connected()
+        return condition1 and condition2
+```
+
 ## Is Directed
 
 $$\text{isDirected}: \text{system} \rightarrow \text{Bool}$$
@@ -32,14 +43,66 @@ $$\text{isDirected}: \text{system} \rightarrow \text{Bool}$$
 
 ### Python Implementation
 
+```python
+class System:
+    ...
+    def is_directed(self):
+        processors = set([x.id for x in self.processors])
+        while len(processors) > 0:
+            q = [processors.pop()]
+            visited = []
+            while len(q) > 0:
+                cur = q.pop()
+                visited.append(cur)
+                cur = self.processors_map[cur]
+                wires = [x for x in self.wires if x.source["Processor"].id == cur.id]
+                for x in wires:
+                    x = x.target["Processor"].id
+                    if x in processors:
+                        q.append(x)
+                        processors.remove(x)
+                    if x in visited:
+                        return False
+        return True
+```
+
 ## Is Connected
 
 $$\text{isConnected}: \text{system} \rightarrow \text{Bool}$$
 
 ### Description
-- A function which determines if there is a path between any two nodes, in the weakly connected sense
+
+- A function which determines if there is a path between any two nodes, in the weakly connected sense, i.e. either A->B or B->A would suffice for A and be being connected.
 
 ### Python Implementation
+
+```python
+class System:
+    ...
+    def is_connected(self):
+        processors = set([x.id for x in self.processors])
+
+        q = [processors.pop()]
+        while len(q) > 0:
+            cur = q.pop()
+            cur = self.processors_map[cur]
+            wires = [
+                x
+                for x in self.wires
+                if x.source["Processor"].id == cur.id
+                or x.target["Processor"].id == cur.id
+            ]
+            for y in wires:
+                x = y.target["Processor"].id
+                if x in processors:
+                    q.append(x)
+                    processors.remove(x)
+                x = y.source["Processor"].id
+                if x in processors:
+                    q.append(x)
+                    processors.remove(x)
+        return len(processors) == 0
+```
 
 ## Is Dynamical
 
@@ -47,9 +110,16 @@ $$\text{isDynamical}: \text{system} \rightarrow \text{Bool}$$
 
 ### Description
 
-- [NOTE]: Is this just the opposite of is directed?
+- The opposite of `IsDirected` in the sense that there is looping behavior in the system
 
 ### Python Implementation
+
+```python
+class System:
+    ...
+    def is_dynamical(self):
+        return not self.is_directed()
+```
 
 ## Get Open Ports
 
@@ -61,6 +131,18 @@ $$\text{getOpenPorts}: \text{system} \rightarrow \text{List[Port]} = \text{List}
 - The data type has a reference to the processor, the index of the port that is open and the space which that port is a type of
 
 ### Python Implementation
+
+```python
+class System:
+    ...
+    def get_open_ports(self):
+        out = []
+        for processor in self.processor_ports_map:
+            for i, port_list in enumerate(self.processor_ports_map[processor]):
+                if len(port_list) == 0:
+                    out.append([processor, i, processor.ports[i]])
+        return out
+```
 
 ## Get Available Terminals
 
@@ -75,6 +157,21 @@ $$\text{getAvailableTerminals}: \text{system} \rightarrow \text{List[Terminal]} 
 - The data type has a reference to the processor, the index of the terminal that is open and the space which that port is a type of
 
 ### Python Implementation
+
+```python
+class System:
+    ...
+    def get_available_terminals(self, open_only=False):
+        out = []
+        for processor in self.processor_terminals_map:
+            for i, terminal_list in enumerate(self.processor_terminals_map[processor]):
+                if open_only:
+                    if len(terminal_list) == 0:
+                        out.append([processor, i, processor.terminals[i]])
+                else:
+                    out.append([processor, i, processor.terminals[i]])
+        return out
+```
 
 ## Get Connected Components
 
