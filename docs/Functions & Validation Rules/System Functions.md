@@ -179,10 +179,42 @@ $$\text{getConnectedComponents}: \text{system} \rightarrow \text{List[Processor]
 
 ### Description
 
-- Returns a list of all processors which have at least one connection
-- [NOTE]: Is this supposed to be something else?
+- This will return a nested list of processors which corresponds to different clusters of processors that are connected
+- If all components are connected, the list will be of length 1 with the that one element being a list of all processors
 
 ### Python Implementation
+
+```python
+class System:
+    ...
+    def get_connected_components(self):
+        processors = set([x.id for x in self.processors])
+        clusters = []
+        while len(processors) > 0:
+            cluster = []
+            q = [processors.pop()]
+            while len(q) > 0:
+                cur = q.pop()
+                cur = self.processors_map[cur]
+                cluster.append(cur)
+                wires = [
+                    x
+                    for x in self.wires
+                    if x.source["Processor"].id == cur.id
+                    or x.target["Processor"].id == cur.id
+                ]
+                for y in wires:
+                    x = y.target["Processor"].id
+                    if x in processors:
+                        q.append(x)
+                        processors.remove(x)
+                    x = y.source["Processor"].id
+                    if x in processors:
+                        q.append(x)
+                        processors.remove(x)
+            clusters.append(cluster)
+        return clusters
+```
 
 ## Get Subsystems
 
@@ -191,11 +223,17 @@ $$\text{getSubsystems}: \text{system} \rightarrow \text{List[Processor]}$$
 
 ### Description
 
-- This function will return the processors of the system which are also subsystems (meaning the isPrimitive function is false)
+- This function will return the subsystems that are part of this system by extracting systems from any composite processors present
 - It will only return the top level, i.e. nested subsystems will not be returned, but the getHierachy function can achieve that
 
 ### Python Implementation
 
+```python
+class System:
+    ...
+    def get_subsystems(self):
+        return [x.subsystem for x in self.processors if not x.is_primitive()]
+```
 
 ## Get Hierarchy
 
