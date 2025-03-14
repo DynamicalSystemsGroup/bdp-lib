@@ -198,4 +198,4 @@
 - Things such as model execution could be split up into a library that just handles this aspect
 - The JSON schema enhancements might be better of as something like JSON LD where you bring in different enhancements/features as context and this opens the door up more and more on what extra features you can use
 - We may want to consider what is protocol level (i.e. if we define out the JSON schema for state) as well as what is client (the code to compose the local states together)
-- Even if we leave it flexible what features you adopt, it could be useful to define out the extent to which we have a "normal" set of phases to build up from a core bdp-lib block diagram all the way to entire simulations and what the intermediate steps are
+- Even if we leave it flexible what features you adopt, it could be useful to define out the extent to which we have a "normal" set of phases to build up from a core bdp-lib block diagram all the way to entire simulations and what the intermediate steps are.
