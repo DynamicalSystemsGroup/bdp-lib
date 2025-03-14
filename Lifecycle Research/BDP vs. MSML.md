@@ -1,3 +1,17 @@
+## Executive Summary
+
+- MSML is currently a superset of all bdp-lib functionality and could replicate a bdp-lib style schema by parsing out the extra pieces
+- This document outlines all the differences between the two
+- Nothing is set in stone, many of the paradigms of MSML may change if it makes it cleaner
+- It is important to consider to what extent we want to break things out, for example, we could split out certain aspects of the MSML into certain bdp-protocol enhancements, for example it might be:
+	- The schema enhancement for adding in ontologies for blocks/processors so that we can have specialized versions (i.e. a boundary action vs. a policy)
+	- The schema enhancement that allows one to represent state and parameters
+	- etc.
+- If we split it like this, we might be able to allow users to pick only the enhancements they need to add in, i.e. you might need no state representation if it is a pure dynamical system where you want to pass the state as part of the spaces
+	- But for a representation of a system with a large state, it might be better to have state abstracted out with the JSON schema enhancement
+- Some of these features might also depend on each other and would have dependencies know up front
+	- For example if you want to add the schema enhancement that allows you to say what pieces of state are updated by blocks, you would need the schema enhancement that adds the idea of state outside of the blocks
+
 ## Block/Processor Data Differences
 
 - MSML only has blocks which has sub-classes of boundary action, control action, policy and mechanism. But this can be changed moving forward.
@@ -90,3 +104,61 @@
 	- Non-supported structures of the graph made by bdp-lib wirings, i.e. if you want two ports on a processor but two separate wirings actually feed into them (but are not considered a parallel wiring)
 	- The ability to have looping for bdp-lib diagrams (right now you would have one larger wiring which calls all your sub wirings or you feed a list of wirings that should be executed sequentially 0-N times each)
 		- This could be solved by the forcing of making a "cut" in a bdp-lib diagram to denote start and finish
+
+## Spaces Differences
+
+- The only difference for spaces is that MSML requires you to give a space a schema which is a typed dictionary of name -> type. I.e. your cartesian space has {"X": "Coordinate Value Type", "Y": "Coordinate Value Type"}
+	- Coordinate value type would map to a floating point number
+	- But this specificity makes it so you understand that X and Y should only represent the value used in a coordinate and not something like a dollar amount
+## Additional MSML Components
+
+### Types
+
+- Defines out by description what types are used in the system such as "USD Currency Type" or "Data Log Type"
+- Has ability to add in mappings to programming language types so that one can automatically have strong typing on code representations of spaces or anywhere else that types are referenced (and that you can translate between different programming languages)
+### States
+
+- Defines out states in the system
+- Only required one is global state which says what the global variables used in the system are
+	- Has types attached to each
+	- Can also be things like users = List[UserEntity] in which case it represents all the local states of user entities / references to the user entities
+- Local states can also be defined here and linked to the global state / entities to make it clear which states are related directly to someone or something versus global
+- Global state is the one that the execution engine uses so all local states need to be somehow linked to an entity/the global state
+### Entities
+
+- Defines out the actors within a system
+- Similar to class definitions
+- Gets local state attached which define out what state variables are tracked
+- Can be singleton or multiple 
+
+### Parameters
+
+- Defined out as the values which can be toggled that impact blocks
+- Blocks have an attribute where they denote which parameters are used
+	- This could be a parameter like a random distribution for representing exogenous signals
+	- Or something like a parameter which defines the rate of fees charged
+- Currently three classes of parameters
+	- Behavioral: Defines out behaviors in the system like randomness of actions or how entities might act
+	- System: Any parameters related to how the logic of the system works, i.e. a fee based on system_fee parameter is charged when computing a policy
+	- Functional: Special class of parameter that for all blocks which have more than one "option" defines out which specific version of the block to use when doing execution of a simulation / wiring
+- **NOTE**: This can also be expanded out to a bring your own ontology approach
+	- The handling of how to specify which option to execute, however, might need to stay the same so we have a way to denote the way you do A/B testing of different policy options of a policy for example or different assumptions of exogenous signals by varying the boundary action options of boundary actions
+
+### Stateful Metrics
+
+- Define out all information which could be computed from pieces of state and parameters
+- This is for holding anything you do not want held in state as it would be redundant
+- Code can be mapped for executing this and having it accessible globally from all blocks
+- Useful for things like "Total Supply" coming from adding up all individual holdings between users and the treasury for example
+
+### Metrics
+
+- The same as stateful metrics except they also take in a domain as well as using stateful metrics or other metrics as input
+- These are for the same idea - repeatable computations
+- For example, if you often need to compute the size of a trade relative to the total volume, you could have a metric that takes as input the trade size in $ and then divides that by the stateful metric of "Total Supply" to return the percentage
+
+### Displays
+
+- A way to group together multiple wirings
+- Given the defined components which are wirings, it is useful for producing reports that are a view on a system, i.e. user wirings only
+- **Could be replaced by tags potentially**
