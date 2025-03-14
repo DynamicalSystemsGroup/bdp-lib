@@ -59,4 +59,29 @@ An important distinction is that this repository defines the **protocol** which 
 
 The bdp-lib schema is purposely verbose with regards to things such as requiring declaring of the space for a wire. This attribute could very well be implied given the port and terminal have to have the matching space, but if one wants to remove it they can simply create the UX on a client which hides this part and auto-fills it.
 
-As well, there can be many output types from different clients and the protocol makes no restrictions on this. Outputted diagrams could be made with mermaid.js or with graphviz, but that is left up to client implementations.
+As well, there can be many output types from different clients and the protocol makes no restrictions on this. Outputted diagrams could be made with mermaid.js or with graphviz, but that is left up to client implementations. The following is an overview of the boundaries between implementations and the protocols:
+
+```mermaid
+graph TD;
+    subgraph "Clients (Back-end)"
+        direction LR
+        pybdp["pybdp\n- Python client for bdp-lib\n- Implements all methods, validation and loading logic\n- Very basic support for writing and playing with, delegates 'nice UI' to front-ends"]
+        bdp-typescript["bdp-typescript\n- Typescript client for bdp-lib\n- Implements all methods, validation and loading logic\n- Very basic support for writing and playing with, delegates 'nice UI' to front-ends"]
+    end
+
+    subgraph "Front-ends"
+        react-bdp["React BDP Front-End\n- Provides a nice interface for users to write out BDP-compliant specs\n- Doesn't directly modify the spec but exports to JSON"]
+    end
+
+    bdp-lib["bdp-lib\n- Core protocol\n- Contains the JSON schema for defining data\n- No specific code implemented\n- Has methods specified but not implemented"]
+    instance["Instance of BDP JSON Spec\n- A compliant spec defining out a project"]
+
+    bdp-lib -->|Implemented by| pybdp
+    bdp-lib -->|Implemented by| bdp-typescript
+    pybdp <-->|Pass same tests\nCan be ported between via JSON representation| bdp-typescript
+    bdp-typescript -->|Utilized for validation, loading and methods| react-bdp
+    instance -->|Input to| pybdp
+    instance -->|Input to| bdp-typescript
+    react-bdp -->|Output of| instance
+
+```
