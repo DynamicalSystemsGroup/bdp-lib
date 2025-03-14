@@ -65,23 +65,22 @@ As well, there can be many output types from different clients and the protocol 
 graph TD;
     subgraph "Clients (Back-end)"
         direction LR
-        pybdp["pybdp\n- Python client for bdp-lib\n- Implements all methods, validation and loading logic\n- Very basic support for writing and playing with, delegates 'nice UI' to front-ends"]
-        bdp-typescript["bdp-typescript\n- Typescript client for bdp-lib\n- Implements all methods, validation and loading logic\n- Very basic support for writing and playing with, delegates 'nice UI' to front-ends"]
+        pybdp["pybdp<br/>- Python client for bdp-lib<br/>- Implements all methods, validation and loading logic<br/>- Very basic support for writing and playing with, delegates 'nice UI' to front-ends"]
+        bdp-typescript["bdp-typescript<br/>- Typescript client for bdp-lib<br/>- Implements all methods, validation and loading logic<br/>- Very basic support for writing and playing with, delegates 'nice UI' to front-ends"]
     end
 
     subgraph "Front-ends"
-        react-bdp["React BDP Front-End\n- Provides a nice interface for users to write out BDP-compliant specs\n- Doesn't directly modify the spec but exports to JSON"]
+        react-bdp["React BDP Front-End<br/>- Provides a nice interface for users to write out BDP-compliant specs<br/>- Doesn't directly modify the spec but exports to JSON"]
     end
 
-    bdp-lib["bdp-lib\n- Core protocol\n- Contains the JSON schema for defining data\n- No specific code implemented\n- Has methods specified but not implemented"]
-    instance["Instance of BDP JSON Spec\n- A compliant spec defining out a project"]
+    bdp-lib["bdp-lib<br/>- Core protocol<br/>- Contains the JSON schema for defining data<br/>- No specific code implemented<br/>- Has methods specified but not implemented"]
+    instance["Instance of BDP JSON Spec<br/>- A compliant spec defining out a project"]
 
     bdp-lib -->|Implemented by| pybdp
     bdp-lib -->|Implemented by| bdp-typescript
-    pybdp <-->|Pass same tests\nCan be ported between via JSON representation| bdp-typescript
+    pybdp <-->|Pass same tests<br/>Can be ported between via JSON representation| bdp-typescript
     bdp-typescript -->|Utilized for validation, loading and methods| react-bdp
     instance -->|Input to| pybdp
     instance -->|Input to| bdp-typescript
     react-bdp -->|Output of| instance
-
 ```
