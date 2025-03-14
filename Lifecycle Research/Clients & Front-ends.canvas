@@ -5,9 +5,8 @@
 		{"id":"54a56a5965d12b47","type":"file","file":"Components/pybdp.md","x":-530,"y":-60,"width":400,"height":240},
 		{"id":"acba3322e8b194f8","type":"file","file":"Components/bdp-typescript.md","x":280,"y":-60,"width":400,"height":240},
 		{"id":"8eee4b6134734c93","type":"file","file":"Components/bdp-lib.md","x":-120,"y":-400,"width":400,"height":200},
-		{"id":"6916cbf1210dc5ed","type":"file","file":"Components/React BDP Front-End.md","x":280,"y":580,"width":400,"height":220},
-		{"id":"9c000c7254e43bfe","type":"file","file":"Components/MSML.md","x":-515,"y":580,"width":370,"height":220},
-		{"id":"a349e866d338cf6b","x":-130,"y":280,"width":410,"height":160,"type":"file","file":"Components/Instance of BDP JSON Spec.md"}
+		{"id":"a349e866d338cf6b","type":"file","file":"Components/Instance of BDP JSON Spec.md","x":-130,"y":280,"width":410,"height":160},
+		{"id":"6916cbf1210dc5ed","type":"file","file":"Components/React BDP Front-End.md","x":-120,"y":580,"width":400,"height":220}
 	],
 	"edges":[
 		{"id":"1ab8e36aa3dd74b8","fromNode":"54a56a5965d12b47","fromSide":"right","toNode":"acba3322e8b194f8","toSide":"left","fromEnd":"arrow","label":"Pass same tests\n\nCan be ported between\nvia json representation"},
@@ -15,7 +14,6 @@
 		{"id":"62efbb79925f1014","fromNode":"8eee4b6134734c93","fromSide":"bottom","toNode":"acba3322e8b194f8","toSide":"top","label":"Implements"},
 		{"id":"11300c6e93efa958","fromNode":"acba3322e8b194f8","fromSide":"bottom","toNode":"6916cbf1210dc5ed","toSide":"top","label":"Will utilize for validation, loading\nand methods"},
 		{"id":"bf6d1a7534cc0aaa","fromNode":"6916cbf1210dc5ed","fromSide":"top","toNode":"a349e866d338cf6b","toSide":"bottom","label":"Output"},
-		{"id":"3a5876f02532c0fc","fromNode":"9c000c7254e43bfe","fromSide":"top","toNode":"a349e866d338cf6b","toSide":"bottom","label":"Output"},
 		{"id":"00b4b414ae530c10","fromNode":"a349e866d338cf6b","fromSide":"top","toNode":"54a56a5965d12b47","toSide":"bottom","label":"Input"},
 		{"id":"dd7713a988899dac","fromNode":"a349e866d338cf6b","fromSide":"top","toNode":"acba3322e8b194f8","toSide":"bottom","label":"Input"}
 	]

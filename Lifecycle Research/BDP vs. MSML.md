@@ -27,9 +27,31 @@
 	- Boundary Action: Actions which entities initiate, this could be something like a trader entity makes a trade
 	- Control Action: Actions abstracted to what the overall system will do, i.e. if a smart contract every hour initiates a checking for quality of service metrics which then aggregates
 	- Policy: Blocks for defining out all the logic, i.e. if you have something like uniswap, you might have a swap boundary action which leads into a policy which determines what amount you get out and any downstream impacts to state (through passing spaces to mechanisms)
-	- Mechanisms
+	- Mechanisms: Blocks which are meant to be the central place for certain kinds of state updates so that you can add things like 1. state variable update listeners 2. constraints 3. have a central location to update for scenarios where you might have the mechanism update on state variable but later on want to expand it to also update another linked state variable... for example if you were updating a stake amount variable each time but later wanted to add in a way to add to some log what the dates are that different stake can be unstaked at
 - This is currently rigid but can be updated to be based on a tags system or bring your own ontology kind of paradigm
 
-## MSML Wiring vs. BDP Systems & Wirings
+### Bring your Own Ontology
 
+- There are three aspects to this potential change:
+	- Tagging for visibility
+	- Modifying constructors of the block class so that making a block is like a factory method and you can toggle certain feature on or off depending on the specific ontology
+	- Allowing a flexible way to have different breakdowns of the types of blocks, i.e. allowing a user to come in and say I want to denote blocks as either on-chain or off-chain for crypto systems
+
+#### Tagging
+
+- The idea with tagging would be that either one or multiple tags could be attached to blocks
+- This could allow for quick filtering of different blocks to look at something like "user actions"
+#### Modifying Constructors
+
+- Right now, for example, only boundary actions are allowed to have "called_by" because they are the only blocks that are initiated by an entity
+- Mechanisms are the only blocks that are able to have state updates
+- Turning this modular means a user can denote which features are or are not used within a block
+- This could be something like a tag that says "Updates State" and this turns on state updating in the factory method or "Called by Entity" which makes it accept the data for what entities are triggering it
+
+#### Flexible Schemas
+
+- Define a way to have a set of subsets of block that have these tags so that you can define out specific versions of blocks, but you as the users write an ontology that defines out what those specific versions are
+- Built-in, off-the-shelf options like the Boundary Action/Control Action/Policy/Mechanism ontology
+
+## MSML Wiring vs. BDP Systems & Wirings
 
