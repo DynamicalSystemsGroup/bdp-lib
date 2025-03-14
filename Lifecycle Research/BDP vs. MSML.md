@@ -162,3 +162,40 @@
 - A way to group together multiple wirings
 - Given the defined components which are wirings, it is useful for producing reports that are a view on a system, i.e. user wirings only
 - **Could be replaced by tags potentially**
+- Also can be implemented in code and then accessed globally by blocks
+
+## Extra MSML Outputs
+
+### Obsidian Vault & Reports
+
+- MSML produces an obsidian vault which has a markdown note for every single component and automatically writes out all the connections between them
+- Also has specific PDF and markdown reports that can be auto-written from an MSML spec
+
+### Block & Wiring Execution
+
+- Individual wirings and blocks can be executed as long as they or their components have code attached
+- Allows you to write block by block and then wiring by wiring the implementation instead of the entire simulation
+### MSML Execution Engine
+
+- Given a set of parameters and initial state (defined with the schema of global state), one can run one or multiple experiments as long as all code is wired up
+- All blocks/wirings must have code attatched
+
+### cadCAD Execution
+
+- Can create a factory of cadCAD models which gives a data scientist the state and parameters required to run as well as an executable object which give just those two runs as code without requiring the user to even know what is happening at the MSML level
+- Provides a strict interface to separate MSML writing from running an actual model
+
+### Meta-Programming
+
+- Work in progress work for writing out MSML specs to specific software packages in any language
+- Given bound code, has methods which automatically translate all the code and metadata into nicely written and typed functions
+- Can return something like all the blocks defined out as their functions
+- And all the wirings defined out as the specific instructions that make them correctly run for execution
+
+## Conclusions & Thoughts
+
+- Given all this information we need to potentially break MSML into multiple components
+- Things such as model execution could be split up into a library that just handles this aspect
+- The JSON schema enhancements might be better of as something like JSON LD where you bring in different enhancements/features as context and this opens the door up more and more on what extra features you can use
+- We may want to consider what is protocol level (i.e. if we define out the JSON schema for state) as well as what is client (the code to compose the local states together)
+- Even if we leave it flexible what features you adopt, it could be useful to define out the extent to which we have a "normal" set of phases to build up from a core bdp-lib block diagram all the way to entire simulations and what the intermediate steps are
