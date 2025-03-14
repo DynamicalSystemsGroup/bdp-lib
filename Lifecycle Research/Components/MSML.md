@@ -1,3 +1,0 @@
-- Will be a superset of the bdp-protocol
-- Allow exporting to bdp-lib compliant JSON specs
-- Interoperable with any clients given the JSON

@@ -1,1 +1,0 @@
-- A compliant spec defining out a project
