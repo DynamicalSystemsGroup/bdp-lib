@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"ba2520a0eae4571e","x":-550,"y":-100,"width":1270,"height":300,"type":"group","label":"Clients - \"Back-end\""},
+		{"id":"b832c2e598b06c8b","x":-535,"y":360,"width":1255,"height":280,"type":"group","label":"Front-end"},
+		{"id":"54a56a5965d12b47","x":-530,"y":-60,"width":400,"height":200,"type":"file","file":"Components/pybdp.md"},
+		{"id":"acba3322e8b194f8","x":280,"y":-60,"width":400,"height":240,"type":"file","file":"Components/bdp-typescript.md"},
+		{"id":"8eee4b6134734c93","x":-120,"y":-400,"width":400,"height":200,"type":"file","file":"Components/bdp-lib.md"},
+		{"id":"6916cbf1210dc5ed","x":280,"y":400,"width":400,"height":220,"type":"file","file":"Components/React BDP Front-End.md"},
+		{"id":"9c000c7254e43bfe","x":-515,"y":400,"width":370,"height":220,"type":"file","file":"Components/MSML.md"}
+	],
+	"edges":[
+		{"id":"1ab8e36aa3dd74b8","fromNode":"54a56a5965d12b47","fromSide":"right","toNode":"acba3322e8b194f8","toSide":"left","fromEnd":"arrow","label":"Pass same tests\n\nCan be ported between\nvia json representation"},
+		{"id":"fc8419452affe50f","fromNode":"8eee4b6134734c93","fromSide":"bottom","toNode":"54a56a5965d12b47","toSide":"top","label":"Implements"},
+		{"id":"62efbb79925f1014","fromNode":"8eee4b6134734c93","fromSide":"bottom","toNode":"acba3322e8b194f8","toSide":"top","label":"Implements"},
+		{"id":"11300c6e93efa958","fromNode":"acba3322e8b194f8","fromSide":"bottom","toNode":"6916cbf1210dc5ed","toSide":"top","label":"Will utilize for validation and loading"}
+	]
+}

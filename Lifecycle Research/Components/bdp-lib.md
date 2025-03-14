@@ -1,0 +1,4 @@
+- Core protocol
+- Contains the JSON schema for defining data
+- No specific code implemented
+- Has methods specified but not implemented

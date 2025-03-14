@@ -1,0 +1,2 @@
+- Provides a nice interface for users to write out bdp compliant specs
+- Don't need to directly modify the spec but will be able to export to a JSON spec so that clients can use it stand-alone

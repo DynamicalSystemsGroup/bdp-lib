@@ -1,0 +1,4 @@
+- Typescript client for bdp-lib
+- Implements all methods, validation and loading logic
+- Implements all methods, validation and loading logic
+- Very basic support for writing and playing with, delegates "nice UI" to front-ends
