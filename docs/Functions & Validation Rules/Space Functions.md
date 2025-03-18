@@ -6,3 +6,5 @@ parent: Functions & Validation Rules
 ---
 
 # Space Functions
+
+- No space functions currently
