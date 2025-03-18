@@ -6,3 +6,5 @@ parent: Functions & Validation Rules
 ---
 
 # Block Functions
+
+- Currently no specific block functions
