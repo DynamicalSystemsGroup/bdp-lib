@@ -24,6 +24,17 @@ class Processor:
         return self.subsystem is None
 ```
 
+### TypeScript Implementation
+
+```typescript
+class Processor {
+    ...
+    isPrimitive(): boolean {
+        return this.subsystem === null;
+    }
+}
+```
+
 ## Get System  
 
 $$\text{getSystem}: \text{Processor} \rightarrow \text{System}$$  
@@ -45,6 +56,20 @@ class Processor:
             return self.subsystem
 ```
 
+### TypeScript Implementation
+
+```typescript
+class Processor {
+    ...
+    getSystem(): any {
+        if (this.isPrimitive()) {
+            return null;
+        } else {
+            return this.subsystem;
+        }
+    }
+}
+```
 
 ## Get Shape
 
@@ -61,4 +86,15 @@ class Processor:
     ...
     def get_shape(self):
         return self.parent
+```
+
+### TypeScript Implementation
+
+```typescript
+class Processor {
+    ...
+    getShape(): Block {
+        return this.parent;
+    }
+}
 ```
