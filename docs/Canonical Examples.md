@@ -4,30 +4,30 @@ nav_order: 6
 layout: default
 ---
 
-## Toy Models (WORK IN PROGRESS NOT READY)
+- There are numerous toy examples and full canonical examples for illustrating how to get started with the block diagram protocol
 
-### 1. Simple Dynamical System Plant
-- **Description**: A basic model demonstrating a single processor with a feedback loop.
-- **Model JSON**: [simple_model.json](models/simple_model.json)
+## Toy Models
 
-### 2. Closed-Loop Control System
-- **Description**: A model illustrating a closed-loop control system with a plant, controller, and sensor.
-- **Model JSON**: [control_loop_model.json](models/control_loop_model.json)
+- The overall repository hosting the toy models can be found [here](https://github.com/BlockScience/bdp-toy-examples)
 
-### 3. Two-Player Game Model
-- **Description**: A model representing a two-player game with strategies and payoffs.
-- **Model JSON**: [game_model.json](models/game_model.json)
+### Composite Processor Mini Example
 
-### 4. Adaptive Strategy Model
-- **Description**: This model introduces an adaptive strategy where the decision-making process incorporates learning from past experiences to refine the policy over time.
-- **Model JSON**: [adaptive_strategy.json](models/adaptive_strategy.json)
+- A simple example which shows how to build up to a composite processor but with a small model
+- The notebook can be found [here](https://github.com/BlockScience/bdp-toy-examples/blob/main/Composite%20Processor%20Mini/Composite%20Process%20Mini.ipynb)
 
-### 5. Iterated Game with Learning
-- **Description**: An extension of the two-player game model where both players employ adaptive strategies, allowing them to learn and evolve their strategies over multiple iterations.
-- **Model JSON**: [iterated_game_with_learning.json](models/iterated_game_with_learning.json)
+### Composite Processor Example
 
-## Full Models
+- An example of building up a composite processor with a larger subsystem
+- The notebook can be found [here](https://github.com/BlockScience/bdp-toy-examples/blob/main/Composite%20Processor%20Mini/Composite%20Process%20Mini.ipynb)
 
-- Placeholder for future full models represented in separate repositories
-1. Homicidal Chauffeur
-2. KOI?
+### Dynamical Systems
+
+- An example of how a saved JSON file can be loaded and used to display five different versions of dynamical systems
+- The notebook can be found [here](https://github.com/BlockScience/bdp-toy-examples/blob/main/Dynamical%20Systems/Dynamical%20Systems.ipynb)
+
+## Full Canonical examples
+
+### Homicidal Chauffeur (Work in Progress)
+
+- A canonical example based on the classic "Homicidal Chauffeur" problem
+- The repository can be found [here](https://github.com/BlockScience/homicidal-chauffeur-canonical-example)
