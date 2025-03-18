@@ -33,6 +33,19 @@ class System:
         return condition1 and condition2
 ```
 
+### TypeScript Implementation
+
+```typescript
+class System {
+    ...
+    isValid(): boolean {
+        const condition1 = this.getOpenPorts().length === 0;
+        const condition2 = this.isConnected();
+        return condition1 && condition2;
+    }
+}
+```
+
 ## Is Directed
 
 $$\text{isDirected}: \text{system} \rightarrow \text{Bool}$$
@@ -64,6 +77,38 @@ class System:
                     if x in visited:
                         return False
         return True
+```
+
+### TypeScript Implementation
+
+```typescript
+class System {
+    ...
+    isDirected(): boolean {
+        const processors = new Set(this.processors.map(x => x.id));
+        while (processors.size > 0) {
+            const q = [processors.values().next().value];
+            const visited: string[] = [];
+            while (q.length > 0) {
+                let cur_name = q.pop()!;
+                visited.push(cur_name);
+                const cur = this.processorsMap[cur_name];
+                const wires = this.wires.filter(x => x.source.Processor.id === cur.id);
+                for (const x of wires) {
+                    const targetId = x.target.Processor.id;
+                    if (processors.has(targetId)) {
+                        q.push(targetId);
+                        processors.delete(targetId);
+                    }
+                    if (visited.includes(targetId)) {
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
+}
 ```
 
 ## Is Connected
@@ -104,6 +149,37 @@ class System:
         return len(processors) == 0
 ```
 
+### TypeScript Implementation
+
+```typescript
+class System {
+    ...
+    isConnected(): boolean {
+        const processors = new Set(this.processors.map(x => x.id));
+
+        const q = [processors.values().next().value];
+        while (q.length > 0) {
+            let cur_name = q.pop()!;
+            const cur = this.processorsMap[cur_name];
+            const wires = this.wires.filter(x => x.source.Processor.id === cur.id || x.target.Processor.id === cur.id);
+            for (const y of wires) {
+                let x = y.target.Processor.id;
+                if (processors.has(x)) {
+                    q.push(x);
+                    processors.delete(x);
+                }
+                x = y.source.Processor.id;
+                if (processors.has(x)) {
+                    q.push(x);
+                    processors.delete(x);
+                }
+            }
+        }
+        return processors.size === 0;
+    }
+}
+```
+
 ## Is Dynamical
 
 $$\text{isDynamical}: \text{system} \rightarrow \text{Bool}$$
@@ -119,6 +195,17 @@ class System:
     ...
     def is_dynamical(self):
         return not self.is_directed()
+```
+
+### TypeScript Implementation
+
+```typescript
+class System {
+    ...
+    isDynamical(): boolean {
+        return !this.isDirected();
+    }
+}
 ```
 
 ## Get Open Ports
@@ -142,6 +229,25 @@ class System:
                 if len(port_list) == 0:
                     out.append([processor, i, processor.ports[i]])
         return out
+```
+
+### TypeScript Implementation
+
+```typescript
+class System {
+    ...
+    getOpenPorts(): [Processor, number, Space][] {
+        const out: [Processor, number, Space][] = [];
+        for (const processor of this.processors) {
+            for (let i = 0; i < this.processorPortsMap[processor.id].length; i++) {
+                if (this.processorPortsMap[processor.id][i].length === 0) {
+                    out.push([processor, i, processor.ports[i]]);
+                }
+            }
+        }
+        return out;
+    }
+}
 ```
 
 ## Get Available Terminals
@@ -171,6 +277,29 @@ class System:
                 else:
                     out.append([processor, i, processor.terminals[i]])
         return out
+```
+
+### TypeScript Implementation
+
+```typescript
+class System {
+    ...
+    getAvailableTerminals(open_only = false): [Processor, number, Space][] {
+        const out: [Processor, number, Space][] = [];
+        for (const processor of this.processors) {
+            for (let i = 0; i < this.processorTerminalsMap[processor.id].length; i++) {
+                if (open_only) {
+                    if (this.processorTerminalsMap[processor.id][i].length === 0) {
+                        out.push([processor, i, processor.terminals[i]]);
+                    }
+                } else {
+                    out.push([processor, i, processor.terminals[i]]);
+                }
+            }
+        }
+        return out;
+    }
+}
 ```
 
 ## Get Connected Components
@@ -216,6 +345,44 @@ class System:
         return clusters
 ```
 
+
+### TypeScript Implementation
+
+```typescript
+class System {
+    ...
+    getConnectedComponents(): Processor[][] {
+        const processors = new Set(this.processors.map(x => x.id));
+        const clusters: Processor[][] = [];
+        while (processors.size > 0) {
+            const cluster: Processor[] = [];
+            const q = [processors.values().next().value];
+            processors.delete(q[0]!);
+            while (q.length > 0) {
+                let cur_name = q.pop()!;
+                const cur = this.processorsMap[cur_name];
+                cluster.push(cur);
+                const wires = this.wires.filter(x => x.source.Processor.id === cur.id || x.target.Processor.id === cur.id);
+                for (const y of wires) {
+                    let x = y.target.Processor.id;
+                    if (processors.has(x)) {
+                        q.push(x);
+                        processors.delete(x);
+                    }
+                    x = y.source.Processor.id;
+                    if (processors.has(x)) {
+                        q.push(x);
+                        processors.delete(x);
+                    }
+                }
+            }
+            clusters.push(cluster);
+        }
+        return clusters;
+    }
+}
+```
+
 ## Get Subsystems
 
 $$\text{getSubsystems}: \text{system} \rightarrow \text{List[Processor]}$$  
@@ -233,6 +400,17 @@ class System:
     ...
     def get_subsystems(self):
         return [x.subsystem for x in self.processors if not x.is_primitive()]
+```
+
+### TypeScript Implementation
+
+```typescript
+class System {
+    ...
+    getSubsystems(): any[] {
+        return this.processors.filter(x => !x.isPrimitive()).map(x => x.subsystem);
+    }
+}
 ```
 
 ## Get Hierarchy
@@ -257,6 +435,25 @@ class System:
             else:
                 out[processor.id] = processor.subsystem.get_hierachy()
         return out
+```
+
+### TypeScript Implementation
+
+```typescript
+class System {
+    ...
+    getHierarchy(): { [key: string]: any } {
+        const out: { [key: string]: any } = {};
+        for (const processor of this.processors) {
+            if (processor.isPrimitive()) {
+                out[processor.id] = processor;
+            } else {
+                out[processor.id] = processor.subsystem.get_hierarchy();
+            }
+        }
+        return out;
+    }
+}
 ```
 
 ## Get Spaces
@@ -294,6 +491,29 @@ class System:
         return spaces
 ```
 
+### TypeScript Implementation
+
+```typescript
+class System {
+    ...
+    getSpaces(nested = false): Space[] {
+        let spaces: Set<Space>;
+        if (!nested) {
+            spaces = new Set(this.processors.flatMap(x => [...x.ports, ...x.terminals]));
+        } else {
+            spaces = new Set();
+            for (const processor of this.processors) {
+                if (processor.isPrimitive()) {
+                    spaces = new Set([...spaces, ...processor.ports, ...processor.terminals]);
+                } else {
+                    spaces = new Set([...spaces, ...processor.subsystem.get_spaces(true)]);
+                }
+            }
+        }
+        return Array.from(spaces);
+    }
+}
+```
 
 ## Lazy Make Processor
 
@@ -369,4 +589,57 @@ class System:
         print()
         print("Add to processors:")
         pprint(processor_scaffold)
+```
+
+### TypeScript Implementation
+
+```typescript
+class System {
+    ...
+    makeProcessorLazy() {
+        // Get open ports and terminals
+        const ports = this.getOpenPorts();
+        const terminals = this.getAvailableTerminals(true);
+
+        // Get spaces
+        const domain = ports.map(x => x[2].id);
+        const codomain = terminals.map(x => x[2].id);
+
+        const block_id = `${this.id}-CP Block`;
+        const processor_id = `${this.id}-CP`;
+
+        const block_scaffold = {
+            ID: block_id,
+            Name: `${this.name}-CP Block`,
+            Description: `A lazy loaded composite processor block for ${this.name}`,
+            Domain: domain,
+            Codomain: codomain,
+        };
+
+        const port_mappings = ports.map(d => ({ Processor: d[0].id, Index: d[1] }));
+        const terminal_mappings = terminals.map(d => ({ Processor: d[0].id, Index: d[1] }));
+
+        const processor_scaffold = {
+            ID: processor_id,
+            Name: `${this.name}-CP`,
+            Description: `A lazy loaded composite processor block for ${this.name}`,
+            Parent: block_id,
+            Ports: domain,
+            Terminals: codomain,
+            Subsystem: {
+                "System ID": this.id,
+                "Port Mappings": port_mappings,
+                "Terminal Mappings": terminal_mappings,
+            },
+        };
+
+        console.log("-----Add the following to your JSON-----");
+        console.log();
+        console.log("Add to blocks:");
+        console.log(block_scaffold);
+        console.log();
+        console.log("Add to processors:");
+        console.log(processor_scaffold);
+    }
+}
 ```

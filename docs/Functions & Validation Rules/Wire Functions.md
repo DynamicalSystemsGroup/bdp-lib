@@ -6,3 +6,5 @@ parent: Functions & Validation Rules
 ---
 
 # Wire Functions
+
+- No wire functions currently
