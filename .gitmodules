@@ -1,3 +1,12 @@
 [submodule "src/bdp_lib/schemas"]
 	path = src/bdp_lib/schemas
 	url = https://github.com/BlockScience/bdp-schema.git
+[submodule "clients/pybdp"]
+	path = clients/pybdp
+	url = https://github.com/BlockScience/pybdp.git
+[submodule "clients/bdp-typescript"]
+	path = clients/bdp-typescript
+	url = https://github.com/BlockScience/bdp-typescript.git
+[submodule "front-ends/bdp-frontend"]
+	path = front-ends/bdp-frontend
+	url = https://github.com/BlockScience/bdp-frontend.git
