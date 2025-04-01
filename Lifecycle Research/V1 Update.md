@@ -17,13 +17,24 @@
 
 ## Phase 2 - BDP & Literature Review
 
+- The next phase is taking the SOW produced prior and also client documentation/academic literature to produce a BDP-spec and the current economic mechanisms + candidate mechanisms
+- As well a project plan can come out of the triage protocol
+- Literature review is transforming the documentation and academic literature into internal documentation as well as the spaces needed for the economics flow
+- Requirements engineering comes up with conceptual requirements which then leads into iterations on the BDP spec
+
 
 ![[Pasted image 20250401113147.png]]
 
 ## Phase 3 - Economics
 
+- Given a BDP spec and the economic spaces, economic engineering comes up with the requirements and mechanisms agreed upon
+- An empty MSML spec also gets initialized
+
 ![[Pasted image 20250401113219.png]]
 
 ## Phase 4 - MSML Concept Spec
+
+- This is the first canvas that we break out into a separate file, we see all the state up until now on the left hand side
+- Given all the economics and requirements work as well as the current BDP spec and MSML spec we iterate until we have a finalized MSML spec for concept
 
 ![[Pasted image 20250401113307.png]]
