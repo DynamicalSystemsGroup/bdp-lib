@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"14e357c4adbd914f","type":"group","x":-260,"y":-160,"width":1160,"height":460,"label":"SOW Negotiation"},
+		{"id":"521abe74176e502c","type":"text","text":"Write Initial SOW","x":-240,"y":-140,"width":140,"height":80},
+		{"id":"50d8157e91fccb67","type":"text","text":"RFP","x":-240,"y":-280,"width":90,"height":60,"color":"4"},
+		{"id":"c7fe80c27d4f6238","type":"text","text":"SOW","x":-60,"y":-130,"width":100,"height":60,"color":"4"},
+		{"id":"4cae90a8ae7713d1","type":"text","text":"Client Review","x":-220,"y":0,"width":140,"height":60},
+		{"id":"bb411e054fa734d3","type":"text","text":"SOW","x":-40,"y":90,"width":120,"height":60,"color":"4"},
+		{"id":"0ac5a2e5c5b49da3","type":"text","text":"SOW Commentary","x":-40,"y":0,"width":160,"height":60,"color":"4"},
+		{"id":"4b250331e2b89f6c","type":"text","text":"SOW Decision (Sign, Terminate, Further Iteration)","x":-40,"y":180,"width":280,"height":80,"color":"4"},
+		{"id":"61712fa87b92f14c","type":"text","text":"SOW Switch","x":280,"y":60,"width":250,"height":60},
+		{"id":"61573a925a2686ba","x":280,"y":-30,"width":250,"height":60,"type":"text","text":"Update SOW"},
+		{"id":"9fcf894d47f9c943","x":580,"y":60,"width":250,"height":60,"type":"text","text":"Log Failed SOW Signing"},
+		{"id":"97095862f4c433b6","x":280,"y":150,"width":250,"height":60,"type":"text","text":"Finalize SOW"},
+		{"id":"41709a4e790f7e8a","type":"text","text":"SOW","x":345,"y":340,"width":120,"height":60,"color":"4"}
+	],
+	"edges":[
+		{"id":"64b264b0831532b3","fromNode":"50d8157e91fccb67","fromSide":"bottom","toNode":"521abe74176e502c","toSide":"top"},
+		{"id":"5826830462135dd5","fromNode":"521abe74176e502c","fromSide":"right","toNode":"c7fe80c27d4f6238","toSide":"left"},
+		{"id":"006cbd6aceb7c10c","fromNode":"c7fe80c27d4f6238","fromSide":"bottom","toNode":"4cae90a8ae7713d1","toSide":"top"},
+		{"id":"fd46341289632046","fromNode":"4cae90a8ae7713d1","fromSide":"right","toNode":"0ac5a2e5c5b49da3","toSide":"left"},
+		{"id":"45cc56984425fc1a","fromNode":"4cae90a8ae7713d1","fromSide":"right","toNode":"bb411e054fa734d3","toSide":"left"},
+		{"id":"b87943e0e716cca0","fromNode":"4cae90a8ae7713d1","fromSide":"right","toNode":"4b250331e2b89f6c","toSide":"left"},
+		{"id":"139f8b381b01d94a","fromNode":"0ac5a2e5c5b49da3","fromSide":"right","toNode":"61712fa87b92f14c","toSide":"left"},
+		{"id":"dac7a802d050fd30","fromNode":"bb411e054fa734d3","fromSide":"right","toNode":"61712fa87b92f14c","toSide":"left"},
+		{"id":"720630b7f5761fbf","fromNode":"4b250331e2b89f6c","fromSide":"right","toNode":"61712fa87b92f14c","toSide":"left"},
+		{"id":"4294f05e1bcfe72d","fromNode":"61712fa87b92f14c","fromSide":"top","toNode":"61573a925a2686ba","toSide":"bottom"},
+		{"id":"cd033b637b5c86ba","fromNode":"61573a925a2686ba","fromSide":"top","toNode":"c7fe80c27d4f6238","toSide":"right"},
+		{"id":"6cd8492340c5d789","fromNode":"61712fa87b92f14c","fromSide":"right","toNode":"9fcf894d47f9c943","toSide":"left"},
+		{"id":"fe3fafeb616000b8","fromNode":"61712fa87b92f14c","fromSide":"bottom","toNode":"97095862f4c433b6","toSide":"top"},
+		{"id":"7e8efbd2c9b2ffd1","fromNode":"97095862f4c433b6","fromSide":"bottom","toNode":"41709a4e790f7e8a","toSide":"top"}
+	]
+}
