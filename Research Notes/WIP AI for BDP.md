@@ -32,8 +32,16 @@ This research note is on the idea of using AI to translate information into bloc
     - This is similar to automatically discarding/failing any code which does not compile given bdp-lib restrictions
 - "Different LLMs have different strengths. Even the same LLM can produce multiple candidate solutions for a given prompt. As our results show, although some prompts, parameters and underlying LLM technologies perform better than others for a given test class, each combination tends to contribute uniquely to the overall number of test cases found (See Section 3.3). It is therefore highly advantageous to formulate the problem in such a way that it is amenable to an ensemble-style learning approach [11]. In such an ensemble approach, the best aspects of many LLMs, their prompts and parameters, can also be combined to give an overall improvement recommendation."
     - Ensemble methods may prove worth investigating for our purposes
+- "The LLM produces code components, not entire programs. Components are composable, and therefore can be provided by multiple different LLMs, working as an ensemble. For the test improvement instance of Assured LLMSE, each component is a test case. Test cases compose very naturally to form test classes and test suites."
+    - We likely also want to do it in smaller pieces
+- The paper makes clear that this is not a replacement for software engineers but rather a recommendation system
 
 ## Application to AI for BDP
+
+### Overall Objectives
+
+- Taking the ideaology of this as a recommender system for engineers rather than a replacement similar to the paper is key
+- This further raises the question of whether we want the AI to produce multiple options for potential implementation
 
 ### Filtering System
 
@@ -51,3 +59,10 @@ This research note is on the idea of using AI to translate information into bloc
 - An offline LLM would be ideal but might be better taken care of in the future
 - Ensemble LLMs are a possible extension to use similar to the paper
 - Following the dual purpose methodology of evaluation then deployment followed by the paper makes sense
+- Based on the paper and personal bias, it makes sense to consider as atomic of components as possible, especially with relation to ensemble learning
+
+
+## Possible Next Steps
+
+1. Scaffold an architecture
+2. Discuss whether the ouput should be a single best option or multiple options in relation to the idea of the AI as a recommender system
