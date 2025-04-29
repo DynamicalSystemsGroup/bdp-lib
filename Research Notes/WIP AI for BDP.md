@@ -30,3 +30,24 @@ This research note is on the idea of using AI to translate information into bloc
 ![TestGen-LLM-Figure1](Assets/TestGen-LLM-Figure1.png)
 - "Any code that does not build is immediately discarded and thereby removed from further consideration."
     - This is similar to automatically discarding/failing any code which does not compile given bdp-lib restrictions
+- "Different LLMs have different strengths. Even the same LLM can produce multiple candidate solutions for a given prompt. As our results show, although some prompts, parameters and underlying LLM technologies perform better than others for a given test class, each combination tends to contribute uniquely to the overall number of test cases found (See Section 3.3). It is therefore highly advantageous to formulate the problem in such a way that it is amenable to an ensemble-style learning approach [11]. In such an ensemble approach, the best aspects of many LLMs, their prompts and parameters, can also be combined to give an overall improvement recommendation."
+    - Ensemble methods may prove worth investigating for our purposes
+
+## Application to AI for BDP
+
+### Filtering System
+
+- Similar to the paper, we can adopt a filtering system that fails at different stages if:
+    - The JSON code is not written correctly
+    - Any of the JSON does not pass the JSON validation of bdp-lib
+    - After validation if the project does not load because of errors like multiple inputs into the same port for a system
+    - Final human evaluation for correctness
+        - This may be better formulated as a score of how accurate the model is
+- Likely we want a pipeline formulated in a similar way to the figure presented where we have LLMs produce the data then filter in batches
+
+
+### LLM Creation
+
+- An offline LLM would be ideal but might be better taken care of in the future
+- Ensemble LLMs are a possible extension to use similar to the paper
+- Following the dual purpose methodology of evaluation then deployment followed by the paper makes sense
