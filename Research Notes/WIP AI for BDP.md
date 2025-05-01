@@ -109,3 +109,4 @@ This research note is on the idea of using AI to translate information into bloc
 1. Scaffold an architecture
 2. Discuss whether the ouput should be a single best option or multiple options in relation to the idea of the AI as a recommender system
 3. Come up with prompts to test
+4. Consider the benefits of further conducting research/literature review
