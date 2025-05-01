@@ -36,12 +36,19 @@ This research note is on the idea of using AI to translate information into bloc
     - We likely also want to do it in smaller pieces
 - The paper makes clear that this is not a replacement for software engineers but rather a recommendation system
 
+### Deployment
+
+- "The deployment workflow thus follows a gradual incremental deployment plan, in which the MVP is gradually evolved and matured from proof of concept to deployed tool/infrastructure, over a series of increasingly larger-scale, and increasingly less tightly constrained trials."
+    - Likewise we can start with tightly constrained trials and move on to larger-scale ones
+- One avenue of feedback was during a test-a-thon where engineers took a week to build out tests
+
 ## Application to AI for BDP
 
 ### Overall Objectives
 
 - Taking the ideaology of this as a recommender system for engineers rather than a replacement similar to the paper is key
 - This further raises the question of whether we want the AI to produce multiple options for potential implementation
+- Following a similar deployment of being with tightly constrained trials and moving outwards into larger scale experiments is the right direction
 
 ### Filtering System
 
@@ -61,6 +68,11 @@ This research note is on the idea of using AI to translate information into bloc
 - Following the dual purpose methodology of evaluation then deployment followed by the paper makes sense
 - Based on the paper and personal bias, it makes sense to consider as atomic of components as possible, especially with relation to ensemble learning
 
+
+### Deployment
+
+- Begin small with component only tests
+- Consider something similar to a "test-a-thon" for rapidly getting feedback
 
 ## Possible Next Steps
 
