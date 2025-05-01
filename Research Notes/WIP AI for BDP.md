@@ -41,6 +41,8 @@ This research note is on the idea of using AI to translate information into bloc
 - "The deployment workflow thus follows a gradual incremental deployment plan, in which the MVP is gradually evolved and matured from proof of concept to deployed tool/infrastructure, over a series of increasingly larger-scale, and increasingly less tightly constrained trials."
     - Likewise we can start with tightly constrained trials and move on to larger-scale ones
 - One avenue of feedback was during a test-a-thon where engineers took a week to build out tests
+- Meta found that having suggestions happen for related tests at the time of an engineer adding a test worked well for keeping context
+    - "When a test is recommended at diff time, the engineer concerned already has the full context of the existing testing in place, and the code under test. As such, the engineer is in a much better position to quickly and correctly assess the recommended test."
 
 ## Application to AI for BDP
 
@@ -73,6 +75,10 @@ This research note is on the idea of using AI to translate information into bloc
 
 - Begin small with component only tests
 - Consider something similar to a "test-a-thon" for rapidly getting feedback
+
+### Additional Considerations
+
+- Meta found that having suggestions happen for related tests at the time of an engineer adding a test worked well for keeping context. We might want to consider a similar thing where we have recommendations of the next things to add or similar
 
 ## Possible Next Steps
 
