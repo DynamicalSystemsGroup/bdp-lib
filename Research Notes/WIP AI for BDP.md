@@ -44,6 +44,25 @@ This research note is on the idea of using AI to translate information into bloc
 - Meta found that having suggestions happen for related tests at the time of an engineer adding a test worked well for keeping context
     - "When a test is recommended at diff time, the engineer concerned already has the full context of the existing testing in place, and the code under test. As such, the engineer is in a much better position to quickly and correctly assess the recommended test."
 
+### Evaluation
+
+- The hyperparameters for evaluation were LLM models, temperatures, and prompts
+- Meta found zero temperature worked well
+
+### Prompts
+
+- "The prompts used are set out in Table 2. We wanted to experiment with a variety of different prompting strategies. The prompt extend_coverage is the canonical example, which gives maximal information and clear direction to the language model. corner_cases was included specifically to focus on corner cases, while extend_test was included to investigate the potential to find solutions when only the test class is provided (and not the class under test). Finally, statement_to_complete was included to investigate the alternative prompting style of making a statement that should be completed by the language model. This is inspired by the fact that language models are, inherently, predictive models for text completion. As such, it seems reasonable that such a prompt ought to have an advantage."
+- The following prompts were used:
+
+
+| Prompt name           | Prompt Template                                                                                                                                                                                                                                                                                                                                                                                                |
+| :-------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| extend_test           | Here is a Kotlin Unit Test class: {existing_test_class}. Write an extended version of the test class that includes additional tests to cover some extra corner cases.                                                                                                                                                                                                                                          |
+| extend_coverage       | Here is a Kotlin Unit Test class and the class that it tests: {existing_test_class} {class_under_test}. Write an extended version of the test class that includes additional unit tests that will increase the test coverage of the class under test.                                                                                                                                                        |
+| corner_cases          | Here is a Kotlin Unit Test class and the class that it tests: {existing_test_class} {class_under_test}. Write an extended version of the test class that includes additional unit tests that will cover corner cases missed by the original and will increase the test coverage of the class under test.                                                                                                   |
+| statement_to_complete | Here is a Kotlin class under test {class_under_test} This class under test can be tested with this Kotlin Unit Test class {existing_test_class}. Here is an extended version of the Unit Test class that includes additional Unit Test cases that will cover methods, edge cases, corner cases, and other features of the class under test that were missed by the original Unit Test class: |
+
+
 ## Application to AI for BDP
 
 ### Overall Objectives
@@ -76,6 +95,11 @@ This research note is on the idea of using AI to translate information into bloc
 - Begin small with component only tests
 - Consider something similar to a "test-a-thon" for rapidly getting feedback
 
+### Evaluation
+
+- For evaluation, we most likely need the hyperparameters of LLM models, temperatures, and prompts
+- It is also possible we want to test different amounts and types of bdp context
+
 ### Additional Considerations
 
 - Meta found that having suggestions happen for related tests at the time of an engineer adding a test worked well for keeping context. We might want to consider a similar thing where we have recommendations of the next things to add or similar
@@ -84,3 +108,4 @@ This research note is on the idea of using AI to translate information into bloc
 
 1. Scaffold an architecture
 2. Discuss whether the ouput should be a single best option or multiple options in relation to the idea of the AI as a recommender system
+3. Come up with prompts to test
