@@ -1,7 +1,7 @@
 # Terminal Mappings Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Terminal Mappings
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Terminal Mappings
 ```
 
 This array, which is equal in length to the number of terminals on the processor, maps terminal port to an internal processor within the subsystem and its terminal index that the outer terminal should receive output from.

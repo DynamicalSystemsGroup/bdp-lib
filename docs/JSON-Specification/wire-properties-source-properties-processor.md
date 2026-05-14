@@ -1,7 +1,7 @@
 # Processor Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source/properties/Processor
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source/properties/Processor
 ```
 
 The ID of the processor that the wire is coming from.

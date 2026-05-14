@@ -1,7 +1,7 @@
 # Index Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source/properties/Index
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source/properties/Index
 ```
 
 The index of the terminal that the wire is coming from.

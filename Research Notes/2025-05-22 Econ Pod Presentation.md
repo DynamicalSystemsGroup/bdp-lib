@@ -72,12 +72,12 @@ graph TD;
 
 ### More Resources
 
-- For more information on bdp-lib, the website [here](https://blockscience.github.io/bdp-lib/) provides detailed documentation
+- For more information on bdp-lib, the website [here](https://dynamicalsystemsgroup.github.io/bdp-lib/) provides detailed documentation
 - We will quickly walk through the site now for awareness
 
 ## Canonical Example Walkthrough
 
-- Now we walk through a canonical example from [BDP-ML](https://github.com/BlockScience/BDP-ML/tree/main).
+- Now we walk through a canonical example from [BDP-ML](https://github.com/DynamicalSystemsGroup/BDP-ML/tree/main).
 
 ## Discussion Time
 

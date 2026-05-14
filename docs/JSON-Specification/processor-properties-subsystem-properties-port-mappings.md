@@ -1,7 +1,7 @@
 # Port Mappings Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings
 ```
 
 This array, which is equal in length to the number of ports on the processor, maps each port to an internal processor within the subsystem and its port index that the port should be passed on to.

@@ -1,7 +1,7 @@
 # Description Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Description
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/block.schema.json#/properties/Description
 ```
 
 A description of the block.

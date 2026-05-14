@@ -1,7 +1,7 @@
 # Untitled string in Processor Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Terminals/items
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Terminals/items
 ```
 
 

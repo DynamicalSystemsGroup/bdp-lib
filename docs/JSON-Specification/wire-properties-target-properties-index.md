@@ -1,7 +1,7 @@
 # Index Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target/properties/Index
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target/properties/Index
 ```
 
 The index of the port that the wire is going to.

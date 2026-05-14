@@ -1,7 +1,7 @@
 # Subsystem Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem
 ```
 
 The subsystem of the processor which is a system that the processor represents and passes its ports to and receives spaces to its terminals from.
@@ -18,9 +18,9 @@ The subsystem of the processor which is a system that the processor represents a
 
 | Property                                | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                   |
 | :-------------------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [System ID](#system-id)                 | `string` | Required | cannot be null | [Processor](processor-properties-subsystem-properties-system-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/System ID")                 |
-| [Port Mappings](#port-mappings)         | `array`  | Required | cannot be null | [Processor](processor-properties-subsystem-properties-port-mappings.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings")         |
-| [Terminal Mappings](#terminal-mappings) | `array`  | Required | cannot be null | [Processor](processor-properties-subsystem-properties-terminal-mappings.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Terminal Mappings") |
+| [System ID](#system-id)                 | `string` | Required | cannot be null | [Processor](processor-properties-subsystem-properties-system-id.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/System ID")                 |
+| [Port Mappings](#port-mappings)         | `array`  | Required | cannot be null | [Processor](processor-properties-subsystem-properties-port-mappings.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings")         |
+| [Terminal Mappings](#terminal-mappings) | `array`  | Required | cannot be null | [Processor](processor-properties-subsystem-properties-terminal-mappings.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Terminal Mappings") |
 
 ## System ID
 
@@ -34,7 +34,7 @@ The ID of the system that the processor is a processor for.
 
 *   cannot be null
 
-*   defined in: [Processor](processor-properties-subsystem-properties-system-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/System ID")
+*   defined in: [Processor](processor-properties-subsystem-properties-system-id.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/System ID")
 
 ### System ID Type
 
@@ -52,7 +52,7 @@ This array, which is equal in length to the number of ports on the processor, ma
 
 *   cannot be null
 
-*   defined in: [Processor](processor-properties-subsystem-properties-port-mappings.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings")
+*   defined in: [Processor](processor-properties-subsystem-properties-port-mappings.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings")
 
 ### Port Mappings Type
 
@@ -70,7 +70,7 @@ This array, which is equal in length to the number of terminals on the processor
 
 *   cannot be null
 
-*   defined in: [Processor](processor-properties-subsystem-properties-terminal-mappings.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Terminal Mappings")
+*   defined in: [Processor](processor-properties-subsystem-properties-terminal-mappings.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Terminal Mappings")
 
 ### Terminal Mappings Type
 

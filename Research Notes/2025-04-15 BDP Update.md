@@ -13,7 +13,7 @@ The following summarizes the current state of different workstreams within the l
 
 ### Documentation (Rough Draft)
 
-- Documentation work is in progress with iterative updates happening, the site [here](https://blockscience.github.io/bdp-lib/) is the working copy
+- Documentation work is in progress with iterative updates happening, the site [here](https://dynamicalsystemsgroup.github.io/bdp-lib/) is the working copy
 - Looking for feedback from others on what can be improved
 
 
@@ -46,19 +46,19 @@ The following summarizes the current state of different workstreams within the l
 
 ### Homicidal Chauffeur (Blocked / Rough Draft)
 
-- Current rough draft repository [here](https://github.com/BlockScience/homicidal-chauffeur-canonical-example)
+- Current rough draft repository [here](https://github.com/DynamicalSystemsGroup/homicidal-chauffeur-canonical-example)
 - Awaiting feedback on if this properly fits the model
 
 ### Toy Examples & Recipes (Rough Draft / Work in Progress)
 
-- Repository [here](https://github.com/BlockScience/bdp-toy-examples) with some examples completed
+- Repository [here](https://github.com/DynamicalSystemsGroup/bdp-toy-examples) with some examples completed
 - Some past Zargham work still slated to be added in
 - One recipe added so far, more to come
 
 
 ### BDP-ML (Work in Progress)
 
-- Repository [here](https://github.com/BlockScience/BDP-ML) which has a few examples of representing machine learning systems within bdp
+- Repository [here](https://github.com/DynamicalSystemsGroup/BDP-ML) which has a few examples of representing machine learning systems within bdp
 - More examples and work being done for dogfooding with good real life examples
 - Has shown already quite a few places where more attention is useful, i.e. the recipe for "switches" that came out of a specific issue with representing certain looping behaviors
 
@@ -67,8 +67,8 @@ The following summarizes the current state of different workstreams within the l
 
 ### Engineering Lifecycle (Blocked / Work in Progress)
 
-- There is a first attempt at re-creating the engineering lifecycle with bdp [here](https://github.com/BlockScience/bdp-eng-lifecycle)
-- Blocked on getting feedback about the direction (https://blockscienceteam.slack.com/archives/C08A70040KD/p1743779612293929)
+- There is a first attempt at re-creating the engineering lifecycle with bdp [here](https://github.com/DynamicalSystemsGroup/bdp-eng-lifecycle)
+- Blocked on getting feedback about the direction (https://dynamicalsystemsgroupteam.slack.com/archives/C08A70040KD/p1743779612293929)
 
 ### LLM -> BDP Worflow (New)
 
@@ -77,4 +77,4 @@ The following summarizes the current state of different workstreams within the l
 
 ## Front Ends (Work in Progress)
 
-- Currently one front end [here](https://github.com/BlockScience/bdp-frontend), which Rohan is working on
+- Currently one front end [here](https://github.com/DynamicalSystemsGroup/bdp-frontend), which Rohan is working on

@@ -1,7 +1,7 @@
 # Processors Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/workbench.schema.json#/properties/Processors
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/workbench.schema.json#/properties/Processors
 ```
 
 A list of processors in the block diagram protocol that follow the processor schema.

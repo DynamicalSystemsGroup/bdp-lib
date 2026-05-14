@@ -1,7 +1,7 @@
 # Untitled string in System Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Wires/items
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Wires/items
 ```
 
 

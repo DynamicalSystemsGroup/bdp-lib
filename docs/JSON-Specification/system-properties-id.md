@@ -1,7 +1,7 @@
 # ID Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ID
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ID
 ```
 
 A unique identifier for the system.

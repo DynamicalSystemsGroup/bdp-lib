@@ -1,7 +1,7 @@
 # Untitled object in Processor Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings/items
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings/items
 ```
 
 
@@ -18,8 +18,8 @@ https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.
 
 | Property                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                 |
 | :---------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Processor](#processor) | `string`  | Required | cannot be null | [Processor](processor-properties-subsystem-properties-port-mappings-items-properties-processor.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings/items/properties/Processor") |
-| [Index](#index)         | `integer` | Required | cannot be null | [Processor](processor-properties-subsystem-properties-port-mappings-items-properties-index.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings/items/properties/Index")         |
+| [Processor](#processor) | `string`  | Required | cannot be null | [Processor](processor-properties-subsystem-properties-port-mappings-items-properties-processor.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings/items/properties/Processor") |
+| [Index](#index)         | `integer` | Required | cannot be null | [Processor](processor-properties-subsystem-properties-port-mappings-items-properties-index.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings/items/properties/Index")         |
 
 ## Processor
 
@@ -33,7 +33,7 @@ The ID of the processor in the system.
 
 *   cannot be null
 
-*   defined in: [Processor](processor-properties-subsystem-properties-port-mappings-items-properties-processor.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings/items/properties/Processor")
+*   defined in: [Processor](processor-properties-subsystem-properties-port-mappings-items-properties-processor.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings/items/properties/Processor")
 
 ### Processor Type
 
@@ -51,7 +51,7 @@ The index of the terminal.
 
 *   cannot be null
 
-*   defined in: [Processor](processor-properties-subsystem-properties-port-mappings-items-properties-index.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings/items/properties/Index")
+*   defined in: [Processor](processor-properties-subsystem-properties-port-mappings-items-properties-index.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem/properties/Port Mappings/items/properties/Index")
 
 ### Index Type
 

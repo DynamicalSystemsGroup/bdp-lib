@@ -1,7 +1,7 @@
 # Spaces Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Spaces
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Spaces
 ```
 
 A list of spaces in the block diagram protocol that follow the space schema. One can think of a space as a typed dictionary of data.

@@ -1,7 +1,7 @@
 # System Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json
 ```
 
 A system is a collection of processors and wires which when loaded represent an actual block diagram. A system can be thought of as a directed multigraph.
@@ -18,11 +18,11 @@ A system is a collection of processors and wires which when loaded represent an 
 
 | Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                                    |
 | :-------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [ID](#id)                   | `string` | Required | cannot be null | [System](system-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ID")                   |
-| [Name](#name)               | `string` | Required | cannot be null | [System](system-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Name")               |
-| [Description](#description) | `string` | Optional | cannot be null | [System](system-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Description") |
-| [Processors](#processors)   | `array`  | Required | cannot be null | [System](system-properties-processors.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Processors")   |
-| [Wires](#wires)             | `array`  | Required | cannot be null | [System](system-properties-wires.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Wires")             |
+| [ID](#id)                   | `string` | Required | cannot be null | [System](system-properties-id.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ID")                   |
+| [Name](#name)               | `string` | Required | cannot be null | [System](system-properties-name.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Name")               |
+| [Description](#description) | `string` | Optional | cannot be null | [System](system-properties-description.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Description") |
+| [Processors](#processors)   | `array`  | Required | cannot be null | [System](system-properties-processors.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Processors")   |
+| [Wires](#wires)             | `array`  | Required | cannot be null | [System](system-properties-wires.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Wires")             |
 
 ## ID
 
@@ -36,7 +36,7 @@ A unique identifier for the system.
 
 *   cannot be null
 
-*   defined in: [System](system-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ID")
+*   defined in: [System](system-properties-id.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/ID")
 
 ### ID Type
 
@@ -54,7 +54,7 @@ The name of the system.
 
 *   cannot be null
 
-*   defined in: [System](system-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Name")
+*   defined in: [System](system-properties-name.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Name")
 
 ### Name Type
 
@@ -72,7 +72,7 @@ A description of the system.
 
 *   cannot be null
 
-*   defined in: [System](system-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Description")
+*   defined in: [System](system-properties-description.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Description")
 
 ### Description Type
 
@@ -90,7 +90,7 @@ A list of processor IDs that are part of the system.
 
 *   cannot be null
 
-*   defined in: [System](system-properties-processors.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Processors")
+*   defined in: [System](system-properties-processors.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Processors")
 
 ### Processors Type
 
@@ -108,7 +108,7 @@ A list of wire IDs that are part of the system.
 
 *   cannot be null
 
-*   defined in: [System](system-properties-wires.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Wires")
+*   defined in: [System](system-properties-wires.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/system.schema.json#/properties/Wires")
 
 ### Wires Type
 

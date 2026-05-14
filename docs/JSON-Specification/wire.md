@@ -1,7 +1,7 @@
 # Wire Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json
 ```
 
 A wire connects a terminal to a port and is the implementation of an underlying space which is passed between these two.
@@ -18,10 +18,10 @@ A wire connects a terminal to a port and is the implementation of an underlying 
 
 | Property          | Type     | Required | Nullable       | Defined by                                                                                                                                    |
 | :---------------- | :------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ID](#id)         | `string` | Required | cannot be null | [Wire](wire-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/ID")         |
-| [Parent](#parent) | `string` | Required | cannot be null | [Wire](wire-properties-parent.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Parent") |
-| [Source](#source) | `object` | Required | cannot be null | [Wire](wire-properties-source.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source") |
-| [Target](#target) | `object` | Required | cannot be null | [Wire](wire-properties-target.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target") |
+| [ID](#id)         | `string` | Required | cannot be null | [Wire](wire-properties-id.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/ID")         |
+| [Parent](#parent) | `string` | Required | cannot be null | [Wire](wire-properties-parent.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Parent") |
+| [Source](#source) | `object` | Required | cannot be null | [Wire](wire-properties-source.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source") |
+| [Target](#target) | `object` | Required | cannot be null | [Wire](wire-properties-target.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target") |
 
 ## ID
 
@@ -35,7 +35,7 @@ A unique identifier for the wire.
 
 *   cannot be null
 
-*   defined in: [Wire](wire-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/ID")
+*   defined in: [Wire](wire-properties-id.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/ID")
 
 ### ID Type
 
@@ -53,7 +53,7 @@ The ID of the space that the wire is passing.
 
 *   cannot be null
 
-*   defined in: [Wire](wire-properties-parent.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Parent")
+*   defined in: [Wire](wire-properties-parent.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Parent")
 
 ### Parent Type
 
@@ -71,7 +71,7 @@ The source of the wire/space.
 
 *   cannot be null
 
-*   defined in: [Wire](wire-properties-source.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source")
+*   defined in: [Wire](wire-properties-source.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source")
 
 ### Source Type
 
@@ -89,7 +89,7 @@ The target of the wire/space.
 
 *   cannot be null
 
-*   defined in: [Wire](wire-properties-target.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target")
+*   defined in: [Wire](wire-properties-target.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Target")
 
 ### Target Type
 

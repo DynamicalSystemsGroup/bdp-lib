@@ -1,7 +1,7 @@
 # Project Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/bdp.schema.json
 ```
 
 A project within the block diagram protocol. The toolbox contains the abstract representations and the workbench contains the implementations.
@@ -18,8 +18,8 @@ A project within the block diagram protocol. The toolbox contains the abstract r
 
 | Property                | Type     | Required | Nullable       | Defined by                                                                                                                                  |
 | :---------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Toolbox](#toolbox)     | `object` | Required | cannot be null | [Project](toolbox.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Toolbox")       |
-| [Workbench](#workbench) | `object` | Required | cannot be null | [Project](workbench.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/workbench.schema.json#/properties/Workbench") |
+| [Toolbox](#toolbox)     | `object` | Required | cannot be null | [Project](toolbox.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Toolbox")       |
+| [Workbench](#workbench) | `object` | Required | cannot be null | [Project](workbench.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/workbench.schema.json#/properties/Workbench") |
 
 ## Toolbox
 
@@ -33,7 +33,7 @@ The abstract classes of blocks and spaces which the workbench will instantiate.
 
 *   cannot be null
 
-*   defined in: [Project](toolbox.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Toolbox")
+*   defined in: [Project](toolbox.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Toolbox")
 
 ### Toolbox Type
 
@@ -51,7 +51,7 @@ The actual instances in bdp-lib which is the actual instances of the toolbox whi
 
 *   cannot be null
 
-*   defined in: [Project](workbench.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/workbench.schema.json#/properties/Workbench")
+*   defined in: [Project](workbench.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/workbench.schema.json#/properties/Workbench")
 
 ### Workbench Type
 

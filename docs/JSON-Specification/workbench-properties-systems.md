@@ -1,7 +1,7 @@
 # Systems Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/workbench.schema.json#/properties/Systems
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/workbench.schema.json#/properties/Systems
 ```
 
 A list of systems in the block diagram protocol that follow the system schema.

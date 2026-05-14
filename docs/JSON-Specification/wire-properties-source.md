@@ -1,7 +1,7 @@
 # Source Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source
 ```
 
 The source of the wire/space.
@@ -18,8 +18,8 @@ The source of the wire/space.
 
 | Property                | Type      | Required | Nullable       | Defined by                                                                                                                                                                              |
 | :---------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Processor](#processor) | `string`  | Optional | cannot be null | [Wire](wire-properties-source-properties-processor.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source/properties/Processor") |
-| [Index](#index)         | `integer` | Optional | cannot be null | [Wire](wire-properties-source-properties-index.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source/properties/Index")         |
+| [Processor](#processor) | `string`  | Optional | cannot be null | [Wire](wire-properties-source-properties-processor.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source/properties/Processor") |
+| [Index](#index)         | `integer` | Optional | cannot be null | [Wire](wire-properties-source-properties-index.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source/properties/Index")         |
 
 ## Processor
 
@@ -33,7 +33,7 @@ The ID of the processor that the wire is coming from.
 
 *   cannot be null
 
-*   defined in: [Wire](wire-properties-source-properties-processor.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source/properties/Processor")
+*   defined in: [Wire](wire-properties-source-properties-processor.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source/properties/Processor")
 
 ### Processor Type
 
@@ -51,7 +51,7 @@ The index of the terminal that the wire is coming from.
 
 *   cannot be null
 
-*   defined in: [Wire](wire-properties-source-properties-index.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source/properties/Index")
+*   defined in: [Wire](wire-properties-source-properties-index.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/wire.schema.json#/properties/Source/properties/Index")
 
 ### Index Type
 

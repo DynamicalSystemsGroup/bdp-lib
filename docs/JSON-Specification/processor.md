@@ -1,7 +1,7 @@
 # Processor Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json
 ```
 
 A processor is an instance of a block where computation or actions would happen. When the optional parameter of subsystem is present, the processor is a composite processor and it represents a system as a processor with the systsem ID it is a processor for as well as the wires that connect the processor ports and terminals to the system ports and terminals.
@@ -18,13 +18,13 @@ A processor is an instance of a block where computation or actions would happen.
 
 | Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                                             |
 | :-------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ID](#id)                   | `string` | Required | cannot be null | [Processor](processor-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/ID")                   |
-| [Name](#name)               | `string` | Required | cannot be null | [Processor](processor-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Name")               |
-| [Description](#description) | `string` | Optional | cannot be null | [Processor](processor-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Description") |
-| [Parent](#parent)           | `string` | Required | cannot be null | [Processor](processor-properties-parent.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Parent")           |
-| [Ports](#ports)             | `array`  | Required | cannot be null | [Processor](processor-properties-ports.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Ports")             |
-| [Terminals](#terminals)     | `array`  | Required | cannot be null | [Processor](processor-properties-terminals.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Terminals")     |
-| [Subsystem](#subsystem)     | `object` | Optional | cannot be null | [Processor](processor-properties-subsystem.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem")     |
+| [ID](#id)                   | `string` | Required | cannot be null | [Processor](processor-properties-id.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/ID")                   |
+| [Name](#name)               | `string` | Required | cannot be null | [Processor](processor-properties-name.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Name")               |
+| [Description](#description) | `string` | Optional | cannot be null | [Processor](processor-properties-description.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Description") |
+| [Parent](#parent)           | `string` | Required | cannot be null | [Processor](processor-properties-parent.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Parent")           |
+| [Ports](#ports)             | `array`  | Required | cannot be null | [Processor](processor-properties-ports.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Ports")             |
+| [Terminals](#terminals)     | `array`  | Required | cannot be null | [Processor](processor-properties-terminals.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Terminals")     |
+| [Subsystem](#subsystem)     | `object` | Optional | cannot be null | [Processor](processor-properties-subsystem.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem")     |
 
 ## ID
 
@@ -38,7 +38,7 @@ A unique identifier for the processor.
 
 *   cannot be null
 
-*   defined in: [Processor](processor-properties-id.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/ID")
+*   defined in: [Processor](processor-properties-id.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/ID")
 
 ### ID Type
 
@@ -56,7 +56,7 @@ The name of the processor.
 
 *   cannot be null
 
-*   defined in: [Processor](processor-properties-name.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Name")
+*   defined in: [Processor](processor-properties-name.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Name")
 
 ### Name Type
 
@@ -74,7 +74,7 @@ A description of the processor.
 
 *   cannot be null
 
-*   defined in: [Processor](processor-properties-description.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Description")
+*   defined in: [Processor](processor-properties-description.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Description")
 
 ### Description Type
 
@@ -92,7 +92,7 @@ The ID of the block that the processor is an instance of.
 
 *   cannot be null
 
-*   defined in: [Processor](processor-properties-parent.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Parent")
+*   defined in: [Processor](processor-properties-parent.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Parent")
 
 ### Parent Type
 
@@ -110,7 +110,7 @@ The IDs of spaces which must match the domain of the parent block.
 
 *   cannot be null
 
-*   defined in: [Processor](processor-properties-ports.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Ports")
+*   defined in: [Processor](processor-properties-ports.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Ports")
 
 ### Ports Type
 
@@ -128,7 +128,7 @@ The IDs of spaces which must match the codomain of the parent block.
 
 *   cannot be null
 
-*   defined in: [Processor](processor-properties-terminals.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Terminals")
+*   defined in: [Processor](processor-properties-terminals.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Terminals")
 
 ### Terminals Type
 
@@ -146,7 +146,7 @@ The subsystem of the processor which is a system that the processor represents a
 
 *   cannot be null
 
-*   defined in: [Processor](processor-properties-subsystem.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem")
+*   defined in: [Processor](processor-properties-subsystem.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/processor.schema.json#/properties/Subsystem")
 
 ### Subsystem Type
 

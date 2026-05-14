@@ -1,7 +1,7 @@
 # Toolbox Schema
 
 ```txt
-https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json
+https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json
 ```
 
 The abstract classes of blocks and spaces which the workbench will instantiate.
@@ -18,8 +18,8 @@ The abstract classes of blocks and spaces which the workbench will instantiate.
 
 | Property          | Type    | Required | Nullable       | Defined by                                                                                                                                             |
 | :---------------- | :------ | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Spaces](#spaces) | `array` | Required | cannot be null | [Toolbox](toolbox-properties-spaces.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Spaces") |
-| [Blocks](#blocks) | `array` | Required | cannot be null | [Toolbox](toolbox-properties-blocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Blocks") |
+| [Spaces](#spaces) | `array` | Required | cannot be null | [Toolbox](toolbox-properties-spaces.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Spaces") |
+| [Blocks](#blocks) | `array` | Required | cannot be null | [Toolbox](toolbox-properties-blocks.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Blocks") |
 
 ## Spaces
 
@@ -33,7 +33,7 @@ A list of spaces in the block diagram protocol that follow the space schema. One
 
 *   cannot be null
 
-*   defined in: [Toolbox](toolbox-properties-spaces.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Spaces")
+*   defined in: [Toolbox](toolbox-properties-spaces.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Spaces")
 
 ### Spaces Type
 
@@ -51,7 +51,7 @@ A list of blocks in the block diagram protocol that follow the block schema.
 
 *   cannot be null
 
-*   defined in: [Toolbox](toolbox-properties-blocks.md "https://github.com/BlockScience/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Blocks")
+*   defined in: [Toolbox](toolbox-properties-blocks.md "https://github.com/DynamicalSystemsGroup/bdp-lib/tree/main/src/bdp_lib/schemas/toolbox.schema.json#/properties/Blocks")
 
 ### Blocks Type
 
