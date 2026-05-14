@@ -2,7 +2,7 @@
 
 The "Block Diagram Protocol Library" or bdp-lib for short is a library for instantiating and validating fundamental block diagrams. Additional functionalities and enhancements come out of libraries which use it as the base object.
 
-**For full documentation please use this bdp-lib site [here](https://blockscience.github.io/bdp-lib/)**
+**For full documentation please use this bdp-lib site [here](https://dynamicalsystemsgroup.github.io/bdp-lib/)**
 
 ## Why bdp-lib?
 
